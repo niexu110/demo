@@ -1,0 +1,23 @@
+.nav,.view{background:rgb(255,127,79);padding-bottom:0;border:none;}
+.title{color:#fff;}
+.bgImg{width:7.5rem;}
+.one-detail{width:7rem;height:3.4rem;margin-left:.22rem;background:url("../img/BJ1@2x.png")no-repeat left;background-size:7rem;}
+.two-detail{width:7rem;height:5.3rem;margin-left:.22rem;background:url("../img/BJ2@2x.png")no-repeat left;background-size:7rem;}
+.one-detail h1{font-size:.3rem;color:#fff;padding:.35rem 0 0 .5rem;}
+.two-detail h1{font-size:.3rem;color:#fff;padding:.5rem 0 0 .5rem;}
+.one-detail p,.two-detail p{font-size:.28rem;color:#333;padding:.2rem .3rem 0 .5rem;}
+.detailBtn{width:4.6rem;height:.95rem;line-height:.95rem;color:#ff6f4f;background:#fff;text-align: center;margin:.3rem auto;font-size:.32rem;border-radius: 40px;box-shadow:4px 4px 4px #ff6f4f;}
+/*登陆弹框*/
+.pop-login{position: fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.5);z-index:200;display: none;}
+.close{width:.6rem;position: absolute;right:.6rem;top:1rem; }
+.login-box{width:6.3rem;height:8rem;display:block;position: absolute;top:0;left:0;bottom:0;right:0;margin:auto;border-radius:6px;background:#fff; }
+.logo{width:1rem;display: block;margin:.4rem auto;border-radius:50%;}
+.login-form{width:5rem;height:auto;margin:0 auto;}
+.itemInt{width:5rem;height:1.5rem;line-height:1.5rem;border-bottom:1px solid #E6E6E6;color:#FE8C73;font-size:.3rem;position: relative; }
+.itemInt span{padding:.2rem 0;}
+.itemInt input{width:2.5rem;height:.6rem;padding-left:.2rem;color:#111;}
+.itemInt img{float:right;width:.35rem;margin-top:.7rem;display: none;}
+.login-form p{width:100%;height:.8rem;padding:.3rem 0;text-align: center;}
+.login-form h5{color:#999;font-size:.26rem;text-align: center;padding-top:.3rem;}
+.login-form p a{font-size:.3rem;color:#FE8C73;}
+.loginBtn{width:5.1rem;height:.95rem;line-height:.95rem;background:#ffcdb9;color:#ffe3cd;text-align:center;border-radius:40px;margin-top:.3rem;  }

@@ -1,0 +1,201 @@
+.d_datatitle{
+	margin-top: 0.9rem;
+	height: 0.9rem;
+	line-height: 0.9rem;
+	font-size: 0.3rem;
+	color: #333333;
+	padding: 0 0.24rem;
+	border-bottom: solid 1px #E6E6E6;
+}
+.d_sureone{
+	
+	
+}
+.d_headtop{
+	height: 1.6rem;
+	margin: 0 0.24rem;
+}
+.d_dataxiny{
+	float: left;
+	margin-left:0.86rem;
+	margin-top: 0.2rem;
+	text-align: center;
+	color: #5397DD;
+}
+.d_dataxiny p{
+	font-size: 0.22rem;
+	line-height: 0.50rem;
+}
+.d_dataxiny span{
+	font-size: 0.44rem;
+}
+.d_headtop img{
+	float: left;
+	height: 1.2rem;
+	width: 1.2.rem;
+	margin: 0.2rem 0.8rem;
+	border-radius: 0.06rem;
+}
+.d_datain{
+	float: left;
+	margin-top: 0.2rem;
+	text-align: center;
+	color: #5397DD;
+}
+.d_datain p{
+	font-size: 0.22rem;
+	line-height: 0.50rem;
+}
+.d_datain span{
+	font-size: 0.44rem;
+}
+.d_nickname{
+	font-size: 0.28rem;
+	color: #333333;
+	text-align: center;
+	line-height: 0.6rem;
+}
+.d_sexage{
+	height: 0.5rem;
+	text-align: center;
+	line-height: 0.5rem;
+}
+.d_seximg{
+	height: 0.17rem;
+	width: 0.17rem;
+	margin-right: 0.1rem;
+}
+.d_shenfen{
+	width: 0.3rem;
+	height: 0.24rem;
+}
+.d_sexage span{
+	font-size: 0.24rem;
+	color: #333333;
+	margin-right: 0.2rem;
+}
+.d_beizhu{
+	text-align: center;
+	font-size: 0.26rem;
+	color: #5397DD;
+	height: 0.86rem;
+	line-height: 0.86rem;
+	border-bottom: solid 1px #E6E6E6;
+}
+.d_morepeople p{
+	height: 0.84rem;
+	font-size: 0.28rem;
+	color: #333333;
+	padding: 0 0.24rem;
+	line-height: 0.84rem;
+}
+.d_peopleimg{
+	height: 1.48rem;
+	overflow: hidden;
+	border-bottom: solid 1px #E6E6E6;
+}
+.d_peopleimg img{
+	height: 1.18rem;
+	width: 1.18rem;
+	border-radius: 0.06rem;
+	margin-left: 0.24rem;
+	margin-right: 0.02rem;
+	margin-bottom: 0.3rem;
+	float: left;
+}
+.d_addrBox{
+	height: 2.0rem;
+	padding: 0 0.24rem;
+}
+.d_goodsname{
+	height: 0.88rem;
+	line-height: 0.88rem;
+	font-size: 0.3rem;
+	color: #333333;
+}
+.d_goodsaddr{
+	height: 0.56rem;
+	font-size: 0.28rem;
+	color: #666666;
+}
+.d_goodstime{
+	font-size: 0.28rem;
+	color: #666666;
+}
+/*弹框*/
+.d_tanbox{
+	display: none;
+	position: fixed;
+	top:0;
+	left: 0;
+	background: rgba(50,50,50,0.5);
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+}
+.d_tanbox div{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+	width: 7.0rem;
+	margin-left: 0.24rem;
+}
+.d_tanbox p{
+	height: 0.8rem;
+	width: 100%;
+	background: #FFFFFF;
+	margin: 0.1rem 0;
+	line-height: 0.8rem;
+	border-radius: 0.06rem;
+	font-size: 0.28rem;
+	color: #333333;
+}
+/* 约会进度  D */
+.d_datejindu{
+	margin: 0 0.24rem;
+}
+.d_datejindu h3{
+	height: 0.84rem;
+	font-size: 0.28rem;
+	color: #333333;
+	line-height: 0.84rem;
+}
+.d_datejindumore li{
+	position: relative;
+	border-left: solid 2px #c1c1c1;
+	padding-left: 0.24rem;
+	padding-bottom: 0.2rem;
+	font-size: 0.26rem;
+	color: #999999;
+}
+.d_datejindumore li span{
+	position: relative;
+	top: -0.1rem;
+}
+.d_jindutime{
+	height: 0.6rem;
+	line-height: 0.6rem;
+}
+.d_jinduDian{
+	height: 0.14rem;
+	width: 0.14rem;
+	background: #c1c1c1;
+	border-radius: 50%;
+	position: absolute;
+	left: -0.09rem;
+}
+.d_datejindumore li:last-child{
+	border-color:#ffffff;
+}
+/*蓝色点点显示*/
+.d_datejindumore li:first-child .d_jinduDian{
+	height: 0.2rem;
+	width: 0.2rem;
+	background: #5397DD;
+	left: -0.12rem;
+}
+.d_datejindumore li:first-child{
+	color: #5397DD;
+}
+

@@ -1,0 +1,31 @@
+.view{padding:0;}
+.head{width:7.5rem;height:6rem;background:url("../../image/img/bg.png")no-repeat;background-size:100%;}
+.nav-head{width:7.5rem;height:.9rem;line-height:.9rem;text-align: center;font-size:.32rem;color:#fff; }
+.head-select{width:6.9rem;height:.7rem;margin:0 auto;  }
+.head-select a{color:#fff;font-weight: bold; }
+.day{font-size:.24rem;padding-right:.2rem;}.mouth{font-size:.28rem;padding-left:.2rem; }
+.head-select div{width:2.3rem;height:.7rem;line-height:.7rem; }
+.head-middle img{width:.4rem;margin:.15rem .12rem 0 .6rem;}
+.head-middle span{font-size:.24rem;color:#fff;font-weight: bold; }
+.head-box{width:6.9rem;margin:0 auto;height:auto; }
+.item{float: left;width:2.3rem;}
+.head-img{width:1.3rem;height:1.3rem;margin:.8rem auto .4rem;position: relative; }
+.head-img1{width:1.7rem;height:1.7rem;margin:.4rem auto .4rem;position: relative; }
+.user-img{width:100%;border-radius:50%;}
+.user-one,.user-two,.user-three{width:.44rem;height:.44rem;line-height:.44rem;text-align:center;font-size:.28rem;color:#fff;font-weight:bold;border-radius:50%;position: absolute;bottom:-.22rem;left:.445rem;background:#43E95E;}
+div.user-three{background:#FD972A;}
+div.user-one{background:#3EAAFD;width:.52rem;height:.52rem;line-height:.52rem;bottom:-.26rem;left:.59rem;font-size:.32rem;}
+.item h1{text-align: center;font-size:.26rem;color:#fff;font-weight: bold;padding-bottom:.05rem;}
+.item h1.big{text-align: center;font-size:.3rem;color:#fff;font-weight: bold;padding:0;}
+.item h2{text-align: center;font-size:.28rem;color:#fff;font-weight: bold;background:url("../../image/img/suge.png")no-repeat .3rem;background-size:.24rem;}
+.item p{text-align: center;font-size:.2rem;color:#fff;padding:.1rem 0;}
+.head-line{width:.95rem;height:2px;background:#fff;opacity:.8;margin:.1rem auto; }
+.main{width:7.5rem;background:#f3f3f3;height:auto;}
+.main-item{display:block;width:7.2rem;height:1.4rem;margin-left:.3rem;border-bottom:1px solid #E7E7E7;}
+.main-num{height:1.4rem;line-height:1.4rem;width:.45rem;font-size:.3rem;color:#666;font-weight: bold; }
+.main-box{width:3.3rem;height:1.4rem;}
+.main-box>img{width:.7rem;border-radius:50%;float:left;margin-top:.35rem;  }
+.main-user{margin-left:.2rem;margin-top:.35rem;}
+.main-user h1{font-size:.28rem;color:#333;}
+.main-user p{font-size:.26rem;color:#999;}
+.main-total{height:1.4rem;line-height:1.4rem;font-weight: bold;color:#333;font-size:.28rem; margin-right:.3rem; }

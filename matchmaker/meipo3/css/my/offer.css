@@ -1,0 +1,22 @@
+.view{padding-bottom:.2rem;}
+.offer-title{width:6.9rem;height:1rem;line-height:1rem;margin-left:.3rem;color:#111;font-size:.28rem; }
+.offer-title>em{float:right;color:#FF704f;font-size:.3rem;font-weight:bold;  }
+.offer-box{width:6.9rem;height:10.4rem;margin:0 auto;box-shadow:0 0 5px 5px #ccc; }
+.offer-box2{width:6.9rem;height:auto;margin-left:.3rem;margin-bottom:.2rem;box-shadow:0 0 5px 5px #ccc;float: left; }
+.user-content{width:6.9rem;height:6.9rem;overflow: hidden;position: relative;}
+.user-content>img{width:6.9rem;}
+.user-msg{width:6.9rem;height:1.4rem;position:absolute;left:0;bottom:0;background:linear-gradient(to top,rgba(0,0,0,0),rgba(0,0,0,.5));color:#fff;}
+.user-msg h1{font-size:.46rem;padding-left:.4rem;}.user-msg h1>span{font-size:.3rem;padding-left:.1rem;}
+.user-msg p{font-size:.3rem;padding-left:.4rem;margin-top:.1rem;}
+.offer-ask{width:6.2rem;height:1.8rem;margin:0 auto;border-bottom:1px solid #ECECEC; }
+.offer-ask h1{font-size:.3rem;color:#FF704f;margin-top:.4rem;}
+.offer-ask p{font-size:.3rem;color:#111;margin-top:.3rem;}
+.offer-ask p>span{padding-right:.2rem;}
+.proclaim{width:6.2rem;margin:.2rem auto 0;line-height:.4rem;font-size:.24rem;color:#666;}
+.offer-text{width:7.5rem;height:auto;line-height:1rem;font-size:.32rem;color:#FF704f;text-align:center;}
+.item{width:1.3rem;height:2.2rem;margin-left:.3rem;margin-top:.3rem;float: left;  }
+.item>img{width:1.3rem;border-radius:50%; }
+.item>span{display:block;width:.34rem;height:.34rem;line-height:.34rem;border:1px solid #ccc;border-radius:4px;margin:.15rem auto 0;font-size:.3rem;text-align:center; }
+div.active>span{background:#FF704F;border:1px solid #FF704f;color:#fff;}
+.offerBtn,.offerBtn2{display:block;width:2.5rem;height:.9rem;border-radius:4px;background:#FF704f;color:#fff;font-size:.3rem;text-align:center;line-height:.9rem;clear: both;margin:.3rem auto;}
+.offerNull{color:#999;font-size:.32rem;text-align: center;margin:1rem auto .3rem; }

@@ -1,0 +1,66 @@
+.d_title{
+	margin-top: 0.9rem;
+	margin-left: 0.3rem;
+	line-height: 1.8rem;
+	font-size: 0.52rem;
+	color: #111111;
+	font-weight: bold;
+}
+.d_xx{
+	width: 0.3rem;
+}
+.d_tis{
+	margin-left: 0.3rem;
+	font-size: 0.34rem;
+	color: #111111;
+}
+.d_tel,.d_wx{
+	width: 1.6rem;
+	margin: 0 auto;
+	margin-top: 1.2rem;
+	text-align: center;
+}
+.d_tel img,.d_wx img{
+	width: 1.06rem;
+	margin-bottom: 0.4rem;
+}
+.d_tel p,.d_wx p{
+	font-size: 0.34rem;
+	color: #FF704F;
+}
+.d_wx .d_yesbd,.d_tel .d_yesbd{
+	color: #111111;
+}
+.d_next{
+	width: 6.3rem;
+	height: 0.94rem;
+	position: fixed;
+	left: 0.6rem;
+	bottom: 0.6rem;
+	background: #FF704F;
+	font-size: 0.32rem;
+	color: #FFFFFF;
+	text-align: center;
+	line-height: 0.94rem;
+	border-radius: 0.5rem;
+}
+.d_wayone,.d_waytwo{
+	margin: 0 0.3rem;
+	margin-top: 0.7rem;
+}
+.d_wayone span,.d_waytwo span{
+	display: block;
+	font-size: 0.34rem;
+	color: #111111;
+}
+.d_wayone p,.d_waytwo p{
+	font-size: 0.3rem;
+	color: #666666;
+	line-height: 0.5rem;
+	margin-top: 0.3rem;
+}
+.d_waytwo img{
+	width: 2.2rem;
+	margin-top: 1.0rem;
+	margin-left: 2.25rem;
+}

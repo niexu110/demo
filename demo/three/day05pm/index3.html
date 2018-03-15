@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>第N个例子</title>
+    <script src="js/three.js"></script>
+    <style>
+        canvas{
+            position:absolute;
+            top:10px;
+            right:10px;
+            bottom:10px;
+            border-radius: 10px;
+            border:2px solid #aaa;
+        }
+    </style>
+</head>
+<body >
+<script>
+    /*.场景(scene)：模型，灯光等
+     * .相机(camera):观察场景的视角
+     * .渲染器(renderer):场景渲染输出的目标
+     * .渲染(render):执行渲染操作
+     * */
+    //创建场景
+    var scene=new THREE.Scene();
+    //创建立方体
+    var geometry=new THREE.BoxGeometry(100,100,100);
+    //创建材质
+    var material=new THREE.MeshLambertMaterial({color:0xff0000});
+    //创建网格模型对象，集合模型和材质
+    var mesh=new THREE.Mesh(geometry,material);
+    scene.add(mesh);
+    //创建点光源
+    var light=new THREE.PointLight(0xffffff);
+    //光源位置
+    light.position.set(300,400,200);
+    scene.add(light);
+    //相机对象，透视相机
+    var camera=new THREE.PerspectiveCamera(45,600/300,1,1000);
+    //定义相机的位置
+    camera.position.set(200,200,200);
+    //相机朝向场景的中心
+    camera.lookAt(scene.position);
+    //创建渲染器 Webgl渲染器
+    var renderer=new THREE.WebGLRenderer();
+    //设置渲染器的尺寸
+    renderer.setSize(600,300);
+    //把渲染器放到HTML中
+    document.body.appendChild(renderer.domElement);
+    //开始渲染
+    renderer.render(scene,camera);
+   
+</script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Websocket</title>
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="expires" content="-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/common.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/common.js"></script>
+    <style>
+         .box{width:6.9rem;height:auto;margin:.3rem auto;}
+        .item{width:6.9rem;height:1rem; }
+        .item span{float: left;color:#5793dd;border:1px solid #01b8ff;border-radius:6px;font-size:.3rem;padding:.1rem .2rem; margin-left:.9rem; margin-top:.2rem;}
+         .item span.active{color:#fff;background:#43E95E;border:1px solid #43E95E; }
+         .item input{border:1px solid #43E95E;width:3rem;height:.6rem;margin-top:.2rem;color:#111;font-size:.28rem; }
+        .content{width:6.9rem;height:auto;margin:.3rem auto; }
+        .content p{text-align: center;font-size:.3rem;color:#666;width:100%;}
+         @keyframes sheen {
+             0% {
+                 transform: skewY(-45deg) translateX(0);
+             }
+             100% {
+                 transform: skewY(-45deg) translateX(12.5em);
+             }
+         }
+         .wrapper {
+             display: block;
+             position: absolute;
+             top: 50%;
+             left: 50%;
+             transform: translate(-50%, -50%);
+         }
+         .button {
+             padding: 0.75em 2em;
+             text-align: center;
+             text-decoration: none;
+             color: #2194E0;
+             border: 2px solid #2194E0;
+             font-size: 24px;
+             display: inline-block;
+             border-radius: 0.3em;
+             transition: all 0.2s ease-in-out;
+             position: relative;
+             overflow: hidden;}
+         .button:before {
+              content: "";
+              background-color: rgba(255,255,255,0.5);
+              height: 100%;
+              width: 3em;
+              display: block;
+              position: absolute;
+              top: 0;
+              left: -4.5em;
+              transform: skewX(-45deg) translateX(0);
+              transition: none;
+          }
+         .button:hover {
+              background-color: #2194E0;
+              color: #fff;
+              border-bottom: 4px solid darken(#2194E0, 10%);
+         }
+         .button:before {
+              transform: skewX(-45deg) translateX(13.5em);
+              transition: all 0.5s ease-in-out;
+         }
+    </style>
+</head>
+<body>
+<div class="nav">
+    <a href="javascript:history.go(-1);" class="back-1 lt"><img class="back" src="image/icon/left.png" /></a>
+    <em class="title">webSocket</em>
+</div>
+<div class="view">
+ <div class="box">
+     <div class="item">
+         <span class="open">打开</span>
+         <span class="close">关闭</span>
+     </div>
+     <p class="line"></p>
+     <div class="item">
+         <input type="text" name="text" class="Tint lt">
+         <span class="send">发送</span>
+     </div>
+    <div class="content">
+    </div>
+ </div>
+</div>
+<div class="hint"></div>
+<div id="footer">
+    <div class="foot-box">
+        <a href="#" class="tab-link-2 " >
+            <i class="icon icon-img-1"></i>
+            <p class="size">媒婆榜</p>
+        </a>
+        <a href="javascript:void(0);" class="tab-link-2 active">
+            <i class="icon icon-img-2 "></i>
+            <p class="active">发现</p>
+        </a>
+        <a href="#" class="tab-link-2">
+            <i class="icon icon-img-3"></i>
+            <p class="size">我的</p>
+        </a>
+    </div>
+</div>
+<script src="websocket.js"></script>
+</body>
+</html>

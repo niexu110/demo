@@ -1,0 +1,112 @@
+.d_contentBox{
+	margin-top: 0.9rem;
+}
+.d_title{
+	width: 5.0rem;
+	margin: 2.0rem auto 0;
+	line-height: 0.6rem;
+	font-size: 0.32rem;
+	color: #111111;
+	text-align: center;
+}
+.d_btn1,.d_btn2,.d_btn3{
+	margin: 5.3rem auto 0;
+	width: 3.6rem;
+	height: 0.9rem;
+	background:linear-gradient(to right,#FF6D51,#FD3163);
+	font-size: 0.3rem;
+	color: #FFFFFF;
+	line-height: 0.9rem;
+	text-align: center;
+	border-radius: 0.5rem;
+}
+.d_lookhe{
+	display: block;
+	text-align: center;
+	margin-top: 1.55rem;
+	font-size: 0.26rem;
+	color: #666;
+	margin-bottom: 0.8rem;
+}
+.d_yeswoman{
+	margin-top: 0.7rem;
+}
+.d_imgBox{
+	height: 3.8rem;
+	width: 3.8rem;
+	margin: 0 auto;
+	position: relative;
+}
+.d_imgboxson{
+	height: 3.8rem;
+	width: 3.8rem;
+}
+.d_headimg{
+	height: 1.8rem;
+	width: 1.8rem;
+	border-radius: 1.0rem;
+	position: absolute;
+	top: 1.0rem;
+	left: 1.0rem;
+}
+.d_nickname{
+	text-align: center;
+	margin-top: 0.7rem;
+	font-size: 0.48rem;
+	color: #111;
+	font-weight: bold;
+}
+.d_job{
+	text-align: center;
+	font-size: 0.28rem;
+	color: #111111;
+	margin-top: 0.4rem;
+}
+.d_btn2{
+	margin-top: 2.2rem;
+}
+.d_thiswoman .d_title{
+	width: 5.0rem;
+	margin: 0 auto;
+	margin-top: 1.6rem;
+	line-height: 0.6rem;
+	font-size: 0.32rem;
+	color: #111111;
+	text-align: center;
+}
+.d_headimgBox{
+	margin-top: 1.3rem;
+	height: 3.0rem;
+}
+.d_myheadimgs,.d_heheadimgs{
+	float: left;
+}
+.d_myheadimgs img,.d_heheadimgs img{
+	height: 1.5rem;
+	width: 1.5rem;
+	border-radius: 0.8rem;
+}
+.d_myheadimgs{
+	margin-left: 1.28rem;
+}
+.d_myheadimgs p,.d_heheadimgs p{
+	margin-top: 0.34rem;
+	font-size: 0.28rem;
+	color: #111111;
+	text-align: center;
+}
+.d_lianxi{
+	float: left;
+	height: 0.5rem;
+	width: 0.5rem;
+	margin: 0.5rem 0.72rem;
+}
+.d_btn3{
+	margin-top: 2.7rem;
+}
+.d_btn3 img{
+	height: 0.38rem;
+	width: 0.46rem;
+	margin-top: 0.22rem;
+	margin-right: 0.2rem;
+}

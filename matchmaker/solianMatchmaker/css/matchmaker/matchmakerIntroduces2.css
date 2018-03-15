@@ -1,0 +1,38 @@
+.introducesFX{width:.3rem;height:.3rem;margin-right:.3rem;}
+.starts{margin-right:.3rem;}
+.starts>span{color:#111;}
+.views{width:7.5rem;height:auto; position: relative;margin-bottom:1.8rem;float: left;}
+.background-img{width:7.5rem;height:2.7rem;display: block;opacity:.6;}
+.introduce-top{width:100%;height:3.7rem;border:1px solid #fff;position: relative;}
+.introduce-uer-img{width:1.8rem;height:1.8rem;border-radius:50%;position: absolute;top:-1.2rem;right:.3rem; }
+.introduce-user-box{width:100%;height:1.6rem;border-bottom:1px solid #EDEDED;margin-top:.6rem;position: relative;}
+.introduce-nike{width:6.9rem;margin:0 auto;}
+.introduce-nike>span{font-size:.48rem;color:#111;font-weight:bold;}
+.introduce-nike>img{width:.25rem;height:.25rem;margin-left:.1rem;}
+.introduce-nike>p{font-size:.26rem;color:#717171;margin-top:.3rem; }
+.introduce-gz{width:1.35rem;height:.6rem;line-height: .6rem;position:absolute;top:.4rem;right:.5rem;border:1px solid #717171;text-align:center;border-radius: 6px;font-size: .26rem;}
+span.active{color:#FFB3A1;border:1px solid #FFB3A1; }
+.introduce-user-content{width:6.9rem;height:1.5rem;margin:0 auto;}
+.introduce-user-content div{width:2.3rem;height:100%;float: left;text-align: center;}
+.introduce-user-content div span{display: block;font-size: .4rem;color:#111;font-weight: bold;margin-top:.3rem;}
+.introduce-user-content div p{font-size: .28rem;color:#808080;}
+.introduce-main{width:7.5rem;height:auto;float: left;}
+.introduce-main-sex{width:100%;height:1rem;border-bottom: 1px solid #F3F3F3;}
+.sex-line{border-right: 1px solid #F3F3F3;}
+.introduce-main-sex div{width:50%;height:1rem;line-height:1rem;text-align: center;color:#999;}
+.introduce-main-sex div span{display: inline-block;height:100%;padding:0 .2rem;}
+.introduce-main-sex div.active span{border-bottom: 1px solid #FF7051;color:#FF7051;}
+.introduce-main-item-0{width:6.9rem;height:auto;color:#C1C1C1;}
+.introduce-main-item-0>img{width:2.6rem;height:2.3rem;display: block;margin:.3rem auto; }
+.introduce-main-item-0 p{text-align: center;font-size: .28rem;}
+.introduce-main-item-1{width:6.9rem;height:auto;}
+.introduce-main-item-1 ul{width:6.9rem;height:auto;float: left;}
+.introduce-list{width:3.3rem;height:4.35rem;margin-top:.4rem;float: left;}
+.introduce-list:nth-child(odd){margin-right:.3rem;}
+.introduce-relative{width:3.3rem;height:3.3rem;position: relative;}
+.introduce-address{position: absolute;bottom:.2rem;left:1.2rem;color:#fff;text-align: center;padding-left:.4rem;background:url("../../image/icons/dingwei.png")no-repeat left;background-size:.22rem .28rem; }
+.introduce-user-img{width:3.3rem;height:3.3rem;border-radius:6px;}
+.introduce-list h1{font-size:.3rem;color:#111;font-weight: bold;margin-top:.2rem; }
+.introduce-list p{color:#6D6D6D;font-size:.24rem;margin-top:.1rem;}
+.women-box{width:6.9rem;height:auto;float:left;margin-left:.3rem;}
+.man-box{width:6.9rem;height:auto;float:left;margin-left:.3rem;display: none;}

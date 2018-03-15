@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>个人主页</title>
+    <link rel="stylesheet" href="cs/jquery-ui.min.css">
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+</head>
+<body>
+<input type="text" id="num" style="display: none">
+<div  id="date"></div>
+<script>
+    $(function(){
+        $("#date").datepicker({
+            dayNamesMin: ['日','一','二','三','四','五','六'],
+            showMonthAfterYear: true,
+            monthNames: ['一月','二月','三月','四月','五月','六月', '七月','八月','九月','十月','十一月','十二月'],
+            dateFormat: 'yy-mm-dd',
+            altField:"#num"
+
+        });
+        $("#date").change(function(){
+            var num=$("#num").val();
+            console.log(num)
+        })
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>邻家小院</title>
+    <meta name="keywords" content='恋爱,约会,love'/>
+    <meta name="description" content="邻家小院"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <script src="js/jquery-1.11.3.js"></script>
+    <style>
+        .box{width:6.9rem;height:auto;margin:0 auto;border:1px solid #111; }
+        .box p{font-size:.32rem;color:#dad55e; }
+        .box p span{font-size:.38rem;color:#333; }
+        .content{width:100%;height:auto;overflow: hidden;}
+        .content img{float:left;border-radius:6px; }
+        .modA img{width:3rem;height:3rem; }
+        .modB img{width:2rem;height:2rem;margin-left:.3rem; }
+        .modC img{width:1.5rem;height:1.5rem;margin-left:.2rem; }
+        #pull{width:7.5rem;text-align:center;height:.8rem;line-height:.8rem;color:#5793dd;font-size:.3rem;  }
+    </style>
+</head>
+<body>
+<div class="container">
+</div>
+<div id="pull"></div>
+</body>
+<script>
+    document.documentElement.style.fontSize=document.documentElement.clientWidth/7.5+"px"
+    var obj=[
+        {age:"1",name:"hanli",color:"red",obj1:""},
+        {age:"1",name:"lihua",color:"blue",obj1:""},
+        {age:"1",name:"liuya",color:"black",obj1:[{uid:"32",src:"tell.png"},{uid:"33",src:"x_one.jpg"},{uid:"34",src:"tell.png"}]},
+        {age:"1",name:"hdd",color:"black",obj1:[{uid:"35",src:"tell.png"},{uid:"36",src:"x_one.jpg"}]},
+        {age:"1",name:"zhanglei",color:"black",obj1:[{uid:"37",src:"x_one.jpg"}]}
+    ];
+    $(function(){
+        for(var k in obj){
+            var html="", txt="";
+            if(obj[k].obj1.length==0){
+                html="<div class='box'>"+
+                    "<p>姓名:<span>"+obj[k].name+"</span></p>"+
+                    "<p>喜欢的颜色: <span>"+obj[k].color+"</span></p></div>";
+                $(".container").append(html);
+            }else if(obj[k].obj1.length==1){
+                for(var j in obj[k].obj1){
+                    txt="<img src="+obj[k].obj1[j].src+" alt="+obj[k].obj1[j].uid+">"
+                }
+                html="<div class='box'>"+
+                    "<p>姓名:<span>"+obj[k].name+"</span></p>"+
+                    "<p>喜欢的颜色: <span>"+obj[k].color+"</span></p>"+
+                    "<div class='content modA '>"+txt+"</div></div>";
+                $(".container").append(html);
+            }else if(obj[k].obj1.length==2){
+                for(var i=0; i<obj[k].obj1.length;i++){
+                    txt+="<img src="+obj[k].obj1[i].src+" alt="+obj[k].obj1[i].uid+">"
+                }
+                html="<div class='box'>"+
+                    "<p>姓名:<span>"+obj[k].name+"</span></p>"+
+                    "<p>喜欢的颜色: <span>"+obj[k].color+"</span></p>"+
+                    "<div class='content modB '>"+txt+"</div></div>";
+                $(".container").append(html);
+            }else if(obj[k].obj1.length<=3){
+                for(var i=0; i<obj[k].obj1.length;i++){
+                    txt+="<img src="+obj[k].obj1[i].src+" alt="+obj[k].obj1[i].uid+">"
+                }
+                html="<div class='box'>"+
+                    "<p>姓名:<span>"+obj[k].name+"</span></p>"+
+                    "<p>喜欢的颜色: <span>"+obj[k].color+"</span></p>"+
+                    "<div class='content modC '>"+ txt+"</div></div>";
+                $(".container").append(html);
+            }
+        }
+        var isOpen=true;
+        var clientH = Number(document.documentElement.clientHeight);
+        var H=Number($(".pullUp").height());
+        $(document).on('scroll',function(){
+            if(isOpen){
+                var docH=parseInt(document.documentElement.scrollTop | document.body.scrollTop+clientH);
+                var H5Top=parseInt($('#pull').offset().top+H);
+                if(docH>H5Top+50){
+                    isOpen=false;
+                    $("#pull").html("数据加载中...");
+                    setTimeout(function(){
+                        for(var k in obj){
+                            var html="", txt="";
+                            if(obj[k].obj1.length==0){
+                                html="<div class='box'>"+
+                                    "<p>姓名:<span>"+obj[k].name+"</span></p>"+
+                                    "<p>喜欢的颜色: <span>"+obj[k].color+"</span></p></div>";
+                                $(".container").append(html);
+                            }else if(obj[k].obj1.length==1){
+                                for(var j in obj[k].obj1){
+                                    txt="<img src="+obj[k].obj1[j].src+" alt="+obj[k].obj1[j].uid+">"
+                                }
+                                html="<div class='box'>"+
+                                    "<p>姓名:<span>"+obj[k].name+"</span></p>"+
+                                    "<p>喜欢的颜色: <span>"+obj[k].color+"</span></p>"+
+                                    "<div class='content modA '>"+txt+"</div></div>";
+                                $(".container").append(html);
+                            }else if(obj[k].obj1.length==2){
+                                for(var i=0; i<obj[k].obj1.length;i++){
+                                    txt+="<img src="+obj[k].obj1[i].src+" alt="+obj[k].obj1[i].uid+">"
+                                }
+                                html="<div class='box'>"+
+                                    "<p>姓名:<span>"+obj[k].name+"</span></p>"+
+                                    "<p>喜欢的颜色: <span>"+obj[k].color+"</span></p>"+
+                                    "<div class='content modB '>"+txt+"</div></div>";
+                                $(".container").append(html);
+                            }else if(obj[k].obj1.length<=3){
+                                for(var i=0; i<obj[k].obj1.length;i++){
+                                    txt+="<img src="+obj[k].obj1[i].src+" alt="+obj[k].obj1[i].uid+">"
+                                }
+                                html="<div class='box'>"+
+                                    "<p>姓名:<span>"+obj[k].name+"</span></p>"+
+                                    "<p>喜欢的颜色: <span>"+obj[k].color+"</span></p>"+
+                                    "<div class='content modC '>"+ txt+"</div></div>";
+                                $(".container").append(html);
+                            }
+                        }
+                    isOpen=true;
+                    },2000)
+                }
+            }
+        })
+    })
+
+    function objList(obj,self){
+        var list=obj;
+        for(var j in obj){
+            var txt="<img src="+obj[j].src+" alt="+obj[j].uid+">"
+        }
+        self.append(txt)
+    }
+</script>
+</html>

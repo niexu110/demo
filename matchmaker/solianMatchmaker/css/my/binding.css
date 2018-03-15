@@ -1,0 +1,62 @@
+.main{
+	width: 7.5rem;
+	height:auto;
+	padding: 0 .3rem;
+	margin-top: .9rem;
+}
+.main .text{
+	width: 100%;
+	height: auto;
+}
+.main .text p{
+	padding: .5rem 0 .4rem;
+	font-size: .28rem;
+	color: #333;
+}
+.main .text input[type = 'text']{
+	width: 100%;
+	height: .9rem;
+	background: #e6e6e6;
+	text-align: center;
+	outline: none;
+	font-size: .3rem;
+	color: #111;
+}
+.main .text input[type = 'text']::placeholder{
+	font-size: .3rem;
+	color: #111;
+}
+.photo{
+	width: 1.8rem;
+	height: 1.8rem;
+	border-radius: 0.08rem;
+	position: relative;
+	overflow: hidden;
+}
+.photo img{
+	width: 100%;
+	height: 100%;
+}
+.photo input[type="file"]{
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1.8rem;
+	height: 1.8rem;
+}
+.main .info{
+	margin-top: .6rem;
+	margin-bottom: .9rem;
+	font-size: .28rem;
+	color: #999;
+	line-height: .5rem;
+}
+input[type="submit"]{
+	width: 100%;
+	height: .94rem;
+	font-size: .32rem;
+	color: #fff;
+	background: #ff704f;
+	border-radius: .47rem;
+}

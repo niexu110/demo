@@ -1,0 +1,18 @@
+.view{padding-bottom:0;padding-top:1.78rem;}
+.myOffer{position: absolute;right:.3rem;top:0;font-size:.3rem;color: #FF704f;font-weight:normal; }
+.reward-nav{position:fixed;top:.9rem;left:0;width:7.5rem;height:.88rem;border-bottom:1px solid #ECECEC;background:#fff;z-index:200;  }
+.reward-nav div{width:50%;height:.88rem;font-size:.3rem;color:#111;line-height:.88rem;text-align: center; }
+.reward-nav div span{display: inline-block;height:.88rem;}
+.reward-nav div.active span{color:#FF704f;border-bottom:1px solid #FF704F;}
+.reward-box{width:7.5rem;height:auto;display: none;}
+div.active{display: block;}
+.null-msg{width:4rem;margin:5rem auto 0; }
+.null-msg p{width:100%;color:#999;font-size:.3rem;padding-top:.3rem;text-align: center; }
+.rewardList{display:block;width:7.2rem;height:2.02rem;border-bottom:1px solid #ECECEC;margin-left:.3rem;}
+.userImg{width:1.1rem;border-radius:50%;margin:.3rem .2rem 0 0; }
+.rewardList-content{margin-top:.3rem;margin-left:.2rem;}
+.rewardList-content h1{font-size:.3rem;color:#111;}
+.rewardList-content p{font-size:.26rem;color:#666;}
+.rewardList-content p span{color:#FF704f;}
+.rewardList-content h2{font-size:.22rem;color:#999;}
+.reward-total{height:2rem;line-height:2rem;margin-right:.3rem;color:#FF704f;font-size:.4rem; }

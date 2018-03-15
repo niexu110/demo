@@ -1,0 +1,101 @@
+#header span{
+	position: absolute;
+	right: .3rem;
+	top: -.1rem;
+	font-size: .4rem;
+	font-weight: bold;
+}
+.line{
+	width: 6.3rem;
+	height: .94rem;
+	text-align: center;
+	position: relative;
+	background: #fff;
+	margin: 0 auto;
+}
+.line p{
+	text-align: center;
+	line-height: .94rem;
+	height: .94rem;
+	width: 6.3rem;
+	font-size: .28rem;
+	color: #666;
+}
+.line em{
+	width: 1.8rem;
+	height: 1px;
+	background: #999;
+	position: absolute;
+	top: .47rem;
+}
+.left{
+	left: 0;
+}
+.right{
+	right: 0;
+}
+.box{
+	width: 6.5rem;
+	height: 4rem;
+	margin: 0 auto;
+	padding-top: .1rem;
+}
+.photo{
+	padding: .1rem .1rem 0 .1rem;
+	float: left;
+}
+.photo img{
+	width: 1.1rem;
+	height: 1.1rem;
+	border-radius: 3px;
+}
+.btn{
+	width: 7.5rem;
+	height: 2.14rem;
+	padding: .6rem 0;
+	position: relative;
+}
+.btn a{
+	width: 4.6rem;
+	height: .94rem;
+	background: linear-gradient(to right,#ff704f,#fd2d63);
+	font-size: .32rem;
+	line-height: .94rem;
+	color: #fff;
+	border: none;
+	margin: 0 auto;
+	border-radius: .47rem;
+}
+.word{
+	padding: 0 .6rem;
+}
+.word h5{
+	font-size: .28rem;
+	color: #111;
+	text-indent: .95rem;
+	padding-bottom: .4rem;
+}
+.copy{
+	width: 100%;
+	height: 2.4rem;
+	border-top: 1px solid #ff704f;
+	border-bottom: 1px solid #ff704f;
+	padding: .2rem .3rem;
+}
+textarea{
+	width: 100%;
+	height: 100%;
+	font-size: .28rem;
+	color: #111;
+	line-height: .5rem;
+	resize: none;
+}
+.count{
+	padding-top: .4rem;
+}
+.word img{
+	display: block;
+	margin: 0 auto;
+	width: 3rem;
+	height: 3rem;
+}

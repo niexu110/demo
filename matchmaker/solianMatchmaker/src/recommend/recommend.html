@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>发现</title>
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="expires" content="-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/recommend/recommend.css">
+    <script src="../../js/TouchSlide.1.1.js"></script>
+    <script src="../../js/jquery-2.1.4.min.js"></script>
+    <script src="../../js/common.js"></script>
+</head>
+<body>
+<div id="header">
+     <img src="../../image/icons/shaixuan.png" id="back-2">
+     <em>发现</em>
+</div>
+<!--弹框购喜糖-->
+<div class="pop-buy">
+  <div class="pop-buy-nav">
+      <img src="../../image/icons/d_clear.png" class="closes lt">
+      申请添加微信
+  </div>
+    <p class="pop-p">如对方拒绝,喜糖返还</p>
+    <p class="pop-p1">打赏越大，诚意越足,媒婆可能会主动帮你哦</p>
+    <div class="pop-content">
+       <div class="pop-item" title="50">
+           <span class="lt bgImg">喜糖50颗</span>
+           <span class="rt ">喜欢TA</span>
+       </div>
+       <div class="pop-item" title="100">
+           <span class="lt bgImg">喜糖100颗</span>
+           <span class="rt ">欣喜若狂</span>
+       </div>
+        <div class="pop-item" title="500">
+            <span class="lt bgImg">喜糖500颗</span>
+            <span class="rt ">命中注定</span>
+        </div>
+        <div class="pop-item" title="1000">
+            <span class="lt bgImg">喜糖1000颗</span>
+            <span class="rt ">千里挑一</span>
+        </div>
+    </div>
+    <form action="">
+        <input type="hidden" name="price" value="" class="pop-price">
+        <input type="hidden" name="user" value="" class="pop-user">
+        <button id="popBtn" disabled>打赏TA的媒婆</button>
+    </form>
+    <p class="pop-p2">·若对方7天内未回复，喜糖返还</p>
+    <p class="pop-p3">·对方如果回复，即为牵缘成功,对方媒婆将会收到您的喜糖打赏</p>
+</div>
+<!--弹窗提示-->
+<div class="pop">
+     <div class="lt-pop">
+         <p>聊天请下载APP哦···</p>
+         <div class="lt-btn">确定</div>
+     </div>
+</div>
+<!--筛选-->
+<div class="filter">
+    <form action="" id="filterForm">
+     <div class="filter-header">
+         <img src="../../image/icons/d_clear.png" class="close lt">
+          <button type="button" id="btn" class="rt">保存</button>
+     </div>
+     <div class="filter-content">
+         <h1 class="filter-title">筛选条件</h1>
+         <div class="filter-item">
+             <div class="title lt">年龄</div>
+             <div class="content rt ageItem">
+                 <p class="plane-p ageP">不限</p>
+                 <img src="../../image/icons/right-arrow.png" class="rt">
+                 <input type="text" name="" value=" " class="ageInt">
+             </div>
+         </div>
+         <div class="filter-item">
+             <div class="title lt">身高</div>
+             <div class="content rt heightItem">
+                 <p class="plane-p heightP">不限</p>
+                 <img src="../../image/icons/right-arrow.png" class="rt">
+                 <input type="text" name="" value="" class="heightInt">
+             </div>
+         </div>
+         <div class="filter-item">
+             <div class="title lt">收入</div>
+             <div class="content rt marryItem">
+                 <p class="plane-p marryP">不限</p>
+                 <img src="../../image/icons/right-arrow.png" class="rt">
+                 <input type="text" name="" value="" class="marryInt">
+             </div>
+         </div>
+         <div class="filter-item">
+             <div class="title lt ">学历</div>
+             <div class="content rt eduItem">
+                 <p class="plane-p eduP">不限</p>
+                 <img src="../../image/icons/right-arrow.png" class="rt">
+                 <input type="text" name="" value="" class="eduInt">
+             </div>
+         </div>
+         <div class="filter-item">
+             <div class="title lt">所在地</div>
+             <div class="content rt addressItem">
+                 <p class="plane-p addressP">陕西&nbsp;西安</p>
+                 <img src="../../image/icons/right-arrow.png" class="rt">
+                 <input type="text" name="" value="陕西-西安" class="addressInt">
+             </div>
+         </div>
+     </div>
+    </form>
+    <div class="filter-list-box">
+         <div class="item-container ageBox">
+              <ul>
+                  <li>20岁</li>
+                  <li>22岁</li>
+                  <li>24岁</li>
+                  <li>26岁</li>
+                  <li>28岁</li>
+                  <li>30岁</li>
+                  <li>32岁</li>
+                  <li>34岁</li>
+                  <li>36岁</li>
+                  <li>38岁</li>
+                  <li>40岁</li>
+                  <li>42岁</li>
+              </ul>
+         </div>
+         <div class="item-container heightBox">
+              <ul>
+                  <li>165cm</li>
+                  <li>166cm</li>
+                  <li>167cm</li>
+                  <li>168cm</li>
+                  <li>169cm</li>
+                  <li>170cm</li>
+                  <li>171cm</li>
+                  <li>172cm</li>
+                  <li>173cm</li>
+                  <li>174cm</li>
+                  <li>175cm</li>
+                  <li>176cm</li>
+              </ul>
+         </div>
+         <div class="item-container marryBox">
+              <ul>
+                  <li>2000以下</li>
+                  <li>3000以下</li>
+                  <li>4000以下</li>
+                  <li>5000以下</li>
+                  <li>6000以下</li>
+                  <li>7000以下</li>
+                  <li>8000以下</li>
+                  <li>9000以下</li>
+                  <li>10000以下</li>
+                  <li>12000以下</li>
+                  <li>15000以下</li>
+                  <li>20000以上</li>
+              </ul>
+         </div>
+         <div class="item-container eduBox">
+              <ul>
+                  <li>初中</li>
+                  <li>高中</li>
+                  <li>大专</li>
+                  <li>本科</li>
+                  <li>硕士</li>
+                  <li>博士</li>
+                  <li>博士后</li>
+                  <li>家里蹲</li>
+                  <li>扯淡吧</li>
+                  <li>学无执行</li>
+                  <li>无需致敬</li>
+                  <li>国家主席</li>
+              </ul>
+         </div>
+        <div class="item-container addressBox">
+            <div class="lt line2">
+                <ul class="pro-ul"></ul>
+            </div>
+            <div class="lt">
+                <ul class="ct-ul"></ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="view">
+    <div class="main">
+      <div class="main-box">
+         <div class="main-nav">
+             <a href="#groom" class="active" title="1">推荐</a>
+             <a href="#matchmaker" title="2">媒婆的话</a>
+         </div>
+          <!--名片滑动-->
+          <div id="groom" class="groomContainer active">
+              <ul class="groom-ul">
+                  <li class="groomItem">
+                      <div class="user-content" title="1">
+                        <img src="../../image/img/x_one.jpg" class="userImg">
+                          <div class="groom-nick">
+                              <p><span class="nick">程曦</span><em>陕西&nbsp;西安</em></p>
+                              <p>22岁·168cm·狮子座·设计师</p>
+                          </div>
+                          <img src="../../image/icons/love.png" class="love" alt="她的uid">
+                      </div>
+                      <div class="matchmaker-box">
+                          <div class="matchmaker-user">
+                              <img src="../../image/img/x_one.jpg" class="maker-img lt">
+                               <span class="lt">红娘<i>马云</i>推荐了TA</span>
+                              <img src="../../image/icons/weixin.png" class="rt btnLT" alt="m_uid">
+                          </div>
+                          <p>媒婆如果没有描述不显示</p>
+                          <h1>推荐理由:<span>你俩都是IT界的精英</span></h1>
+                      </div>
+                  </li>
+                  <li class="groomItem">
+                      <div class="user-content" title="2">
+                          <img src="../../image/img/x_one.jpg" class="userImg">
+                          <div class="groom-nick">
+                              <p><span class="nick">橙儿</span><em>陕西&nbsp;西安</em></p>
+                              <p>28岁·168cm·狮子座·设计师</p>
+                          </div>
+                          <img src="../../image/icons/love.png" class="love">
+                      </div>
+                      <div class="matchmaker-box">
+                          <div class="matchmaker-user">
+                              <img src="../../image/img/x_one.jpg" class="maker-img lt">
+                              <span class="lt">红娘<i>程曦</i>推荐了TA</span>
+                              <img src="../../image/icons/weixin.png" class="rt btnLT">
+                          </div>
+                          <p>媒婆如果没有描述不显示</p>
+                          <h1>推荐理由:<span>你俩都是IT界的SB</span></h1>
+                      </div>
+                  </li>
+                  <li class="groomItem">
+                      <div class="user-content" title="3">
+                          <img src="../../image/img/x_one.jpg" class="userImg">
+                          <div class="groom-nick">
+                              <p><span class="nick">省钱</span><em>陕西&nbsp;西安</em></p>
+                              <p>29岁·168cm·狮子座·设计师</p>
+                          </div>
+                          <img src="../../image/icons/love.png" class="love">
+                      </div>
+                      <div class="matchmaker-box">
+                          <div class="matchmaker-user">
+                              <img src="../../image/img/x_one.jpg" class="maker-img lt">
+                              <span class="lt">红娘<i>杜杜</i>推荐了TA</span>
+                              <img src="../../image/icons/weixin.png" class="rt btnLT">
+                          </div>
+                          <p>媒婆如果没有描述不显示</p>
+                          <h1>推荐理由:<span>你俩都是IT界的二杆子</span></h1>
+                      </div>
+                  </li>
+                  <li class="groomItem">
+                      <div class="user-content" title="4">
+                          <img src="../../image/img/x_one.jpg" class="userImg">
+                          <div class="groom-nick">
+                              <p><span class="nick">省钱</span><em>陕西&nbsp;西安</em></p>
+                              <p>29岁·168cm·狮子座·设计师</p>
+                          </div>
+                          <img src="../../image/icons/love.png" class="love">
+                      </div>
+                      <div class="matchmaker-box">
+                          <div class="matchmaker-user">
+                              <img src="../../image/img/x_one.jpg" class="maker-img lt">
+                              <span class="lt">红娘<i>杜杜</i>推荐了TA</span>
+                              <img src="../../image/icons/weixin.png" class="rt btnLT">
+                          </div>
+                          <p>媒婆如果没有描述不显示</p>
+                          <h1>推荐理由:<span>你俩都是IT界的二杆子</span></h1>
+                      </div>
+                  </li>
+                  <li class="groomItem">
+                      <div class="user-content" title="5">
+                          <img src="../../image/img/x_one.jpg" class="userImg">
+                          <div class="groom-nick">
+                              <p><span class="nick">省钱</span><em>陕西&nbsp;西安</em></p>
+                              <p>29岁·168cm·狮子座·设计师</p>
+                          </div>
+                          <img src="../../image/icons/love.png" class="love">
+                      </div>
+                      <div class="matchmaker-box">
+                          <div class="matchmaker-user">
+                              <img src="../../image/img/x_one.jpg" class="maker-img lt">
+                              <span class="lt">红娘<i>杜杜</i>推荐了TA</span>
+                              <img src="../../image/icons/weixin.png" class="rt btnLT">
+                          </div>
+                          <p>媒婆如果没有描述不显示</p>
+                          <h1>推荐理由:<span>你俩都是IT界的二杆子</span></h1>
+                      </div>
+                  </li>
+                  <li class="groomItem">
+                      <div class="user-content" title="6">
+                          <img src="../../image/img/x_one.jpg" class="userImg">
+                          <div class="groom-nick">
+                              <p><span class="nick">省钱</span><em>陕西&nbsp;西安</em></p>
+                              <p>29岁·168cm·狮子座·设计师</p>
+                          </div>
+                          <img src="../../image/icons/love.png" class="love">
+                      </div>
+                      <div class="matchmaker-box">
+                          <div class="matchmaker-user">
+                              <img src="../../image/img/x_one.jpg" class="maker-img lt">
+                              <span class="lt">红娘<i>杜杜</i>推荐了TA</span>
+                              <img src="../../image/icons/weixin.png" class="rt btnLT">
+                          </div>
+                          <p>媒婆如果没有描述不显示</p>
+                          <h1>推荐理由:<span>你俩都是IT界的二杆子</span></h1>
+                      </div>
+                  </li>
+                  <li class="groomItem">
+                      <div class="user-content" title="7">
+                          <img src="../../image/img/x_one.jpg" class="userImg">
+                          <div class="groom-nick">
+                              <p><span class="nick">省钱</span><em>陕西&nbsp;西安</em></p>
+                              <p>29岁·168cm·狮子座·设计师</p>
+                          </div>
+                          <img src="../../image/icons/love.png" class="love">
+                      </div>
+                      <div class="matchmaker-box">
+                          <div class="matchmaker-user">
+                              <img src="../../image/img/x_one.jpg" class="maker-img lt">
+                              <span class="lt">红娘<i>杜杜</i>推荐了TA</span>
+                              <img src="../../image/icons/weixin.png" class="rt btnLT">
+                          </div>
+                          <p>媒婆如果没有描述不显示</p>
+                          <h1>推荐理由:<span>你俩都是IT界的二杆子</span></h1>
+                      </div>
+                  </li>
+                  <li class="groomItem">
+                      <div class="user-content" title="7">
+                          <img src="../../image/img/x_one.jpg" class="userImg">
+                          <div class="groom-nick">
+                              <p><span class="nick">省钱</span><em>陕西&nbsp;西安</em></p>
+                              <p>29岁·168cm·狮子座·设计师</p>
+                          </div>
+                          <img src="../../image/icons/love.png" class="love">
+                      </div>
+                      <div class="matchmaker-box">
+                          <div class="matchmaker-user">
+                              <img src="../../image/img/x_one.jpg" class="maker-img lt">
+                              <span class="lt">红娘<i>杜杜</i>推荐了TA</span>
+                              <img src="../../image/icons/weixin.png" class="rt btnLT">
+                          </div>
+                          <p>媒婆如果没有描述不显示</p>
+                          <h1>推荐理由:<span>你俩都是IT界的二杆子</span></h1>
+                      </div>
+                  </li>
+              </ul>
+          </div>
+          <!--<script >TouchSlide({slideCell:"#groom", mainCell:".groom-ul"})</script>-->
+          <!--媒婆说-->
+          <div id="matchmaker" class="matchmakerContainer ">
+              <div class="matchmaker-content">
+                  <div class="marker-mother">
+                    <div class="matchmaker-header">
+                        <img src="../../image/img/x_one.jpg" class="lt">
+                        <p class="lt">马云极力推荐这个妹子</p>
+                    </div>
+                      <div class="matchmaker-header">
+                          <img src="../../image/img/demo1.jpg" class="lt">
+                          <p class="lt">磊磊极力推荐这个妹子</p>
+                      </div>
+                      <div class="matchmaker-header">
+                          <img src="../../image/img/demo2.jpg" class="lt">
+                          <p class="lt">豆豆极力推荐这个妹子</p>
+                      </div>
+                      <div class="matchmaker-header">
+                          <img src="../../image/img/x_one.jpg" class="lt">
+                          <p class="lt">老潘极力推荐这个妹子</p>
+                      </div>
+                      <div class="matchmaker-header">
+                          <img src="../../image/img/demo.jpg" class="lt">
+                          <p class="lt">党辉极力推荐这个妹子</p>
+                      </div>
+                      <div class="matchmaker-header">
+                          <img src="../../image/img/head.png" class="lt">
+                          <p class="lt">石磊极力推荐这个妹子</p>
+                      </div>
+                      <div class="matchmaker-header">
+                          <img src="../../image/img/x_one.jpg" class="lt">
+                          <p class="lt">112极力推荐这个妹子</p>
+                      </div>
+                      <div class="matchmaker-header">
+                          <img src="../../image/img/x_one.jpg" class="lt">
+                          <p class="lt">1124极力推荐这个妹子</p>
+                      </div>
+                      <div class="matchmaker-header">
+                          <img src="../../image/img/x_one.jpg" class="lt">
+                          <p class="lt">554极力推荐这个妹子</p>
+                      </div>
+                      <div class="matchmaker-header">
+                          <img src="../../image/img/x_one.jpg" class="lt">
+                          <p class="lt">8457极力推荐这个妹子</p>
+                      </div>
+                  </div>
+                  <!--滑动查看图像-->
+                  <div class="matchmaker-img-box">
+                      <div class="d3-box">
+                          <ul class="d3-ul">
+                              <li title="1"><img src="../../image/img/x_one.jpg"><p class="site">陕西&nbsp;西安</p></li>
+                              <li title="2"><img src="../../image/img/demo.jpg"><p class="site">陕西&nbsp;西安</p></li>
+                              <li title="3"><img src="../../image/img/head.png"><p class="site">陕西&nbsp;西安</p></li>
+                              <li title="4"><img src="../../image/img/demo1.jpg"><p class="site">陕西&nbsp;西安</p></li>
+                              <li title="5"><img src="../../image/img/demo2.jpg"><p class="site">陕西&nbsp;西安</p></li>
+                              <li title="6"><img src="../../image/img/x_one.jpg"><p class="site">陕西&nbsp;西安</p></li>
+                              <li title="8"><img src="../../image/img/head.png"><p class="site">陕西&nbsp;西安</p></li>
+                              <li title="9"><img src="../../image/img/demo2.jpg"><p class="site">陕西&nbsp;西安</p></li>
+                              <li title="10"><img src="../../image/img/x_one.jpg"><p class="site">陕西&nbsp;西安</p></li>
+                              <li title="11"><img src="../../image/img/demo1.jpg"><p class="site">陕西&nbsp;西安</p></li>
+                          </ul>
+                      </div>
+                  </div>
+                  <!--滑动查看图像后信息-->
+                  <div class="maker-title-box">
+                      <div class="maker-say">
+                       <h1 class="maker-user"><span>黄豆豆</span><em>27岁·155cm·设计师</em></h1>
+                       <p class="makerP">媒婆说</p>
+                       <p class="maker-title"><em>TA的性格:</em><span>开朗大方,孝顺父母</span></p>
+                       <p class="maker-title"><em>TA的优点:</em><span>胸大，无脑</span></p>
+                       <p class="maker-title">TA的征婚要求:</p>
+                       <h2 class="maker-txt">要求175cm，下方20cm,作战时间长，坚挺如铁，哥哥快来,输入要高,有车有房才配得上老娘。大叔大婶多阿萨德阿达啊实打实多撒多阿萨德撒的的阿萨德阿萨德阿达大厦</h2>
+                     </div>
+                      <div class="maker-say">
+                          <h1 class="maker-user"><span>豆豆王</span><em>23岁·175cm·设计师</em></h1>
+                          <p class="makerP">媒婆说</p>
+                          <p class="maker-title"><em>TA的性格:</em><span>活泼可爱,刷锅一枚</span></p>
+                          <p class="maker-title"><em>TA的优点:</em><span>叼大，坚挺</span></p>
+                          <p class="maker-title">TA的征婚要求:</p>
+                          <h2 class="maker-txt">要求168cm，有车有房才配得上老娘。大叔大婶多阿萨德阿达啊实打实多撒多阿萨德撒的的阿萨德阿萨德阿达大厦</h2>
+                      </div>
+                      <div class="maker-say">
+                          <h1 class="maker-user"><span>张磊磊</span><em>27岁·175cm·程序员</em></h1>
+                          <p class="makerP">媒婆说</p>
+                          <p class="maker-title"><em>TA的性格:</em><span>开朗大方,孝顺父母,喜欢LOL</span></p>
+                          <p class="maker-title"><em>TA的优点:</em><span>闷骚，性趣高</span></p>
+                          <p class="maker-title">TA的征婚要求:</p>
+                          <h2 class="maker-txt">下方20cm,作战时间长，坚挺如铁，输入要高,大叔大婶多阿萨德阿达啊实打实多撒多阿萨德撒的的阿萨德阿萨德阿达大厦</h2>
+                      </div>
+                      <div class="maker-say">
+                          <h1 class="maker-user"><span>11223</span><em>22岁·168cm·设计师</em></h1>
+                          <p class="makerP">媒婆说</p>
+                          <p class="maker-title"><em>TA的性格:</em><span>开朗大方,孝顺父母</span></p>
+                          <p class="maker-title"><em>TA的优点:</em><span>风骚,胸大</span></p>
+                          <p class="maker-title">TA的征婚要求:</p>
+                          <h2 class="maker-txt">要求175cm，下方20cm,作战时间长，坚挺如铁，哥哥快来,输入要高,有车有房才配得上老娘。大叔大婶多阿萨德阿达啊实打实多撒多阿萨德撒的的阿萨德阿萨德阿达大厦</h2>
+                      </div>
+                      <div class="maker-say">
+                          <h1 class="maker-user"><span>7545</span><em>22岁·168cm·设计师</em></h1>
+                          <p class="makerP">媒婆说</p>
+                          <p class="maker-title"><em>TA的性格:</em><span>开朗大方,孝顺父母</span></p>
+                          <p class="maker-title"><em>TA的优点:</em><span>风骚,胸大</span></p>
+                          <p class="maker-title">TA的征婚要求:</p>
+                          <h2 class="maker-txt">要求175cm，下方20cm,作战时间长，坚挺如铁，哥哥快来,输入要高,有车有房才配得上老娘。大叔大婶多阿萨德阿达啊实打实多撒多阿萨德撒的的阿萨德阿萨德阿达大厦</h2>
+                      </div>
+                      <div class="maker-say">
+                          <h1 class="maker-user"><span>123123</span><em>22岁·168cm·设计师</em></h1>
+                          <p class="makerP">媒婆说</p>
+                          <p class="maker-title"><em>TA的性格:</em><span>开朗大方,孝顺父母</span></p>
+                          <p class="maker-title"><em>TA的优点:</em><span>风骚,胸大</span></p>
+                          <p class="maker-title">TA的征婚要求:</p>
+                          <h2 class="maker-txt">要求175cm，下方20cm,作战时间长，坚挺如铁，哥哥快来,输入要高,有车有房才配得上老娘。大叔大婶多阿萨德阿达啊实打实多撒多阿萨德撒的的阿萨德阿萨德阿达大厦</h2>
+                      </div>
+                      <div class="maker-say">
+                          <h1 class="maker-user"><span>老潘</span><em>22岁·168cm·设计师</em></h1>
+                          <p class="makerP">媒婆说</p>
+                          <p class="maker-title"><em>TA的性格:</em><span>开朗大方,孝顺父母</span></p>
+                          <p class="maker-title"><em>TA的优点:</em><span>风骚,胸大111</span></p>
+                          <p class="maker-title">TA的征婚要求:</p>
+                          <h2 class="maker-txt">要求175cm，下方20cm,作战时间长，坚挺如铁，哥哥快来,输入要高,有车有房才配得上老娘。大叔大婶多阿萨德阿达啊实打实多撒多阿萨德撒的的阿萨德阿萨德阿达大厦</h2>
+                      </div>
+                      <div class="maker-say">
+                          <h1 class="maker-user"><span>天天蓝</span><em>22岁·168cm·设计师</em></h1>
+                          <p class="makerP">媒婆说</p>
+                          <p class="maker-title"><em>TA的性格:</em><span>开朗大方,孝顺父母</span></p>
+                          <p class="maker-title"><em>TA的优点:</em><span>风骚,胸大</span></p>
+                          <p class="maker-title">TA的征婚要求:</p>
+                          <h2 class="maker-txt">要求175cm，下方20cm,作战时间长，坚挺如铁，哥哥快来,输入要高,有车有房才配得上老娘。大叔大婶多阿萨德阿达啊实打实多撒多阿萨德撒的的阿萨德阿萨德阿达大厦</h2>
+                      </div>
+                      <div class="maker-say">
+                          <h1 class="maker-user"><span>石磊</span><em>22岁·168cm·设计师</em></h1>
+                          <p class="makerP">媒婆说</p>
+                          <p class="maker-title"><em>TA的性格:</em><span>开朗大方,孝顺父母</span></p>
+                          <p class="maker-title"><em>TA的优点:</em><span>风骚,胸大</span></p>
+                          <p class="maker-title">TA的征婚要求:</p>
+                          <h2 class="maker-txt">要求175cm，下方20cm,作战时间长，坚挺如铁，哥哥快来,输入要高.大叔大婶多阿萨德阿达啊实打实多撒多阿萨德撒的的阿萨德阿萨德阿达大厦</h2>
+                      </div>
+                      <div class="maker-say">
+                          <h1 class="maker-user"><span>天天蓝</span><em>22岁·168cm·设计师</em></h1>
+                          <p class="makerP">媒婆说</p>
+                          <p class="maker-title"><em>TA的性格:</em><span>开朗大方,孝顺父母</span></p>
+                          <p class="maker-title"><em>TA的优点:</em><span>风骚,胸大</span></p>
+                          <p class="maker-title">TA的征婚要求:</p>
+                          <h2 class="maker-txt">要求175cm，下方20cm,作战时间长，坚挺如铁,婶多阿萨德阿达啊实打实多撒多阿萨德撒的的阿萨德阿萨德阿达大厦</h2>
+                      </div>
+                  </div>
+                  <!--触发事件盒子-->
+                  <div class="conversation-box">
+                      <div class="maker-conversation">
+                          <img src="../../image/icons/loves.png" class="lighten-love" alt="uid">
+                          <img src="../../image/icons/lliaotian.png" class="lighten-LT">
+                          <img src="../../image/icons/weixin.png" class="lighten-WeiX" alt="uid">
+                      </div>
+                      <div class="maker-conversation">
+                          <img src="../../image/icons/loves.png" class="lighten-love" alt="uid">
+                          <img src="../../image/icons/lliaotian.png" class="lighten-LT">
+                          <img src="../../image/icons/weixin.png" class="lighten-WeiX" alt="uid">
+                      </div>
+                      <div class="maker-conversation">
+                          <img src="../../image/icons/loves.png" class="lighten-love" alt="uid">
+                          <img src="../../image/icons/lliaotian.png" class="lighten-LT">
+                          <img src="../../image/icons/weixin.png" class="lighten-WeiX" alt="uid">
+                      </div>
+                      <div class="maker-conversation">
+                          <img src="../../image/icons/loves.png" class="lighten-love" alt="uid">
+                          <img src="../../image/icons/lliaotian.png" class="lighten-LT">
+                          <img src="../../image/icons/weixin.png" class="lighten-WeiX" alt="uid">
+                      </div>
+                      <div class="maker-conversation">
+                          <img src="../../image/icons/loves.png" class="lighten-love" alt="uid">
+                          <img src="../../image/icons/lliaotian.png" class="lighten-LT">
+                          <img src="../../image/icons/weixin.png" class="lighten-WeiX" alt="uid">
+                      </div>
+                      <div class="maker-conversation">
+                          <img src="../../image/icons/loves.png" class="lighten-love" alt="uid">
+                          <img src="../../image/icons/lliaotian.png" class="lighten-LT">
+                          <img src="../../image/icons/weixin.png" class="lighten-WeiX" alt="uid">
+                      </div>
+                      <div class="maker-conversation">
+                          <img src="../../image/icons/loves.png" class="lighten-love" alt="uid">
+                          <img src="../../image/icons/lliaotian.png" class="lighten-LT">
+                          <img src="../../image/icons/weixin.png" class="lighten-WeiX" alt="uid">
+                      </div>
+                      <div class="maker-conversation">
+                          <img src="../../image/icons/loves.png" class="lighten-love" alt="uid">
+                          <img src="../../image/icons/lliaotian.png" class="lighten-LT">
+                          <img src="../../image/icons/weixin.png" class="lighten-WeiX" alt="uid">
+                      </div>
+                      <div class="maker-conversation">
+                          <img src="../../image/icons/loves.png" class="lighten-love" alt="uid">
+                          <img src="../../image/icons/lliaotian.png" class="lighten-LT">
+                          <img src="../../image/icons/weixin.png" class="lighten-WeiX" alt="uid">
+                      </div>
+                      <div class="maker-conversation">
+                          <img src="../../image/icons/loves.png" class="lighten-love" alt="uid">
+                          <img src="../../image/icons/lliaotian.png" class="lighten-LT">
+                          <img src="../../image/icons/weixin.png" class="lighten-WeiX" alt="uid">
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+</div>
+<div id="footer">
+    <div class="foot-box">
+        <a href="../index.html" class="tab-link-2 " >
+            <i class="icon icon-img-1"></i>
+        </a>
+        <a href="javascript:void(0);" class="tab-link-2 active">
+            <i class="icon icon-img-2 "></i>
+        </a>
+        <a href="../my/myIndex2.html" class="tab-link-2">
+            <i class="icon icon-img-3"></i>
+        </a>
+    </div>
+</div>
+</body>
+<script src="../../js/recommend/recommend.js"></script>
+</html>

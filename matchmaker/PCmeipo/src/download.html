@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>下载</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon " type="images/x-icon" href="../image/ico.ico">
+    <link rel="stylesheet" href="../css/common/common.css">
+    <script src="../js/common/jquery-3.2.1.min.js"></script>
+    <style>
+        *{font-family: "宋体";  }
+        #header{height: 162px;background: rgba(255,255,255,.8);font-weight: bolder;position: relative; top:0;left: 0}
+        #main{position: relative;margin: 0;}
+        .nav{width: 1182px;height: 162px;}
+        .nav div{height:162px;}
+        .nav-logo{margin-left:45px;}
+        .nav-bar ul{overflow: hidden;height:100%;}
+        .nav-bar li{height:162px;line-height:162px;font-size: 34px;color:#FD3A60;position: relative;}
+        .nav-bar a{color: #FD3A60;}
+        .nav-logo img:nth-child(2){margin-top:40px;}
+        .nav .line{position: absolute;height: 6px;background: #C5C5C5;top:105px;left:0;}
+        .nav-bar li:first-child{margin-right:75px;}
+        .nav-bar li:nth-child(2){margin-right:20px;}
+        .nav-bar li:nth-child(3){margin-right: 10px;}
+        .banner{height: 498px;background: url("../image/img/banner_06.png") no-repeat center; background-size:100%;overflow: hidden;}
+        a:hover{color:#FD3A60;}
+        .pic{display:block;width: 100%}
+        .mask{position: absolute;top:0;left:0;right:0;bottom:0;}
+        .mask a{width: 230px;height:80px;display:block;position: absolute;left:53.6%;top:4.6%;}
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div class="nav">
+            <div class="nav-logo lt">
+                <img src="../image/icon/LOGO.png" class="mt30" style="width: 90px">
+                <img src="../image/icon/meipo.png" class="mt40 mL20" style="width: 120px">
+            </div>
+            <div class="nav-bar rt">
+               <ul>
+                   <li class="lt">
+                       <a href="../index.html"> 返回首页</a>
+                       <div class="line lt"></div>
+                   </li>
+                   <li class="lt"><img src="../image/img/phone.png" alt=""></li>
+                   <li class="phoneNum lt">400-6313-520</li>
+               </ul>
+            </div>
+        </div>
+    </div>
+<div id="main" class="mWidth">
+    <img src="../image/img/banner6.png" alt="" class="pic">
+    <div class="mask">
+            <a href="#" class="change"></a>
+    </div>
+</div>
+</body>
+</html>
+<script>
+$(function () {
+    function ps() {
+        var w=document.documentElement.clientWidth,
+            fw=w*0.12,
+            h=$('#main').height(),
+            fh=h*0.02
+        $('.change').css({width:fw,height:fh})
+    }
+   ps()
+    $(window).resize(function () {
+       ps()
+    })
+})
+</script>

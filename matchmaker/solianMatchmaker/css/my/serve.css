@@ -1,0 +1,34 @@
+.header{
+	width: 7.5rem;
+	height: .9rem;
+	position: relative;
+}
+.header a{
+	float: left;
+	margin-left: .6rem;
+	margin-top: .6rem;
+	width: .3rem;
+	height: .3rem;
+}
+.header a img{
+	width: 100%;
+}
+.view{
+	padding: 0 .6rem;
+}
+.view h1{
+	margin: .9rem 0 0 0;
+	font-size: .52rem;
+	color: #111;
+	font-weight: bold;
+}
+.view h5{
+	padding: .6rem 0 .1rem 0;
+	font-size: .3rem;
+	color: #333;
+}
+.view p{
+	font-size: .26rem;
+	color: #666;
+	line-height: .5rem;
+}

@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <title>我是媒婆</title>
+	    <meta http-equiv="pragma" content="no-cache">
+	    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+	    <meta http-equiv="expires" content="-1">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+	    <meta name="format-detection" content="telephone=no">
+	    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+	    <link rel="stylesheet" href="../../css/common.css">
+    	<link rel="stylesheet" href="../../css/login/register.css">
+   		<link rel="stylesheet" href="http://cache.amap.com/lbs/static/main1119.css"/>
+    	<script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=55dd1443993bcb3128897c2d7b20829d&plugin=AMap.Geocoder"></script>
+    	<script type="text/javascript" src="http://cache.amap.com/lbs/static/addToolbar.js"></script>
+	    <script type="text/javascript" src="../../js/common.js"></script>
+	    <script type="text/javascript" src="../../js/jquery-2.1.4.min.js" charset="utf-8"></script>
+	   	<script src="../../js/login/wsdan.js"></script>
+    	<script src="js/img.js"></script>
+		<script src="js/require.js"></script>
+		<script src="js/main.js"></script>
+	</head>
+	<body  onload="regeocoder()">
+		<div class="d_form">
+			<div></div>
+			<div></div>
+			<!-- 3  单身，已婚 身份选择-->
+			<div>
+				<div class="d_backBox">
+					<a href="javascript:history.go(-1)"><img class="d_back" src="../../image/icons/left.png" ></a>
+					<p>资料完整度：<span>0%</span></p>
+				</div>
+				<div class="d_koy"></div>
+				<p class="d_send">婆婆想先确定一下您的身份</p>
+				<p class="d_declare" style="text-align: left;margin-left: 0.6rem;">请选择您的个人身份</p>
+				<div class="d_rank">
+					<p class="d_change" name="1">单身</p>
+					<p name="2">已婚</p>
+				</div>
+				<div class="d_koyi"></div>
+				<div class="d_nextone d_shfnext"><p>下一步</p></div>
+			</div>
+			<!--4  头像昵称-->
+			<div style="display: none;">
+				<div class="d_backBox">
+					<img class="d_back d_wsback" src="../../image/icons/left.png" >
+					<p>资料完整度：<span>4%</span></p>
+				</div>
+				<div class="d_koy"></div>
+				<p class="d_send">上传头像，填写昵称</p>
+				<p class="d_declare" style="text-align: left;margin-left: 0.6rem;">请上传真人头像，否则审核不会通过</p>
+				<div class="d_file">
+					<img class="d_photo" src="../../image/icons/d_photo.png" />
+				</div>
+				<p class="d_declare">上传单身照片，提高你单身群的成功率</p>
+				<div>
+					<div class="d_inpBox">
+						<p>昵称</p>
+						<input class="d_nickname" type="text" placeholder="请输入(昵称为2-7个字)" />
+					</div>
+				</div>
+				<div class="d_koyi"></div>
+				<div class="d_nextone d_wsnext"><p>下一步</p></div>
+			</div>
+			<!-- 5 性别选择-->
+			<div style="display: none;">
+				<div class="d_backBox">
+					<img class="d_back d_xbback" src="../../image/icons/left.png" >
+					<p>资料完整度：<span>8%</span></p>
+				</div>
+				<div class="d_koy"></div>
+				<p class="d_send">选择您的性别</p>
+				<p class="d_declare" style="text-align: left;margin-left: 0.6rem;">一旦选择，不可更改</p>
+				<div class="d_sex">
+					<p class="d_change" name="2">女神</p>
+					<p name="1">男神</p>
+				</div>
+				<div class="d_koyi"></div>
+				<div class="d_nextone d_xbnext"><p>下一步</p></div>
+			</div>
+			<!-- 6 生日选择-->
+			<div style="display: none;">
+				<div class="d_backBox">
+					<img class="d_back d_srback" src="../../image/icons/left.png" >
+					<p>资料完整度：<span>12%</span></p>
+				</div>
+				<div class="d_koy"></div>
+				<p class="d_send">选择您的生日</p>
+				<p class="d_declare" style="text-align: left;margin-left: 0.6rem;">生日一旦选定，不可更改</p>
+				<div class="d_data">
+					<input class="d_feteday" type="date" placeholder="请选择" />
+				</div>
+				<div class="d_koyi"></div>
+				<div class="d_nextone d_srnext"><p>下一步</p></div>
+			</div>
+			<!-- 7 身高选择-->
+			<div style="display: none;">
+				<div class="d_backBox">
+					<img class="d_back d_sgback" src="../../image/icons/left.png" >
+					<p>资料完整度：<span>16%</span></p>
+				</div>
+				<div class="d_koy"></div>
+				<p class="d_send">身高选择</p>
+				<p class="d_declare" style="text-align: left;margin-left: 0.6rem;">您的身高是多少厘米？</p>
+				<div class="d_data">
+					<span class="d_height">请选择</span>
+				</div>
+				<div class="d_koyi"></div>
+				<div class="d_nextone d_sgnext"><p>下一步</p></div>
+			</div>
+			<!-- 8 收入选择-->
+			<div style="display: none;">
+				<div class="d_backBox">
+					<img class="d_back d_shrback" src="../../image/icons/left.png" >
+					<p>资料完整度：<span>20%</span></p>
+				</div>
+				<div class="d_koy"></div>
+				<p class="d_send">选择您的收入</p>
+				<p class="d_declare" style="text-align: left;margin-left: 0.6rem;">您的收入是多少？</p>
+				<div class="d_data">
+					<span class="d_srmoney">请选择</span>
+					
+				</div>
+				<div class="d_koyi"></div>
+				<div class="d_nextone d_shrnext"><p>下一步</p></div>
+			</div>
+			<!-- 9 选择学历-->
+			<div style="display: none;">
+				<div class="d_backBox">
+					<img class="d_back d_xlback" src="../../image/icons/left.png" >
+					<p>资料完整度：<span>24%</span></p>
+				</div>
+				<div class="d_koy"></div>
+				<p class="d_send">选择您的学历</p>
+				<p class="d_declare" style="text-align: left;margin-left: 0.6rem;">您的学历是什么？</p>
+				<ul class="d_education">
+					
+				</ul>
+				<div class="d_koyi"></div>
+			</div>
+			<!-- 10 爱情宣言-->
+			<div style="display: none;">
+				<div class="d_backBox">
+					<img class="d_back d_xyback" src="../../image/icons/left.png" >
+					<p>资料完整度：<span>28%</span></p>
+				</div>
+				<div class="d_koy"></div>
+				<p class="d_send">描述您的爱情宣言</p>
+				<p class="d_declare" style="text-align: left;margin-left: 0.6rem;">
+					可说说自己的个性，对另一半的要求，对爱情的见解等等……
+				</p>
+				<textarea class="d_textarea" placeholder="请输入"></textarea>
+				<div class="d_koyi"></div>
+				<div class="d_nextone d_xynext"><p>下一步</p></div>
+			</div>
+			<!-- 11 选择定位-->
+			<div style="display: none;">
+				<div class="d_backBox">
+					<img class="d_back d_dwback" src="../../image/icons/left.png" >
+					<p>资料完整度：<span>32%</span></p>
+				</div>
+				<div class="d_koy"></div>
+				<p class="d_send">正在为您选择定位</p>
+				<p class="d_declare" style="text-align: left;margin-left: 0.6rem;">
+					当前定位
+				</p>
+				<div class="d_addrBox" class="d_showCityPicker">
+					<img class="d_leftimg" src="../../image/icons/d_addr.png" />
+					<p class="d_location">定位失败</p>
+					<img class="d_rightimg" src="../../image/icons/right-arrow.png" />
+				</div>
+				<div class="d_koyi"></div>
+				<div class="d_nextone d_dwnext"><p>下一步</p></div>
+			</div>
+			<!-- 12 从事的行业-->
+			<div style="display: none;">
+				<div class="d_backBox">
+					<img class="d_back d_hyback" src="../../image/icons/left.png" >
+					<p>资料完整度：<span>36%</span></p>
+				</div>
+				<div class="d_koy"></div>
+				<p class="d_send">选择您从事的行业</p>
+				<p class="d_declare" style="text-align: left;margin-left: 0.6rem;">
+					目前从事的行业是什么？
+				</p>
+				<ul class="d_jobBox">
+				</ul>
+				<div class="d_skip d_hyskip">以后再填</div>
+				<div class="d_koyi"></div>
+			</div>
+			<!-- 13 选择职业-->
+			<div style="display: none;">
+				<div class="d_backBox">
+					<img class="d_back d_zyback" src="../../image/icons/left.png" >
+					<p>资料完整度：<span>40%</span></p>
+				</div>
+				<div class="d_koy"></div>
+				<p class="d_send">选择您的职业</p>
+				<p class="d_declare" style="text-align: left;margin-left: 0.6rem;">
+					目前从事的职业是什么？
+				</p>
+				<ul class="d_proBox">
+				</ul>
+				<div class="d_skip d_zyskip">以后再填</div>
+				<div class="d_koyi"></div>
+			</div>
+			<!-- 14 是否有车-->
+			<div style="display: none;">
+				<div class="d_backBox">
+					<img class="d_back d_ycback" src="../../image/icons/left.png" >
+					<p>资料完整度：<span>44%</span></p>
+				</div>
+				<div class="d_koy"></div>
+				<p class="d_send">您是否有车</p>
+				<p class="d_declare" style="text-align: left;margin-left: 0.6rem;">
+					您是否有车？
+				</p>
+				<ul class="d_cars">
+					<li>有车</li><li>无车</li><li>打算购买</li>
+				</ul>
+				<div class="d_skip d_ycskip">以后再填</div>
+				<div class="d_koyi"></div>
+			</div>
+			<!-- 15 是否有房-->
+			<div style="display: none;">
+				<div class="d_backBox">
+					<img class="d_back d_yfback" src="../../image/icons/left.png" >
+					<p>资料完整度：<span>48%</span></p>
+				</div>
+				<div class="d_koy"></div>
+				<p class="d_send">您是否有房</p>
+				<p class="d_declare" style="text-align: left;margin-left: 0.6rem;">
+					您是否有房？
+				</p>
+				<ul class="d_house">
+				</ul>
+				<div class="d_skip d_yfskip">以后再填</div>
+				<div class="d_koyi"></div>
+			</div>
+			<!-- 16 毕业院校-->
+			<div style="display: none;">
+				<div class="d_backBox">
+					<img class="d_back d_byback" src="../../image/icons/left.png" >
+					<p>资料完整度：<span>52%</span></p>
+				</div>
+				<div class="d_koy"></div>
+				<p class="d_send">毕业院校</p>
+				<p class="d_declare" style="text-align: left;margin-left: 0.6rem;">
+					您毕业于哪所大学/中学/小学？
+				</p>
+				<div class="d_data">
+					<input class="d_school" type="text" placeholder="请输入" />
+				</div>
+				<div class="d_skip d_byskip d_comskip">以后再填</div>
+				<div class="d_koyi"></div>
+				<div class="d_nextone d_bynext"><p>下一步</p></div>
+			</div>
+			<!-- 17 家庭背景-->
+			<div style="display: none;">
+				<div class="d_backBox">
+					<img class="d_back d_jtback" src="../../image/icons/left.png" >
+					<p>资料完整度：<span>56%</span></p>
+				</div>
+				<div class="d_koy"></div>
+				<p class="d_send">您的家庭背景</p>
+				<p class="d_declare" style="text-align: left;margin-left: 0.6rem;">
+					您的家庭背景
+				</p>
+				<ul class="d_homeback">
+				</ul>
+				<div class="d_skip d_jtskip">以后再填</div>
+				<div class="d_koyi"></div>
+			</div>
+			<!-- 18 家乡-->
+			<div style="display: none;">
+				<div class="d_backBox">
+					<img class="d_back d_jxback" src="../../image/icons/left.png" >
+					<p>资料完整度：<span>60%</span></p>
+				</div>
+				<div class="d_koy"></div>
+				<p class="d_send">您的家乡</p>
+				<p class="d_declare" style="text-align: left;margin-left: 0.6rem;">
+					您的家乡所在地
+				</p>
+				<div class="d_data">
+					<span class="d_youaddr">请选择</span>
+				</div>
+				<div class="d_skip d_jxskip d_comskip">以后再填</div>
+				<div class="d_koyi"></div>
+				<div class="d_nextone d_jxnext"><p>下一步</p></div>
+			</div>
+			<!-- 19 饮酒史-->
+			<div style="display: none;">
+				<div class="d_backBox">
+					<img class="d_back d_yjback" src="../../image/icons/left.png" >
+					<p>资料完整度：<span>64%</span></p>
+				</div>
+				<div class="d_koy"></div>
+				<p class="d_send">您是否饮酒</p>
+				<p class="d_declare" style="text-align: left;margin-left: 0.6rem;">
+					您的饮酒史
+				</p>
+				<ul class="d_drink"></ul>
+				<div class="d_skip d_yjskip">以后再填</div>
+				<div class="d_koyi"></div>
+			</div>
+			<!-- 20 吸烟史-->
+			<div style="display: none;">
+				<div class="d_backBox">
+					<img class="d_back d_xiyback" src="../../image/icons/left.png" >
+					<p>资料完整度：<span>68%</span></p>
+				</div>
+				<div class="d_koy"></div>
+				<p class="d_send">您是否吸烟</p>
+				<p class="d_declare" style="text-align: left;margin-left: 0.6rem;">
+					您的吸烟史史
+				</p>
+				<ul class="d_smoke">	</ul>
+				<div class="d_skip d_xiyskip">以后再填</div>
+				<div class="d_koyi"></div>
+			</div>
+			<!-- 21 宗教信仰-->
+			<div style="display: none;">
+				<div class="d_backBox">
+					<img class="d_back d_zjback" src="../../image/icons/left.png" >
+					<p>资料完整度：<span>72%</span></p>
+				</div>
+				<div class="d_koy"></div>
+				<p class="d_send">您的宗教信仰</p>
+				<p class="d_declare" style="text-align: left;margin-left: 0.6rem;">
+					选择您的宗教信仰
+				</p>
+				<ul class="d_hiero"></ul>
+				<div class="d_skip d_zjskip">以后再填</div>
+				<div class="d_koyi"></div>
+			</div>
+			<!-- 22 饮食习惯-->
+			<div style="display: none;">
+				<div class="d_backBox">
+					<img class="d_back d_ysback" src="../../image/icons/left.png" >
+					<p>资料完整度：<span>76%</span></p>
+				</div>
+				<div class="d_koy"></div>
+				<p class="d_send">您的饮食习惯</p>
+				<p class="d_declare" style="text-align: left;margin-left: 0.6rem;">
+					选择您的饮食习惯
+				</p>
+				<ul class="d_dist"></ul>
+				<div class="d_skip d_ysskip">以后再填</div>
+				<div class="d_koyi"></div>
+			</div>
+			<!-- 23 作息习惯-->
+			<div style="display: none;">
+				<div class="d_backBox">
+					<img class="d_back d_zxback" src="../../image/icons/left.png" >
+					<p>资料完整度：<span>80%</span></p>
+				</div>
+				<div class="d_koy"></div>
+				<p class="d_send">您的作息习惯</p>
+				<p class="d_declare" style="text-align: left;margin-left: 0.6rem;">
+					选择您的作息习惯
+				</p>
+				<ul class="d_workandrest"></ul>
+				<div class="d_skip d_zxskip">以后再填</div>
+				<div class="d_koyi"></div>
+			</div>
+			<!-- 24 宠物史-->
+			<div style="display: none;">
+				<div class="d_backBox">
+					<img class="d_back d_cwback" src="../../image/icons/left.png" >
+					<p>资料完整度：<span>84%</span></p>
+				</div>
+				<div class="d_koy"></div>
+				<p class="d_send">您是否养宠物</p>
+				<p class="d_declare" style="text-align: left;margin-left: 0.6rem;">
+					选择您的宠物史
+				</p>
+				<ul class="d_pet"></ul>
+				<div class="d_skip d_cwskip">以后再填</div>
+				<div class="d_koyi"></div>
+			</div>
+			<!-- 25 民族种族-->
+			<div style="display: none;">
+				<div class="d_backBox">
+					<img class="d_back d_mzback" src="../../image/icons/left.png" >
+					<p>资料完整度：<span>88%</span></p>
+				</div>
+				<div class="d_koy"></div>
+				<p class="d_send">您的民族</p>
+				<p class="d_declare" style="text-align: left;margin-left: 0.6rem;">
+					您属于哪个民族？
+				</p>
+				<div class="d_data">
+					<span class="d_nation">请选择</span>
+				</div>
+				<div class="d_skip d_mzskip d_comskip">以后再填</div>
+				<div class="d_koyi"></div>
+				<div class="d_nextone d_mznext"><p>下一步</p></div>
+			</div>
+			<!-- 26 兴趣爱好-->
+			<div style="display: none;">
+				<div class="d_backBox">
+					<img class="d_back d_xqback" src="../../image/icons/left.png" >
+					<p>资料完整度：<span>92%</span></p>
+				</div>
+				<div class="d_koy"></div>
+				<p class="d_send">选择您的兴趣爱好</p>
+				<p class="d_declare" style="text-align: left;margin-left: 0.6rem;">
+					最多选5项
+				</p>
+				<ul class="d_hobby"></ul>
+				<div class="d_skip d_xqskip d_comskip">以后再填</div>
+				<div class="d_koyi"></div>
+				<div class="d_nextone d_xqnext"><p>下一步</p></div>
+			</div>
+			<!-- 27 择偶条件-->
+			<div style="display: none;">
+				<div class="d_backBox">
+					<img class="d_back d_zoback" src="../../image/icons/left.png" >
+					<p>资料完整度：<span>96%</span></p>
+				</div>
+				<div class="d_koy"></div>
+				<p class="d_send">您的择偶条件</p>
+				<p class="d_declare" style="text-align: left;margin-left: 0.6rem;">
+					选择您的择偶条件
+				</p>
+				<div style="max-height: 6.0rem;overflow: auto;">
+					<div class="d_inpBox d_ageselect">
+						<p>年龄</p>
+						<span>请选择</span>
+					</div>
+					<div class="d_inpBox d_heightselect">
+						<p>身高</p>
+						<span>请选择</span>
+					</div>
+					<div class="d_inpBox d_income">
+						<p>月收入</p>
+						<span>请选择</span>
+					</div>
+					<div class="d_inpBox d_bacg">
+						<p>学历</p>
+						<span>请选择</span>
+					</div>
+				</div>
+				<div class="d_skip d_zoskip d_comskip">以后再填</div>
+				<div class="d_koyi"></div>
+				<div class="d_nextone d_save"><p>保存</p></div>
+			</div>
+			<!-- 28 体重选择-->
+			<div style="display: none;">
+				<div class="d_backBox">
+					<img class="d_back d_tzback" src="../../image/icons/left.png" >
+					<p>资料完整度：<span>18%</span></p>
+				</div>
+				<div class="d_koy"></div>
+				<p class="d_send">体重选择</p>
+				<p class="d_declare" style="text-align: left;margin-left: 0.6rem;">您的体重是多少？</p>
+				<div class="d_data">
+					<span class="d_weight">请选择</span>
+				</div>
+				<div class="d_koyi"></div>
+				<div class="d_nextone d_tznext"><p>下一步</p></div>
+			</div>
+		</div>
+		<form class="d_fileForm" id="form">
+			<div style="display: none;">
+				<div class="SL_nav">
+					上传图像
+					<a href="#" class="imgLeft"></a>
+				</div>
+				<div class="toBar">
+					<label>
+						选择图片
+						<input type="file"  id="upLoadInt">
+					</label>
+					<button type="button">确定</button>
+				</div>
+				<div class="img_content">
+					<img class="image" src="" id="upLoadImg">
+				</div>
+				<canvas width="200" height="200" id="canvas"></canvas>
+			</div>
+			<input type="hidden" name="cmd" value="100002" />
+			<input type="hidden" name="type" value="" />
+			<input type="hidden" name="username" value="" />
+			<input type="hidden" name="password" value="" />
+			<input type="hidden" name="nickname" value="" />
+			<input type="hidden" name="sex" value="" />
+			<input type="hidden" name="birthday" value="" />
+			<input type="hidden" name="height" value="" />
+			<input type="hidden" name="weight" value="" />
+			<input type="hidden" name="image" value="" />
+			<input type="hidden" name="income" value="" />
+			<input type="hidden" name="edu" value="" />
+			<input type="hidden" name="declaration" value="" />
+			<input type="hidden" name="province" value="" />
+			<input type="hidden" name="city" value="" />
+			<input type="hidden" name="industry" value="" />
+			<input type="hidden" name="job" value="" />
+			<input type="hidden" name="car" value="" />
+			<input type="hidden" name="house" value="" />
+			<input type="hidden" name="school" value="" />
+			<input type="hidden" name="familybg" value="" />
+			<input type="hidden" name="hometown" value="" />
+			<input type="hidden" name="drink" value="" />
+			<input type="hidden" name="smoking" value="" />
+			<input type="hidden" name="belief" value="" />
+			<input type="hidden" name="diet" value="" />
+			<input type="hidden" name="rest" value="" />
+			<input type="hidden" name="pet" value="" />
+			<input type="hidden" name="nation" value="" />
+			<input type="hidden" name="style" value="" />
+			<input type="hidden" name="rq_age" value="" />
+			<input type="hidden" name="rq_height" value="" />
+			<input type="hidden" name="rq_income" value="" />
+			<input type="hidden" name="rq_edu" value="" />
+			<input type="hidden" name="introduction" value="" />
+			<input type="hidden" name="uid" value="0" />
+			<input type="hidden" name="marry" value="1" />
+			<input type="hidden" name="wx_unionid" value="" />
+			<input type="hidden" name="token" value="" />
+			<input type="hidden" name="code" value="" />
+			<input type="hidden" name="wx_name" value="" />
+			<input type="hidden" name="wx_image" value="" />
+		</form>
+		<div id="container" style="display: none;"></div>
+		<div id="tip" style="display: none;">
+		    <span id="result"></span>
+		</div>
+		<div class="d_hideBox" style="display: none;">
+			<div class="d_selectcity" >
+				<div class="d_citytitle"><span>取消</span><p>确认</p></div>
+				<div class="d_citylist">
+					<ul class="d_province"></ul>
+					<ul class="d_town"></ul>
+				</div>
+			</div>
+		</div>
+		<div class="d_heightageBox" style="display: none;">
+			<div class="d_heighttitle"><span>取消</span><p>确认</p></div>
+			<div>
+				<ul class="d_heightagestar">
+				
+				</ul>
+				<ul class="d_heightageend">
+					
+				</ul>
+			</div>
+		</div>
+		<div class="d_one" style="display: none;">
+			<div class="d_onetitle"><span>取消</span><p>确认</p></div>
+			<ul class="d_oneul">
+				
+			</ul>
+		</div>
+		<div class="d_posifixed"></div>
+		<div class="d_popupbox"></div>
+	</body>
+</html>

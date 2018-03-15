@@ -1,0 +1,79 @@
+s{
+	text-decoration: none;
+}
+.main{
+	margin-top: .9rem;
+	width: 7.5rem;
+	height: auto;
+	padding-left: .3rem;
+}
+.main .list{
+	width: 100%;
+	padding: .3rem .3rem .3rem 0;
+	height: 1.6rem;
+	border-bottom: 1px solid #e6e6e6;
+	position: relative;
+}
+.main .list .photo{
+	float: left;
+	width: 1rem;
+	height: 1rem;
+	border-radius: 50%;
+}
+.main .list .photo img{
+	width: 100%;
+	border-radius: 50%;
+}
+.main .list div{
+	width: 5.9rem;
+	float: right;
+	height: 100%;
+	padding-left: .2rem;
+}
+.main .list div p{
+	width: 100%;
+	font-size: .28rem;
+	color: #999;
+}
+.main .list div p em,.main .list div p span,.main .list div p i{
+	display: block;
+}
+.main .list div p em{
+	font-weight: bold;
+	color: #111;
+}
+.main .list div p span{
+	font-size: .26rem;
+}
+.main .list div p i{
+	font-size: .22rem;
+}
+input[type = "button"]{
+	width: 1.1rem;
+	height: .5rem;
+	border-radius: .25rem;
+	outline: none;
+	font-size: .24rem;
+	background: #fff;
+	margin-left: .2rem;
+}
+#agree{
+	border: 1px solid #458eff;
+	color: #458eff;
+}
+#refuse{
+	border: 1px solid #ff704f;
+	color: #ff704f;
+}
+.main .list div .content{
+	width: auto;
+	height: auto;
+	position: absolute;
+	top: .55rem;
+	right: .3rem;
+}
+.main .list div .content{
+	font-size: .26rem;
+	color: #999;
+	line-height: .5rem;
+}

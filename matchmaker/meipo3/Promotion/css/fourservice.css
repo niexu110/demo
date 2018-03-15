@@ -1,0 +1,16 @@
+.d_ftopbox{height: 1.9rem;background: rgb(255,222,0);}
+.d_ftitle{font-size: .34rem;color: #333333;text-align: center;padding-top: .6rem;}
+.d_ftitle span{font-size: .46rem;}
+.d_eng{font-size: .24rem;color: #666666;text-align: center;}
+.d_content{background: #efefef;min-height: 2rem;margin: .4rem .3rem 0;}
+.d_contenttop{height: .82rem;}
+.d_qpbg{height: .92rem;width: 2.6rem;margin-top: -.1rem;}
+.d_letter{position: relative;height: .82rem;width: 2.6rem;float: left;margin-right: .52rem;}
+.d_letter p{position: absolute;top: 0;left: 0;width: 2.3rem; line-height: .62rem;font-size: .46rem;text-align: center;color: #FFFFFF;}
+.d_price{float:left;height: .82rem;line-height: .82rem;width: 3.6rem;border-bottom: solid 2px rgb(102,102,102);color: #c00001;}
+.d_price span{display: inline-block;}
+.d_price span:nth-of-type(1){font-size: .24rem;text-decoration: line-through;float: left;}
+.d_price span:nth-of-type(2){font-size: .34rem;font-weight: bold;float: right;}
+.d_text{font-size: .26rem;line-height: .42rem;color: #111111;padding: .22rem .3rem;}
+.d_givebox{height: 1.2rem;}
+.d_give{width: 4.2rem;height: .9rem;background: rgb(255,67,73);border-radius: 4px;text-align: center;line-height: .9rem;font-size: .28rem;color: #FFFFFF;margin: 0 1.35rem;}

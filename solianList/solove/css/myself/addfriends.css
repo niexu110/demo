@@ -1,0 +1,73 @@
+
+.d_seek{
+	margin-top: 0.9rem;
+	height:1.2rem;
+	border-bottom: solid 1px #E6E6E6;
+}
+.d_seek div{
+	height: 0.64rem;
+	width:5.8rem;
+	background: #eeeeee;
+	border-radius: 0.6rem;
+	float: left;
+	margin: 0.27rem 0.34rem 0.27rem 0.24rem;
+}
+.d_seek input{
+	outline: none;
+	border: none;
+	width:4.0rem;
+	background: #eeeeee;
+	line-height: 0.64rem;
+	margin-left: 0.2rem;
+}
+.d_seek span{
+	font-size: 0.26rem;
+	color: #5397DD;
+	line-height: 1.2rem;
+	float: left;
+}
+.d_seek img{
+	height: 0.26rem;
+	width: 0.26rem;
+	margin-left: 0.3rem;
+}
+.d_contentson{
+	height: 1.5rem;
+	border-bottom: solid 1px #E6E6E6;
+	margin-left: 0.24rem;
+	padding-right: 0.24rem;
+}
+.d_contentson img{
+	height: 1.04rem;
+	width: 1.04rem;
+	float: left;
+	margin-top: 0.23rem;
+	margin-right: 0.24rem;
+}
+.d_contentcenter{
+	margin-top: 0.23rem;
+	float: left;
+}
+.d_contentcenter h3{
+	font-size: 0.3rem;
+	font-weight: bold;
+	line-height: 0.52rem;
+	color: #333333;
+}
+.d_contentcenter p{
+	font-size: 0.24rem;
+	line-height: 0.52rem;
+	color: #999999;
+}
+.d_addfriend{
+	float: right;
+	height: 0.54rem;
+	width: 1.2rem;
+	background: #5397DD;
+	font-size: 0.22rem;
+	color: #ffffff;
+	text-align: center;
+	line-height: 0.54rem;
+	margin-top: 0.48rem;
+	border-radius: 0.06rem;
+}

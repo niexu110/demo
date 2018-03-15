@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>绑定手机号</title>
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="expires" content="-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/my/bindPhone.css">
+    <script src="../../js/jquery-2.1.4.min.js"></script>
+    <script src="../../js/common.js"></script>
+</head>
+<body>
+<div id="header">
+    <a href="javascript:history.go(-1);" class="lt back-1">
+        <img src="../../image/icons/left.png" id="back" >
+    </a>
+    <em>绑定手机号</em>
+</div>
+<div class="view">
+    <div class="container">
+      <form action="">
+          <div class="phoneBox">
+              <span class="lt">请输入您的手机号</span>
+              <input type="text" placeholder="输入电话号码" maxlength="11" name="phone" class="phoneInt lt">
+              <img src="../../image/icons/true.png" class="phoneSuc" />
+          </div>
+          <div class="phoneBox">
+              <span class="lt">请输入验证码</span>
+              <input type="text" placeholder="验证码" maxlength="4" name="code" class="lt">
+              <div id="codeBtn">发送验证码</div>
+          </div>
+          <button id="btn">绑定</button>
+      </form>
+            <div class="phoneBox">
+                <span class="lt">我的手机号</span>
+                <em class="lt">15029080420</em>
+                <i class=" rt">已绑定</i>
+            </div>
+    </div>
+</div>
+</body>
+<script src="../../js/my/bindPhone.js"></script>
+</html>

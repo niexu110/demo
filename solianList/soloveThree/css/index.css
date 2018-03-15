@@ -1,0 +1,57 @@
+html{overflow-y: hidden;}
+.filter-btn{width:.4rem;height:auto;position: absolute;right:.3rem;top:.25rem;}
+.stars-list{width:6.9rem;height:auto;margin:.3rem auto 0;}
+.star-box-img,.star-user-ul{width:6.9rem;height:7.5rem;overflow: hidden;}
+.star-user-ul{position: relative;}
+.star-user-ul li{position: absolute;bottom:0;left:.3rem;width:6.3rem;height:6.3rem;opacity: .2;z-index:1;box-shadow:0 2px 5px #FA6F7C;border-radius:6px; overflow: hidden; }
+.vip-love{width:100%;height:1.2rem;position: absolute;bottom:0;right:0;z-index:4;background:linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,.1))}
+.vip-love>img{height:.6rem;margin:.3rem .3rem 0 0;}
+.vip-img{width:100%;position: absolute;bottom:0;right:0;}
+.vip-class{position: absolute;right:0;top:0;width:1.4rem;z-index:10;}
+.star-box{width:6.9rem;height:auto;position: relative;}
+div.active{display: block;}
+.star-user-box{width:5.3rem;position: absolute;left:.8rem;top:0;display: none;}
+.star-user-box>p{margin-top:.2rem;text-align: center;font-size:.36rem;font-weight:bold;}
+.star-user-box>p>span,.star-user-box>h1{font-size:.3rem;color:#666;font-weight: normal;padding-left:.3rem; }
+.star-user-box>h1{text-align: center;padding-top:.2rem;}
+/*筛选*/
+.filter{position: fixed;top:0;bottom:0;left:0;right:0;background:#fff;z-index:150;display: none;}
+.filter-header{width:6.9rem;height:.9rem;margin:0 auto;}
+.close,.closes{width:.35rem;height:auto;margin-top:.275rem;}
+#btn{background:#fff;height:.4rem;font-size:.3rem;color:#FF7051;margin-top:.25rem; }
+.filter-content{width:7.2rem;height:auto;margin-left:.3rem;}
+.filter-title{width:100%;height:1.8rem;line-height: 1.8rem;font-size:.52rem;color:#111;}
+.filter-item{width:100%;height:1.4rem;border-bottom:1px solid #F3F3F3;}
+.title{color:#696969;font-size:.3rem;width:30%;height:1.4rem;line-height:1.4rem;}
+.content{width:70%;height:1.4rem; position: relative;}
+.content>img{width:.2rem;height:.4rem;margin-right:.3rem;margin-top:.5rem;}
+.content>input{float:right;opacity: 0;}
+.ageBox,.heightBox,.marryBox,.eduBox,.addressBox{display:none;}
+.plane-p{position: absolute;right:.6rem;top:0;width:70%;height:1.4rem;line-height:1.4rem;color:#111;font-size:.36rem;text-align: right;z-index:100; }
+.filter-list-box{position: fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.7);display:none;z-index:200; }
+.item-container{position: absolute;bottom:0;left:.3rem;width:6.9rem;height:7rem;background:#fff;overflow-x:hidden;overflow-y:auto;}
+.item-container>ul>li,.item-container div>ul>li{width:100%;height:.8rem;line-height:.8rem;text-align:center;color:#111;font-size:.3rem;border-bottom:1px solid #efefef;  }
+.item-container div{float:left;width:50%;height:7rem;background:#fff;overflow-x:hidden;overflow-y:auto;}
+.item-container div>ul>li.active{background:#efefef;}
+.line2{border-right:1px solid #EAEAEA;}
+.pop-sign,.pop-sign2{position: fixed;top:0 ;left:0;right:0;bottom:0;background:rgba(0,0,0,.15);z-index:300;display: none; }
+.pop-img{width:100%;}
+.pop-box1{width:5.6rem;position:absolute;top:2rem;left:.95rem;}
+.pop-box1>img{width:100%;}
+.pop-time{position: absolute;width:100%;top:2.5rem;left:0;}
+.pop-time p{font-size:.32rem;color:#666;padding:.1rem 0;text-align: center; }
+.cartoon{animation:scales 200ms linear both;-webkit-animation:scales 200ms linear both; }
+.cartoon2{animation:scales2 300ms linear both;-webkit-animation:scales2 300ms linear both; }
+.spinRotate{animation:spin 5s linear infinite;-webkit-animation:spin 5s linear infinite; }
+.title-img{width:100%;display: block;}
+.closeBtn{position: absolute;right:-.2rem;top:-.2rem;width:.4rem;}
+.day-content{margin:.4rem auto;width:100%;height:2.3rem;padding-left:.2rem;vertical-align: middle;text-align: center;}
+.day-content img{width:1rem;margin:0 .25rem .3rem 0;}
+.pop-box6 p{ color:#f83444;font-size:.26rem; text-align: center;padding-bottom:.4rem;}
+.dayBtn{width:2rem;height:.7rem;line-height:.7rem;margin:0 auto;text-align: center;font-size:.3rem; color:#fff;border-radius:20px;background:#f83444;  }
+@-webkit-keyframes scales{ 0%{transform:scale(.2)} 100%{transform:scale(1)}}
+@keyframes scales{ 0%{transform:scale(.2)} 100%{transform:scale(1)}}
+@-webkit-keyframes scales2{ 0%{transform:scale(0)} 100%{transform:scale(1)}}
+@keyframes scales2{ 0%{transform:scale(0)} 100%{transform:scale(1)}}
+@keyframes spin{ 0%{transform: rotate(0deg);  -webkit-transform: rotate(0deg);} 100%{transform: rotate(360deg); -webkit-transform: rotate(360deg);} }
+@-webkit-keyframes spin{ 0%{transform: rotate(0deg);  -webkit-transform: rotate(0deg);} 100%{transform: rotate(360deg); -webkit-transform: rotate(360deg);} }

@@ -1,0 +1,225 @@
+.d_headimg{
+	margin: 0 auto;
+	margin-top:1.4rem;
+	width: 1.8rem;
+	height: 1.8rem;
+	
+	position: relative;
+	border-radius: 0.9rem;
+	overflow: hidden;
+}
+.d_headimg img{
+	height: 1.8rem;
+	width: 1.8rem;
+	border-radius: 0.9rem;
+	
+}
+.d_check{
+	height: 0.6rem;
+	width: 1.8rem;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: rgba(50,50,50,0.5);
+	text-align: center;
+	font-size: 0.28rem;
+	line-height: 0.6rem;
+	color: #FFFFFF;
+}
+.d_alterimg{
+	line-height: 0.9rem;
+	font-size: 0.28rem;
+	color: #FF704F;
+	text-align: center;
+}
+.d_inpBox{
+	margin-left: 0.3rem;
+	padding-right: 0.3rem;
+	height: 1.2rem;
+	padding-top: 0.24rem;
+	border-bottom: solid 1px #E6E6E6;
+}
+.d_inpBox p{
+	float: left;
+	font-size: 0.28rem;
+	color: #666666;
+	line-height: 0.96rem;
+	width: 1.5rem;
+}
+.d_inpBox input{
+	width: 4.0rem;
+	float: left;
+	text-align: center;
+	line-height: 0.92rem;
+	font-size: 0.32rem;
+	color: #111111;
+}
+.d_inpBox div{
+	width: 4.0rem;
+	float: left;
+	text-align: center;
+	line-height: 0.95rem;
+	font-size: 0.32rem;
+	color: #111111;
+}
+.d_inpBox img{
+	float: right;
+	width: 0.14rem;
+	margin-top: 0.4rem;
+}
+.d_save{
+	height: 0.94rem;
+	width: 6.5rem;
+	margin: 0 auto;
+	margin-top: 0.9rem;
+	background: #FF704F;
+	font-size: 0.32rem;
+	color: #FFFFFF;
+	text-align: center;
+	line-height: 0.94rem;
+	border-radius: 0.5rem;
+}
+.d_selectcity{
+	height: 5.0rem;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background: #FFFFFF;
+	border-top: solid 1px #E6E6E6;
+}
+.d_citytitle{
+	height: 1.0rem;
+	font-size: 0.28rem;
+}
+.d_citytitle span{
+	margin-top: 0.1rem;
+	float: left;
+	margin-left: 0.6rem;
+	padding: 0.1rem;
+	border: solid 1px #E6E6E6;
+	border-radius: 0.06rem;
+	color: #666666;
+}
+.d_citytitle p{
+	margin-top: 0.1rem;
+	float: right;
+	margin-right: 0.6rem;
+	padding: 0.1rem;
+	border: solid 1px #5793DD;
+	border-radius: 0.06rem;
+	background: #5793DD;
+	color: #FFFFFF;
+}
+.d_citylist{
+	width: 7.5rem;
+	height: 3.5rem;
+}
+.d_selectcity ul{
+	float: left;
+	overflow-y: auto !important;
+	width: 2.0rem;
+	height: 3.5rem;
+	margin-right: 0.5rem;
+}
+.d_selectcity ul li{
+	height: 0.6rem;
+	width: 100%;
+	line-height: 0.6rem;
+	text-align: center;
+	font-size: 0.26rem;
+	color: #111111;
+	border: solid 1px #E6E6E6;
+	margin-bottom: 0.1rem;
+	border-radius: 0.06rem;
+}
+.d_selectcity select{
+	float: left;
+	overflow-y: auto;
+	width: 2.0rem;
+	height: 3.5rem;
+	margin-right: 0.5rem;
+}
+.d_selectcity select option{
+	height: 0.6rem;
+	width: 100%;
+	line-height: 0.6rem;
+	text-align: center;
+	font-size: 0.26rem;
+	color: #111111;
+	border: solid 1px #E6E6E6;
+	margin-bottom: 0.1rem;
+	border-radius: 0.06rem;
+}
+.d_province,.d_heightagesta{
+	margin-left: 1.7rem;
+}
+/*头像裁剪*/
+.toBar{  width: 100%;  padding: 15px;  -webkit-box-sizing: border-box;  box-sizing: border-box;  position: absolute;  left: 0;  top:45px;  z-index: 1;  }
+.toBar label input{  display: none;  }
+.toBar label,.toBar button{  display: inline-block;  width: 55px;  text-align: center;  padding: 7px 0;  font-size: 12px;  color: #fff; outline: none; background: #5793dd;  border-radius: 6px;  cursor: pointer;  }
+.toBar button{  border: none;  float: right;  }
+.img_content,canvas{  position: absolute;  top: 50%;  left: 50%;  -webkit-transform: translate(-50%,-50%);  transform: translate(-50%,-50%);  }
+canvas{  border-radius: 50%;  border: 1px solid #666;  }
+.SL_nav{width:100%;height:45px;background:#f9f9f9;font-weight: bold;font-size:16px;line-height: 45px;text-align: center;}
+.imgLeft{margin-left:20px;display:inline-block;margin-top:10px;float:left;width:20px;height:25px;background: url("../../image/icons/left.png")no-repeat top left;background-size:10px 20px;}
+.d_hideBox{
+	width: 100%;
+	height: 100%;
+	background: rgba(50,50,50,0.7);
+	position: fixed;
+	top:0;
+	left: 0;
+	z-index: 2147483647;
+}
+
+.d_backBox{
+	height: 1.0rem;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: #ffffff;
+	z-index: 100;
+}
+.d_back{
+	float: left;
+	margin-top: 0.6rem;
+	margin-left: 0.6rem;
+	width: 0.18rem;
+}
+.d_koy{
+	margin-top: 1.0rem;
+}
+.d_send{
+	line-height: 1.7rem;
+	padding-top: 0.2rem;
+	margin-left: 0.6rem;
+	font-size: 0.52rem;
+	color: #111111;
+	font-weight: bold;
+}
+.d_declare{
+	line-height: 0.9rem;
+	font-size: 0.28rem;
+	color: #999999;
+	text-align: center;
+	margin-bottom: 0.3rem;
+}
+.d_jobBox{
+	margin-left: 0.3rem;
+}
+.d_jobBox li{
+	float: left;
+	width: 1.75rem;
+	height: 0.8rem;
+	margin-left: 0.3rem;
+	font-size: 0.28rem;
+	color: #FF704F;
+	border: solid 1px #FF704F;
+	border-radius: 0.5rem;
+	text-align: center;
+	line-height: 0.8rem;
+	margin-top: 0.4rem;
+	background: #FFFFFF;
+}

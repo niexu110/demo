@@ -1,0 +1,16 @@
+.d_backgroud{position: relative;}
+.d_backgroud img{height: 4.2rem;}
+.d_titleBox{position: absolute;top: 1.4rem;text-align: center;width: 100%;}
+.d_titleBox img{height: 0.5rem;}
+.d_futitle{font-size: 0.3rem;color: #FFFFFF;margin-top: 0.1rem;}
+.d_branchBox{position: absolute;left:0;bottom: 0;height: 1.0rem;width: 100%;}
+.d_branchBox div{float: left; width: 3.75rem;height: 1.0rem;position: relative;}
+.d_branchBox p{text-align: center;line-height: 1.0rem;font-size: 0.32rem;color: #f83444;}
+.d_branchBox img{height: 0.15rem;width: 0.28rem;position: absolute;bottom: 0.1rem;left: 1.73rem;}
+.d_box{height: 1.4rem;margin-left: 0.3rem;padding-right: 0.3rem;border-bottom: solid 1px #dddddd;}
+.d_box img{width: 0.35rem;margin-left: 0.3rem;margin-top: 0.68rem;float: left;}
+.d_box input{font-size: 0.3rem;color: #333333;padding-left: 0.4rem;line-height:0.6rem;margin-top: 0.6rem;width:6rem ;line-height: 0.6rem;float: left;}
+.d_box p{float: right;font-size: 0.3rem;color: #aaaaaa;line-height:0.6rem;margin-top: 0.6rem;line-height: 0.6rem;}
+.d_btndl,.d_btngg{height: 0.94rem;margin: 0 0.3rem;background: #fdc2c7;border-radius:0.5rem;line-height: 0.94rem;text-align: center;font-size: 0.34rem;color: #FFFFFF;margin-top: 0.54rem;}
+.d_box .d_btnzc{margin-top: 0.5rem; width: 2.0rem;height: 0.8rem;background: #fdc2c7;text-align: center;line-height: 0.8rem;color: #FFFFFF;border-radius: 0.5rem;}
+

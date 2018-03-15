@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>约见记录</title>
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="expires" content="-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../css/common.css">
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/common.js"></script>
+    <link rel="stylesheet" href="../../css/personal/appointment.css">
+    <script src="../../js/personal/appointment.js"></script>
+</head>
+<body>
+<div id="header">
+    <a href="javascript:history.go(-1);" class="back-1 lt"><img id="back" src="../../image/icon/left.png" /></a>
+    <em class="header-title">约见记录</em>
+</div>
+<div class="view">
+    <!--选项卡-->
+    <ul class="nav">
+        <li class="lt active">我发起的</li>
+        <li class="lt">约见我的</li>
+        <li class="lt">已完成的</li>
+    </ul>
+    <!--为空-->
+    <div class="empty">
+        <img src="../../image/img/lingdang.png" alt="">
+        <p>暂时没有约见记录哦！</p>
+    </div>
+    <!--已完成的-->
+    <div class="complete" data-num="1">
+        <div class="item" data-type="wait" data-time="2017.01.01">
+            <div class="time">
+                <span>约见时间</span>
+                <span>发布：</span>
+                <span>2017.01.01</span>
+            </div>
+            <div class="content">
+                <div class="itePic lt">
+                    <img src="../../image/img/two.png" alt="">
+                </div>
+                <p class="word lt">
+                    <span>花儿为什么这样</span>
+                    <span class="wait">已评价！</span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--约见我的-->
+    <div class="meetMe" data-num="1">
+        <div class="item" data-uid="1">
+            <div class="time">
+                <span>约见时间</span>
+                <span>发布：</span>
+                <span>2017.01.01</span>
+            </div>
+            <div class="content">
+                <div class="itePic lt">
+                    <img src="../../image/img/two.png" alt="">
+                </div>
+
+                <p class="word lt">
+                    <span>花儿为什么这样</span>
+                    <span class="request">向您发送了约会请求</span>
+                </p>
+                <div class="btn rt">
+                    <div class="lt">拒绝</div>
+                    <div class="lt">同意</div>
+                </div>
+            </div>
+        </div>
+        <div class="item" data-uid="1">
+            <div class="time">
+                <span>约见时间</span>
+                <span>发布：</span>
+                <span>2017.01.01</span>
+            </div>
+            <div class="content">
+                <div class="itePic lt">
+                    <img src="../../image/img/two.png" alt="">
+                </div>
+                <p class="word lt">
+                    <span>花儿为什么这样</span>
+                    <span class="request">向您发送了约会请求</span>
+                </p>
+                <div class="btn rt">
+                    <div class="lt">拒绝</div>
+                    <div class="lt">同意</div>
+                </div>
+            </div>
+        </div>
+        <div class="item" data-uid="1">
+            <div class="time">
+                <span>约见时间</span>
+                <span>发布：</span>
+                <span>2017.01.01</span>
+            </div>
+            <div class="content">
+                <div class="itePic lt">
+                    <img src="../../image/img/two.png" alt="">
+                </div>
+
+                <p class="word lt">
+                    <span>花儿为什么这样</span>
+                    <span class="request">向您发送了约会请求</span>
+                </p>
+                <div class="btn rt">
+                    <div class="lt">拒绝</div>
+                    <div class="lt">同意</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--我发起的-->
+    <div class="launch"  data-num="1">
+        <!--等待对方确认-->
+    <div class="item" data-uid="1">
+    <div class="time">
+        <span>约见时间</span>
+        <span>发布：</span>
+        <span>2017.01.01</span>
+        <span class="aTime">同意：</span>
+        <span class="aTime">2017.01.01</span>
+    </div>
+    <div class="content">
+        <div class="itePic lt">
+            <img src="../../image/img/two.png" alt="">
+        </div>
+        <p class="word lt">
+            <span>花儿为什么这样</span>
+            <span class="wait">等待对方确认回复！</span>
+        </p>
+    </div>
+    </div>
+        <!--对方已同意-->
+    <div class="item" data-uid="1">
+        <div class="time">
+            <span>约见时间</span>
+            <span>发布：</span>
+            <span>2017.01.01</span>
+            <span class="aTime"></span>
+            <span class="aTime"></span>
+        </div>
+        <div class="content">
+            <div class="itePic lt">
+                <img src="../../image/img/two.png" alt="">
+            </div>
+
+            <p class="word lt">
+                <span>花儿为什么这样</span>
+                <span class="request">对方已同意！</span>
+            </p>
+        </div>
+    </div>
+        <!--向您发送了约会请求-->
+    <div class="item" data-uid="1">
+        <div class="time">
+            <span>约见时间</span>
+            <span>发布：</span>
+            <span>2017.01.01</span>
+            <span class="aTime"></span>
+            <span class="aTime"></span>
+        </div>
+        <div class="content">
+            <div class="itePic lt">
+                <img src="../../image/img/two.png" alt="">
+            </div>
+            <p class="word lt">
+                <span>花儿为什么这样</span>
+                <span class="request">对方已拒绝！</span>
+            </p>
+        </div>
+    </div>
+        <div class="item" data-uid="1">
+            <div class="time">
+                <span>约见时间</span>
+                <span>发布：</span>
+                <span>2017.01.01</span>
+                <span class="aTime"></span>
+                <span class="aTime"></span>
+            </div>
+            <div class="content">
+                <div class="itePic lt">
+                    <img src="../../image/img/two.png" alt="">
+                </div>
+                <p class="word lt">
+                    <span>花儿为什么这样</span>
+                    <span class="request">对方已拒绝！</span>
+                </p>
+            </div>
+        </div>
+        <div class="item" data-uid="1">
+            <div class="time">
+                <span>约见时间</span>
+                <span>发布：</span>
+                <span>2017.01.01</span>
+                <span class="aTime"></span>
+                <span class="aTime"></span>
+            </div>
+            <div class="content">
+                <div class="itePic lt">
+                    <img src="../../image/img/two.png" alt="">
+                </div>
+                <p class="word lt">
+                    <span>花儿为什么这样</span>
+                    <span class="request">对方已拒绝！</span>
+                </p>
+            </div>
+        </div>
+        <div class="item" data-uid="1">
+            <div class="time">
+                <span>约见时间</span>
+                <span>发布：</span>
+                <span>2017.01.01</span>
+                <span class="aTime"></span>
+                <span class="aTime"></span>
+            </div>
+            <div class="content">
+                <div class="itePic lt">
+                    <img src="../../image/img/two.png" alt="">
+                </div>
+                <p class="word lt">
+                    <span>花儿为什么这样</span>
+                    <span class="request">对方已拒绝！</span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="pullUp">加载更多</div>
+</div>
+</body>
+</html>

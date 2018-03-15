@@ -1,0 +1,74 @@
+.d_backBox{
+	height: 1.0rem;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: #ffffff;
+	z-index: 100;
+}
+.d_back{
+	float: left;
+	margin-top: 0.6rem;
+	margin-left: 0.6rem;
+	width: 0.18rem;
+}
+.d_koy{
+	margin-top: 1.0rem;
+}
+.d_send{
+	line-height: 1.7rem;
+	padding-top: 0.2rem;
+	margin-left: 0.6rem;
+	font-size: 0.52rem;
+	color: #111111;
+	font-weight: bold;
+}
+.d_declare{
+	line-height: 0.9rem;
+	font-size: 0.28rem;
+	color: #999999;
+	text-align: center;
+	margin-bottom: 0.3rem;
+}
+.d_koyi{
+	height:2.0rem;
+}
+.d_jump{
+	position: fixed;
+	left: 0;
+	bottom: 1.8rem;
+	width: 6.3rem;
+	margin: 0 0.6rem;
+	background: #ffffff;
+}
+.d_jump p{
+	height: 0.94rem;
+	width: 100%;
+	background: #FFFFFF;
+	font-size: 0.32rem;
+	color: #FF704F;
+	text-align: center;
+	line-height: 0.94rem;
+	border-radius: 0.5rem;
+	border: solid 1px #FF704F;
+}
+.d_nextone{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 6.3rem;
+	margin: 0 0.6rem;
+	background: #ffffff;
+	padding-bottom: 0.6rem;
+}
+.d_nextone p{
+	height: 0.94rem;
+	width: 100%;
+	background: #FF704F;
+	font-size: 0.32rem;
+	color: #ffffff;
+	text-align: center;
+	line-height: 0.94rem;
+	border-radius: 0.5rem;
+}

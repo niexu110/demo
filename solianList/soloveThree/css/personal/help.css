@@ -1,0 +1,9 @@
+body{background: #F3F3F3;}
+.d_banner{background: #FFFFFF;height: 2.66rem;margin: 0 .3rem;margin-top: 1.2rem;}
+.d_banner img{height: 2.08rem;width: 1.9rem;margin-top: .3rem;margin-left: 2.5rem;}
+.d_contentBox{background: #FFFFFF;margin: 0 .3rem;padding-bottom: 2.7rem;}
+.d_contentlist{border-bottom: solid 1px #E6E6E6;margin-left: .3rem;padding-right: .3rem;}
+.d_contenttitle{height: 1rem;}
+.d_contenttitle span{float: left;font-size: .28rem;color: #111111;line-height: 1rem;}
+.d_contenttitle img{float: right;height: .24rem;width: .14rem;margin-top: .38rem;}
+.d_contentlist p{line-height: .46rem;margin-bottom: 0.24rem;}

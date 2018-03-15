@@ -1,0 +1,135 @@
+body{
+    background: #F8F8F8;
+}
+.banner{
+    height: 400px;
+    overflow: hidden;
+}
+.banImg{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    display: none;
+}
+#map{
+    height: 100%;
+}
+.tab{
+   
+    position: relative;
+    margin-top:25px;
+    overflow: hidden;
+}
+.btn{
+    width: 175px;
+    position: relative;
+    height: 235px;
+    margin-top: 90px;
+    background: #F1F1F1;
+}
+.tabBtn{
+ font-size: 20px;
+width: 100%;
+}
+.tabBtn li{
+    position: relative;
+    height: 60px;
+    color: #676767;
+    text-align: center;
+    line-height: 60px;
+    margin-bottom: 12px;
+}
+.about{
+    position: absolute;
+    top:0;
+    color: #444444;
+    left: 0;
+    font-size:24px ;
+    background: #ffffff;
+    width: 175px;
+    height: 70px;
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 70px;
+}
+.item{
+    background: #ffffff;
+    width: 995px;
+    overflow: hidden;
+    padding-top: 85px;
+}
+.item li{
+    display: none;
+}
+.itemHead{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 20px;
+}
+.itemHead1{
+ font-weight: bold;
+    text-align: center;
+font-size: 30px;
+line-height: 30px;
+}
+.contact{
+    font-size: 18px;
+    color: #4F4F4F;
+    width: 550px;
+    margin:145px auto 0;
+    height:420px;
+}
+.contact p{
+    line-height: 32px;
+
+}
+.spacing{
+    word-spacing: 30px;
+}
+.container{
+    margin-bottom: 30px;
+}
+.service{
+    width:875px;
+    font-size: 14px;
+    line-height: 25px;
+    margin: 55px auto 30px;
+
+}
+.item li:nth-child(2) .service{
+    max-height: 600px;
+    overflow-y:scroll ;
+}
+.service p{
+    margin-bottom: 30px;
+}
+.tabBtn .show{
+    background:#FC8A6F;
+    color:#FFFFFF;
+}
+.sanjiao{
+    position: absolute;
+    left:24px ;
+    top:20px;
+    width: 0;
+    display: none;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-left: 10px solid #FFFFFF ;
+    border-bottom: 10px solid transparent;
+}
+.banImg.show{
+    display: block;
+}
+.item .show{
+    display: block;
+}
+.show .sanjiao{
+    display: block;
+}
+.ml{
+margin-left:85px;
+}
+
+

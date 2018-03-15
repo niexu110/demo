@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>测试</title>
+    <style>
+        *{padding:0;margin: 0;}
+        .fixed{position: fixed;top:0; left:0;bottom:0;right:0;background: rgba(50,50,50,.8);display: none;}
+        .boxs{width:800px;height:200px;margin:400px auto;background: #fff;}
+        ul li{list-style: none;}
+        .page span.active{background:#5793dd;color:#fff;}
+        .left{float:left;color:#333;}
+        .right{float: right;background: #f9f9f9;color:#5793dd;  font-weight:bold;}
+        .box{width:800px;height:300px;margin:100px auto; border:1px solid #5793dd; position: relative;}
+        .box ul li{width:100%;height:50px;box-sizing:border-box ;}
+        .content{height:50px;width:800px;margin-top:30px;}
+        .content span,.box ul li span{width:50%;height:50px;line-height: 50px; text-align: center;font-size: 30px;border-bottom:1px solid #efefef;}
+         .p{width:100%;height:30px;line-height: 30px;background:#5793dd;}
+         .p span{width:390px;height:30px;line-height: 30px;color:#fff;font-size:30px;display:inline-block;text-align: center;}
+        .page{width:800px;height:80px; position: absolute; bottom:-80px; left:0; border:1px solid #efefef;}
+        .page span{width:60px;height:60px;border:1px solid #e4393c;border-radius: 10px; text-align: center;line-height: 60px; font-size:50px;float:left;margin:10px 49px;}
+        .btn{width:800px;margin-top:40px; height:50px;line-height: 50px;background: #e4393c;color:#fff;font-size: 40px;text-align: center;}
+    </style>
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+  <div class="box">
+      <p class="p"><span class="name">姓名</span> <span class="age">地址</span></p>
+      <ul>
+      </ul>
+      <div class="page"></div>
+  </div>
+<div class="fixed">
+    <div class="boxs">
+        <p class="p"><span class="name">姓名</span> <span class="age">地址</span></p>
+         <div class="content"></div>
+        <div class="btn">取消</div>
+    </div>
+</div>
+</body>
+<script>
+    var obj=[
+        [
+            {name:"李强",adrr:"东风路80号"},
+            {name:"李强2",adrr:"东风路81号"},
+            {name:"李强3",adrr:"东风路82号"},
+            {name:"李强4",adrr:"东风路83号"},
+            {name:"李强5",adrr:"东风路84号"}
+        ],
+        [
+            {name:"董鹏明",adrr:"文景路30号"},
+            {name:"董鹏明1",adrr:"文景路31号"},
+            {name:"董鹏明2",adrr:"文景路32号"},
+            {name:"董鹏明3",adrr:"文景路33号"},
+            {name:"董鹏明4",adrr:"文景路34号"}
+        ],
+            [
+                {name:"王泽节",adrr:"长安北路30号"},
+                {name:"王泽节1",adrr:"长安北路31号"},
+                {name:"王泽节2",adrr:"长安北路32号"},
+                {name:"王泽节3",adrr:"长安北路33号"},
+                {name:"王泽节4",adrr:"长安北路35号"}
+            ],
+                [
+                    {name:"刘老根",adrr:"长安北路12号"},
+                    {name:"刘老根1",adrr:"长安北路21号"},
+                    {name:"刘老根2",adrr:"长安北路22号"},
+                    {name:"刘老根3",adrr:"长安北路33号"},
+                    {name:"刘老根4",adrr:"长安北路45号"}
+                ],
+                [
+                    {name:"赵四",adrr:"文艺路78号"},
+                    {name:"赵四1",adrr:"长安北路79号"},
+                    {name:"赵四2",adrr:"长安北路76号"},
+                    {name:"赵四3",adrr:"长安北路75号"},
+                    {name:"赵四4",adrr:"长安北路74号"}
+                ]
+    ];
+    $(function(){
+        var stady=0;
+          for(var i=0;i<obj.length;i++){
+              var html="<span>"+(i+1)+"</span>";
+              $(".page").append(html);
+          }
+          $(".page").find("span").eq(0).addClass("active");
+           pages(0,obj,$(".box ul"));
+          $(".page span").on("click",function(e){
+             e.stopPropagation();
+             $(this).addClass("active").siblings(".active").removeClass('active');
+             var index=$(this).index();
+             stady=index;
+              $(".box ul").html("");
+             pages(index,obj,$(".box ul"));
+         });
+        function pages(num,list,self){
+              $.each(list[num],function(i,k){
+                  var html="<li class='item'><span class='left'>"+k.name+"</span> <span class='right'>"+k.adrr+"</span></li>"
+                     self.append(html)
+              })
+            $(".item").click(function(e){
+                e.stopPropagation();
+                var index=$(this).index();
+                $(".fixed").fadeIn(500)
+                $(".content").append("<span class='left'>"+obj[stady][index].name+"</span> <span class='right'>"+obj[stady][index].adrr+"</span>");
+            });
+            $(".btn").click(function(){
+                $(".content").html("");
+                $(".fixed").fadeOut(500)
+            })
+        }
+    })
+</script>
+</html>

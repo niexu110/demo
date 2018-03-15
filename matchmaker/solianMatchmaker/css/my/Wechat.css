@@ -1,0 +1,210 @@
+.nav{
+	width: 7.5rem;
+	height: .88rem;
+	border: 1px solid #e6e6e6;
+}
+.nav span{
+	width: 50%;
+	float: left;
+	text-align: center;
+}
+.nav span i{
+	font-size: .24rem;
+	line-height: .83rem;
+}
+.curr{
+	display: inline-block;
+	color: #ff704f;
+	border-bottom: 1px solid #ff704f;
+}
+.lists{
+	padding-left: .3rem;
+}
+.hide{
+	display: none;
+}
+.list{
+	width: 100%;
+	padding: .3rem .3rem .3rem 0;
+	height: 1.6rem;
+	border-bottom: 1px solid #e6e6e6;
+}
+.list .photo{
+	float: left;
+	width: 1rem;
+	height: 1rem;
+	border-radius: 50%;
+}
+.photo img{
+	width: 100%;
+	border-radius: 50%;
+}
+.list div{
+	width: 5.9rem;
+	float: right;
+	height: 100%;
+	padding-left: .2rem;
+}
+.list div p{
+	width: 100%;
+	color: #111;
+}
+em{
+	font-size: .3rem;
+	color: #111;
+	font-weight: bold;
+}
+i{
+	font-size: .26rem;
+	color: #666;
+}
+.list div{
+	position: relative;
+}
+.look{
+	position: absolute;
+	top: .2rem;
+	right: 0;
+	width: 1.7rem;
+	height: .6rem;
+	text-align: center;
+	line-height: .6rem;
+	color: #ff704f;
+	border: 1px solid #ff704f;
+	border-radius: .3rem;
+	font-size: .24rem;
+}
+.list div b{
+	position: absolute;
+	top: .35rem;
+	right: 0;
+	font-size: .26rem;
+	color: #999;
+	font-weight: normal;
+}
+.list div span{
+	position: absolute;
+	top: .2rem;
+	right: 0;
+	width: 2.7rem;
+	height: .6rem;
+	text-align: center;
+	line-height: .6rem;
+}
+.list div span b{
+	position: absolute;
+	top: 0;
+}
+.list div span a{
+	display: inline-block;
+	width: 1.1rem;
+	height: .6rem;
+	text-align: center;
+	border-radius: .3rem;
+	font-size: .24rem;
+	margin-left: .2rem;
+}
+.list div span a.look{
+	position: absolute;
+	top: 0rem;
+	right: 0;
+	width: 1.7rem;
+	height: .6rem;
+	text-align: center;
+	line-height: .6rem;
+	color: #ff704f;
+	border: 1px solid #ff704f;
+	border-radius: .3rem;
+	font-size: .24rem;
+}
+.yes{
+	color: #ff704f;
+	border: 1px solid #ff704f;
+}
+.no{
+	color: #458eff;
+	border: 1px solid #458eff;
+}
+/*弹框*/
+.boom,.boom1{
+	width: 5.26rem;
+	height: 6.02rem;
+	background: #fff;
+	border-radius: 3px;
+	margin: 0 auto;
+	position: absolute;
+	top: 3rem;
+	left: 1.12rem;
+	text-align: center;
+	display: none;
+}
+.image{
+	width: 100%;
+	height: 2rem;
+	background: url(../../image/img/boomTop.png) no-repeat;
+	background-size: 100% 100%;
+	padding-top: .4rem;
+}
+.image img{
+	width: 1.2rem;
+	height: 1.2rem;
+	display: block;
+	margin:  0 auto;
+	border-radius: 50%;
+}
+s{
+	text-decoration: none;
+}
+.boom span{
+	display: block;
+	margin: .4rem 0 0 0;
+	font-size: .28rem;
+	color: #111;
+}
+.boom p{
+	color: #FF704F;
+	font-size: .32rem;
+	margin: .5rem 0;
+}
+.boom a{
+	font-size: .3rem;
+	padding: .1rem .5rem;
+	background: #ff704f;
+	border-radius: .3rem;
+	color: #fff;
+}
+h6{
+	font-size: .26rem;
+	color: #999;
+	margin-top: .5rem;
+}
+.boom1 .image{
+	background: url(../../image/img/boom.png) no-repeat;
+	width: 100%;
+	height: 2rem;
+	background-size: 100% 100%;
+	text-align: center;
+	line-height: 1.2rem;
+	font-size: .48rem;
+	color: #fff;
+	font-weight: bold;
+}
+.boom1 b{
+	display: block;
+	width: 4rem;
+	text-align: center;
+	margin: .4rem auto;
+	font-size: .4rem;
+	color: #111;
+}
+.boom1 a{
+	display: block;
+	background: linear-gradient(to right,#ff704f,#fd2d63);
+	font-size: .32rem;
+	color: #fff;
+	width: 3rem;
+	height: .88rem;
+	border-radius: .44rem;
+	line-height: .88rem;
+	margin: .4rem auto;
+}

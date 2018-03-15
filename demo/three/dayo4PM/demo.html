@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Three框架</title>
+    <script src="js/three.js"></script>
+
+</head>
+<body >
+<script>
+    var scene=new THREE.Scene();
+    var camera=new THREE.PerspectiveCamera(45,window.innerWidth/window.innerHeight,0.1,1000);
+    var webGLRenderer=new THREE.WebGLRenderer();
+    webGLRenderer.setClearColor(new THREE.Color(0xefefef,1.0));
+    webGLRenderer.setSize(window.innerWidth,window.innerHeight);
+    webGLRenderer.shadowMapEnabled=true;
+    var sphere1=createMesh(new THREE.BoxGeometry(15,15,2),"img/111.png");
+    sphere1.position.y=-1;
+    sphere1.position.x=12;
+    scene.add(sphere1);
+    var floorTex=THREE.ImageUtils.loadTexture("img/112.png");
+    var plane=new THREE.Mesh(new THREE.BoxGeometry(200,100,0.1,30),new THREE.MeshPhongMaterial({
+        map:floorTex
+    }));
+    plane.position.y=-7.5;
+    plane.rotation.x=-0.5*Math.PI;
+    scene.add(plane);
+    camera.position.x=0;
+    camera.position.y=12;
+    camera.position.z=28;
+    camera.lookAt(new THREE.Vector3(0,0,0));
+    var ambiLight=new THREE.AmbientLight(0x242424);
+    scene.add(ambiLight);
+    //设置一个灯泡
+    var light=new THREE.SpotLight();
+    light.position.set(0,30,30);
+    light.intensity=1.5;
+    scene.add(light);
+    document.body.appendChild(webGLRenderer.domElement);
+     var step=0;
+    render();
+    function createMesh(geom,imageFile) {
+        //文理对象
+        var texture=THREE.ImageUtils.loadTexture("./"+imageFile);
+        geom.computeVertexNormals();
+        //材质
+        var mat=new THREE.MeshPhongMaterial();
+        mat.map=texture;
+        //3D物体
+        var mesh=new THREE.Mesh(geom,mat);
+        return mesh;
+    }
+    function render() {
+        requestAnimationFrame(render);
+        webGLRenderer.render(scene,camera);
+    }
+</script>
+</body>
+</html>

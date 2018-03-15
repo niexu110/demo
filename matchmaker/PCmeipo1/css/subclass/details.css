@@ -1,0 +1,10 @@
+.bgF8{background:#F8F8F8;}
+.title-img{width:1200px;height:400px;overflow: hidden;margin-bottom:27px;}
+.text-content{width:1200px;background:#fff;margin-bottom:35px;}
+.title-line{width:1080px;margin:0 auto;color:#A6A6A6;font-size:14px;padding-bottom:5px;border-bottom:1px solid #ECECEC;}
+.title-line a{color:#FE8C73;}
+.text-box{width:1080px;margin:30px auto;}
+.text-box h3{color:#444;font-size:24px;text-align: center;padding-bottom:30px;}
+.date-box span{width:50%;float:left;font-size:14px;color:#939393;}
+.date{text-align: right;}
+.text{text-align: left;color:#6F6F6F;font-size:14px;padding-bottom:50px;}

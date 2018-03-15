@@ -1,0 +1,109 @@
+/*媒婆主页*/
+.matchmaker-star-top{width:100%;height:5.5rem;}
+.matchmaker-title-1{width:6.9rem;height:.9rem;margin:0 auto;}
+.matchmaker-title-1 span{margin-top:.3rem;}
+.matchmaker-title-1 :first-child{border-left:3px solid #333;font-size:.3rem;font-weight:bold;padding-left:.2rem;}
+.matchmaker-friend-looks,.matchmaker-looks{font-size:.28rem;color:#6D6D6D;padding-right:.3rem;background:url("../../solianMatchmaker/image/icons/right-arrow.png") no-repeat right;background-size:.19rem .25rem;}
+.matchmaker-star-main{width:100%;height:4.5rem;overflow-y:hidden;overflow-x: auto;}
+.matchmaker-friend-main{width:100%;height:3.5rem;overflow-y:hidden;overflow-x: auto;}
+.matchmaker-star-ul,.matchmaker-friend-ul{width:11rem;height:100%;padding-left:.3rem;}
+.matchmaker-star-ul li,.matchmaker-friend-ul li{width:2.2rem;height:100%;float:left;text-align: center;}
+.star-img{width:1.8rem;height:1.8rem;border-radius:6px;display: block;margin:.3rem 0 .3rem .2rem;}
+.star-nickName img{width:.22rem;height:.22rem;}
+.star-nickName b{font-size:.26rem;}
+.star-explain{width:1.8rem;height:.6rem;font-size:.24rem;margin:.1rem auto 0;color:#7F7F7F;text-align: left;text-overflow: ellipsis;overflow: hidden;}
+.gzBtn{display: inline-block;margin-top:.2rem;border:1px solid #FF7051;font-size:.26rem;color:#FF7051;padding:.05rem .1rem;border-radius:30px; }
+/*喜糖排行*/
+.candies-box{width:6.9rem;height:4.2rem;border-radius:6px;overflow:hidden;margin:.5rem auto 0;position: relative;  }
+.seniorityOne{position:absolute;width:3.8rem;height:4.2rem;left:0;top:0;overflow: hidden;}
+.candies-img{height:4.2rem;}
+.one-img{position: absolute;top:.3rem;left:.3rem;width:.34rem;}
+.one-bg{position: absolute;bottom:0;left:0;width:3.8rem;}
+.candies-user{position: absolute;bottom:.3rem;left:0;text-align: center;width:3.8rem;}
+.candies-user h1{font-size:.3rem;color:#fff;font-weight: bold;margin-bottom:.05rem;}
+.candies-user p{font-size:.26rem;color:#fff;}
+.candies-user p>img{width:.3rem;display: inline-block;margin-right:.1rem;}
+.seniorityTwo{position:absolute;width:3.1rem;height:2.1rem;overflow: hidden;top:0;right:0;}
+.seniorityThree{position:absolute;width:3.1rem;height:2.1rem;overflow: hidden;bottom:0;right:0;}
+.two-bg{position: absolute;top:.2rem;left:.2rem;width:.3rem;}
+.candies-two-img{width:3.1rem;}
+.candies-two-user{position: absolute;bottom:.2rem;left:0;text-align: center;width:3.1rem;}
+.candies-two-user h1{font-size:.24rem;color:#fff;font-weight: bold;margin-bottom:.05rem;}
+.candies-two-user p{font-size:.2rem;color:#fff;}
+.candies-two-user p>img{width:.24rem;display: inline-block;margin-right:.05rem;}
+/*高人气单身*/
+.matchmaker-singe-content{width:7.5rem;height:auto; }
+.matchmaker-singe-box{width:6.9rem;height:10rem;margin:0 auto ;}
+.matchmaker-singe-item{float: left;width:3.3rem;height:auto;position: relative;margin-top:.4rem;overflow: hidden;border-radius:6px;  }
+.sexA{display: inline-block;width:.6rem;height:.3rem;line-height:.3rem;font-size:.16rem;color:#fff;background:url(../image/icon/boy.png) no-repeat .05rem #4E9CFB;background-size:.15rem;padding-left:.25rem;font-weight: 100;margin-left:.1rem;  }
+.sexB{display: inline-block;width:.6rem;height:.3rem;line-height:.3rem;font-size:.16rem;color:#fff;background:url(../image/icon/girl.png) no-repeat .05rem #FC8CA7;background-size:.15rem;padding-left:.25rem;font-weight: 100;margin-left:.1rem; }
+.cityA{color:#fff;font-size:.26rem;padding:.05rem .1rem;position: absolute;top:.14rem;left:0;background:url(../image/icon/blue.png) no-repeat left;background-size:100%;}
+.cityB{color:#fff;font-size:.26rem;padding:.05rem .1rem;position: absolute;top:.14rem;left:0;background:url(../image/icon/zi.png) no-repeat left;background-size:100%;}
+.singe-user{width:3.3rem;}
+.hot{width:.52rem;position: absolute;top:0;right:0;}
+.matchmaker-singe-item:nth-of-type(odd){ margin-right:.3rem;}
+.matchmaker-singe-item h1{font-size:.28rem;color:#111;font-weight: bold;margin-top:.2rem;}
+.matchmaker-singe-item p{font-size:.24rem;color:#666;margin-top:.1rem;}
+.jump-url{width:7.5rem;}
+/*好友媒婆*/
+.view-banner{width:100%;height:3rem;}
+.view-banner img{width:100%;height:3rem;}
+.matchmaker-DR{width:100%;height:1rem;background:linear-gradient(to right,#FF6D51,#FD3163);color:#fff; position: relative;}
+.matchmaker-DR h4{font-size: .28rem;padding:.1rem 0 .1rem .3rem;}
+.matchmaker-DR p{font-size:.24rem;padding-left:.3rem;}
+.matchmaker-close{position: absolute;right:.3rem;top:.3rem;width:.2rem;height:.2rem;}
+.matchmaker-friend-none{width:100%;height:2.4rem; display: none;}
+.matchmaker-friend-1{width:6.9rem;height:1.8rem;margin:.3rem .3rem;background:linear-gradient(to right,#FF6D51,#FD3163);border-radius:6px;position: relative; }
+.matchmaker-friend-1>p{font-size:.48rem;color:#fff;padding-top:.6rem;padding-left:.4rem;}
+.matchmaker-friend-img{width:.8rem;height:.8rem;position: absolute;top:.5rem;right:.5rem;}
+.matchmaker-friend-content{width:7.5rem;height:6.4rem;}
+.matchmaker-friend-box{width:100%;height:3.6rem;overflow-x:auto;overflow-y: hidden; }
+
+.matchmaker-friend-btn{width:3.4rem;height:.8rem;line-height: .8rem;background:linear-gradient(to right,#FF6D51,#FD3163);color:#fff;font-size:.3rem;text-align:center;border-radius: 30px;margin:.5rem auto;}
+/*媒婆推荐*/
+.matchmaker-nominate-content{width:7.2rem;height:auto;margin-left:.3rem;}
+.matchmaker-title-2{width:100%;height:.9rem;}
+.matchmaker-title-2 span{border-left:3px solid #333;font-size:.3rem;font-weight:bold;padding-left:.2rem;margin-top:.3rem;}
+.matchmaker-nominate-box{width:100%;height:3.8rem;border-bottom: 1px solid #F4F4F4;}
+div .box2{height:5.1rem;}
+.matchmaker-nominate-user{width:6.9rem;height:1.8rem;position: relative;}
+.matchmaker-nominate-user>img{width:.8rem;height:.8rem;border-radius:50%;margin-top:.5rem;}
+.matchmaker-nominate-msg{margin-top:.5rem;margin-left:.3rem;font-size: .28rem;}
+.matchmaker-nominate-msg h1,.matchmaker-nominate-msg p{font-weight:bold;padding-bottom:.05rem;}
+.matchmaker-nominate-msg p>span,.matchmaker-nominate-msg h2>span{padding-left:.2rem;}
+.matchmaker-nominate-msg h2{color:#999;font-size:.24rem;}
+.matchmaker-nominate-number{font-size:.26rem;color:#FF7454;position: absolute;top:.5rem;right:0;padding-right:.3rem;background:url("../../solianMatchmaker/image/icons/right-arrow.png") no-repeat right;background-size:.19rem .25rem; }
+.mold{width:5.7rem;height:2rem;margin-left:1.1rem;margin-top:.1rem;}
+div.moldA{height:1.5rem;overflow: hidden;}
+.moldA img{width:1.5rem;height:1.5rem;border-radius:4px;margin-right:.3rem;}
+.moldB img{width:1.5rem;height:1.5rem;border-radius:4px;margin-right:.1rem;}
+.moldC img{width:2.8rem;height:2.8rem;border-radius:4px; }
+/* 单身团样式*/
+.single-title{width:100%;height:2.25rem;background:linear-gradient(to right,#498DFF,#01B9FF);border-radius: 6px;margin-top:.2rem;color:#fff;position: relative;}
+.single-title h2{font-size: .58rem;padding-top:.35rem;padding-left:.54rem;}
+.single-title p{font-size:.32rem;padding-left:.5rem;padding-top:.35rem; }
+.single-fx{position: absolute;right:.5rem;top:.7rem;width:.88rem;height:.9rem;}
+.single-apply{width:100%;height:2rem;}
+.single-apply p{width:100%;height:1rem;border-bottom:1px solid #EAEAEA;}
+.single-apply a{display:block;width:6.9rem;margin:0 auto;height:1rem;line-height:1rem;font-size:.3rem;color:#333;
+                 font-weight:bold;background:url("../../solianMatchmaker/image/icons/right-arrow.png")no-repeat right;background-size:.19rem .3rem; }
+.single-main{width:7.5rem;height:auto;}
+.single-main-sex{width:100%;height:1rem;border-bottom: 1px solid #F3F3F3;}
+.sex-line{border-right: 1px solid #F3F3F3;}
+.single-main-sex div{width:50%;height:1rem;line-height:1rem;text-align: center;color:#999;}
+.single-main-sex div span{display: inline-block;height:100%;padding:0 .2rem;font-size:.28rem; }
+.single-main-sex div.active span{border-bottom: 1px solid #FF7051;color:#FF7051;}
+.women-box,.man-box{width:6.9rem;height:auto;margin:0 auto;}
+.man-box{display:none;}
+.single-main-item-0{width:6.9rem;height:auto;color:#C1C1C1;margin:0 auto;}
+.single-main-item-0>img{width:2.6rem;height:2.3rem;display: block;margin:.3rem auto;}
+.single-main-item-0 p{text-align: center;font-size: .28rem;}
+.btnSingle{width:3.6rem;height:.8rem;line-height: .8rem;margin:.4rem auto;background:linear-gradient(to right,#498DFF,#01B9FF);color:#fff;font-size: .32rem;text-align: center;border-radius:30px;}
+.single-main-item-1{width:6.9rem;height:auto;margin:0 auto;}
+.single-main-itemList{width:100%;height:1.6rem;}
+.single-user{width:auto;height:1rem;margin-top:.3rem;}
+.single-user span{margin-left:.3rem;}
+.single-userImg{width:1rem;height:1rem;border-radius:50%;}
+.single-userMsg b{font-size:.3rem;margin:.07rem 0;display: block;}
+.single-userMsg p{font-size:.24rem;color:#858585;}
+.single-tj{width:1.4rem;height:.5rem;line-height:.5rem;font-size:.26rem;margin-top:.55rem;border:1px solid #FFA692;color:#FFA692;border-radius:6px;text-align: center; }

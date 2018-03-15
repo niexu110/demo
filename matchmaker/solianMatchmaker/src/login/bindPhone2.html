@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>绑定手机号</title>
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="expires" content="-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../css/common.css">
+    <script src="../../js/jquery-2.1.4.min.js"></script>
+    <script src="../../js/common.js"></script>
+    <style>
+        input::-webkit-input-placeholder{color:#ff704f;}
+        .phoneBox{width:100%;height:1.6rem;border-bottom:1px solid #E8E8E8;position: relative;}
+        .bgImg{height:2.2rem;display: block;margin:0 auto;}
+        .phoneBox>span,.phoneBox>i{font-size:.32rem;color:#FF7051;margin-top:.8rem;margin-right:.2rem; }
+        .phoneBox>input,.phoneBox>em{font-size:.32rem;color:#111;margin-top:.8rem;width:4rem;}
+        .phoneSuc,.phoneSuc2{position: absolute;right:0; top:.6rem;width:.4rem;height:auto;display: none;}
+        #codeBtn{position: absolute;right:0;bottom:.3rem;padding:.1rem .2rem;border:1px solid #8E8E8E;color:#8E8E8E;border-radius:20px;}
+        #btnForm{width:100%;height:.95rem;line-height:.95rem;text-align:center;color:#fff;background:#ff704f;font-size:.32rem;border-radius:20px;}
+        .point{width:3rem;height:.8rem;line-height:.8rem;color:#fff;background:rgba(0,0,0,.8);font-size:.3rem;text-align: center;margin:.5rem auto;display:none;}
+        p{color:#999;font-size:.3rem;padding:.4rem 0;}
+    </style>
+</head>
+<body>
+<div class="view">
+    <img src="../../image/img/bindimg.png" class="bgImg">
+    <div class="container">
+      <form action="" id="formData" method="post">
+          <div class="phoneBox">
+              <input type="text" placeholder="请输入您的手机号" maxlength="11" name="phone" class="phoneInt lt">
+              <img src="../../image/icons/true.png" class="phoneSuc" />
+          </div>
+          <div class="phoneBox">
+              <input type="text" placeholder="请输出验证码" maxlength="4" name="code" class="lt">
+              <div id="codeBtn">发送验证码</div>
+          </div>
+          <div class="phoneBox">
+              <input type="password" placeholder="请输出6-16位密码" minlength="11" maxlength="16" name="password" class="psdInt lt">
+              <img src="../../image/icons/true.png" class="phoneSuc2" />
+          </div>
+          <p >设置密码后可使用手机号和密码登陆</p>
+          <div id="btnForm">绑定</div>
+      </form>
+    </div>
+    <div class="point">手机号有误</div>
+</div>
+</body>
+<script >
+    $(function(){
+        var isOpen=false,point=$(".point"),isOk=false;
+        var psd=/^([!-~]){6,18}$/;
+        var time=60,code=null;
+        var reg = /^1[3|5|8|7][0-9]{9}$/;
+        $(".psdInt").blur(function(){
+            if(psd.test($(this).val())){
+                $(".phoneSuc2").show();
+
+            }else{
+                $(".phoneSuc2").hide();
+                show("密码格式错误");
+            }
+        });
+        $(".phoneInt").blur(function(){
+            if(reg.test($(this).val())){
+                $(".phoneSuc").show();
+                isOpen=true;
+            }else{
+                $(".phoneSuc").hide();
+                show("手机号有误");
+                isOpen=false;
+            }
+        });
+        $("#codeBtn").click(function(){
+            if(isOpen){
+                isOpen=false;
+                var timer=setInterval(function(){
+                    time--;
+                    if(time<=0){
+                        time=60;  clearInterval(timer);   isOpen=true;
+                        $("#codeBtn").text("发送验证码").removeAttr("style");
+                    }else{
+                        $("#codeBtn").text(time+" s").css({color:"#FF7C5D",border:"1px solid #FF7C5D",padding:".1rem .4rem"});isOpen=false;code=1111;
+                    }
+                },1000)
+            }
+        });
+        $("#btnForm").click(function(){
+            if(code!=null&&reg.test($(".phoneInt").val())&&psd.test($(".psdInt").val())){
+                    $("#formData").submit();
+            }else{
+                show("填写信息不全")
+            }
+        })
+        function show(text){
+            point.show().html(text);
+            setTimeout(function(){ point.hide()},2000)
+        }
+    });
+</script>
+</html>

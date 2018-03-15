@@ -1,0 +1,76 @@
+#header span{
+	float: right;
+	padding-right: 0.3rem;
+	font-size: 0.3rem;
+	color: #FF704F;
+	font-weight: normal;
+}
+#header em{
+	margin: 0;
+}
+.d_text{
+	height: 5.18rem;
+	width: 6.9rem;
+	margin: 0 auto;
+	margin-top: 1.2rem;
+	position: relative;
+}
+.d_text textarea{
+	height: 5.18rem;
+	width: 6.9rem;
+	padding: 0.3rem;
+	border: solid 1px #E6E6E6;
+	border-radius: 0.06rem;
+	font-size: 0.28rem;
+	color: #111111;
+	line-height: 0.5rem;
+}
+.d_text p{
+	position: absolute;
+	bottom: 0.3rem;
+	right: 0.3rem;
+	font-size: 0.28rem;
+	color: #CCCCCC;
+}
+/*上传图片*/
+.d_photo ul li{
+	float: left;
+	height:1.8rem;
+	width:1.8rem;
+	position: relative;
+	overflow: hidden;
+	margin-top: 0.3rem;
+	margin-left: 0.3rem;
+	border: solid 1px #FF704F;
+	border-radius: 0.06rem;
+}
+.d_firstphoto{
+	float: left;
+	height:1.8rem;
+	width:1.8rem;
+	margin-left: 0.3rem;
+	margin-top: 0.3rem;
+}
+.d_photo li img{
+	width:1.8rem;
+	height:1.8rem;
+}
+.d_setimg{
+	float: left;
+	position: relative;
+	height:1.8rem;
+	width: 1.8rem;
+	margin-right: 0.2rem;
+}
+#d_btn{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height:1.8rem;
+	width: 1.8rem;
+	margin-left: 0.3rem;
+	margin-top: 0.3rem;
+	z-index: 2;
+	filter:alpha(opacity:0);
+	opacity: 0;
+}

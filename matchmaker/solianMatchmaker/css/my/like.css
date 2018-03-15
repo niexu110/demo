@@ -1,0 +1,18 @@
+.d_nav{
+	height:0.88rem;
+	border-bottom: solid 1px #E6E6E6;
+	position: fixed;
+	top: 0.9rem;
+	left: 0;
+}
+.d_nav .d_navli{color: #FF6F4F;border-bottom: solid 1px #FF6F4F;}
+.d_nav li{float: left;line-height: 0.88rem; margin: 0 0.65rem;font-size: 0.3rem;color: #111111;}
+.d_keys{margin-top: 1.8rem;}
+.d_boxson{height: 1.6rem;border-bottom: solid 1px #E6E6E6;padding-top:0.3rem;padding-right: 0.3rem;margin-left: 0.3rem;}
+.d_headimg{float: left; height: 1.0rem;width: 1.0rem;border-radius: 50%;margin-right: 0.3rem;}
+.d_content{float: left;}
+.d_content p{line-height: 0.62rem;font-size: 0.3rem;color: #111111;font-weight: bold;}
+.d_content div span{display: inline-block;font-size: 0.26rem;color: #666666;margin-right: 0.2rem;}
+.d_zanwu{margin-top:4rem;font-size:.3rem;color:#999;text-align: center;}
+.d_zanwu img{width:4rem;}
+.d_zanwu p{width:100%;margin-top:.5rem;}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>基本资料</title>
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="expires" content="-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <link rel="stylesheet" href="../../css/reset.css"/>
+    <link rel="stylesheet" href="../../css/mui.min.css">
+    <link href="../../css/mui.picker.css" rel="stylesheet" />
+    <link href="../../css/mui.poppicker.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="../../css/login/prefect.css">
+    <link rel="stylesheet" href="https://cache.amap.com/lbs/static/main1119.css"/>
+    <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.3&key=55dd1443993bcb3128897c2d7b20829d&plugin=AMap.Geocoder"></script>
+    <script type="text/javascript" src="https://cache.amap.com/lbs/static/addToolbar.js"></script>
+    <script type="text/javascript" src="../../js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src='../../js/MD5.js'></script>
+    <script type="text/javascript" src='../../js/ajaxHttp.js'></script>
+    <script>
+        document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px';
+    </script>
+</head>
+<body onload="regeocoder()">
+<div class="bomb">
+    <img src="../../img/icon/h_bombClose.png" alt="" />
+    <p>不能为空</p>
+</div>
+<!-- 头部 -->
+<div class="headTop">
+    <img src="../../img/d_csbg.png" class="imgs">
+    <div class="prefect"> <a href="../../index.html" class="pull-left" style="margin-left:0.4rem;">
+        <img src="../../img/icon/x_leftWhite_icon.png" class="IMG"></a>
+        基本资料
+    </div>
+    <!--<div class="prefect_upImg">
+        <img src="../../img/icon/d_head.png" id="IMGUp">
+    </div>-->
+</div>
+<form method="post" id="formData">
+  <div class="prefect_box">
+      <span >昵称</span><input type="text" placeholder="请填写昵称2-7字符" minlength="2" maxlength="7" id="user">
+  </div>
+    <div class="prefect_box">
+        <span >性别</span>
+        <select name="sex" id="select">
+            <option value="1">男</option>
+            <option value="2">女</option>
+        </select>
+    </div>
+    <div class="prefect_box">
+        <span >生日</span>
+        <div class="prefectData"><em>请选择生日</em> <input type="date" value="" name="date" id="dates">
+        </div>
+    </div>
+	<div class="prefect_box" id='showCityPicker'>
+		<span >地区</span> <em id="cityResult">点击选择城市</em>
+	</div>
+    <div class="prefect_box d_youheight">
+        <span >身高</span><input type="text" disabled='disabled' placeholder="点击选择身高" id="d_inp5">
+    </div>
+    <div class="prefect_box d_youmarry">
+        <span >身份</span><input type="text" disabled='disabled' placeholder="点击选择身份" id="d_inp6">
+    </div>
+    <div class="prefect_box d_youincome">
+        <span >收入</span><input type="text" disabled='disabled' placeholder="点击选择收入" id="d_inp7">
+    </div>
+	<h2>注:性别和日期选定后不可修改</h2>
+	<button type="button" class="mui-btn-blue mui-btn btn" id="btns"> 下一步</button>
+</form>
+<div class="d_box">
+	<ul class="d_height">
+	</ul>
+	<ul class="d_marry">
+	</ul>
+	<ul class="d_income">
+	</ul>
+</div>
+<div id="container" style="display: none;"></div>
+<div id="tip" style="display: none;">
+    <span id="result"></span>
+</div>
+<script src="../../js/find/mui.min.js"></script>
+<script src="../../js/find/mui.picker.js"></script>
+<script src="../../js/find/mui.poppicker.js"></script>
+<script src="../../js/find/city.data.js" type="text/javascript" charset="utf-8"></script>
+<script src="../../js/find/city.data-3.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="../../js/login/prefect.js"></script>
+</body>
+<script type="text/javascript">
+    var map = new AMap.Map("container", {
+        resizeEnable: true,
+		zoom: 18
+    }),    
+    lnglatXY = [localStorage.getItem('x'),localStorage.getItem('y')]; //已知点坐标
+    function regeocoder() {  //逆地理编码
+        var geocoder = new AMap.Geocoder({
+            radius: 1000,
+            extensions: "all"
+        });        
+        geocoder.getAddress(lnglatXY, function(status, result) {
+            if (status === 'complete' && result.info === 'OK') {
+                geocoder_CallBack(result);
+            }
+        });        
+        var marker = new AMap.Marker({  //加点
+            map: map,
+            position: lnglatXY
+        });
+        map.setFitView();
+    }
+    function geocoder_CallBack(data) {
+        var address = data.regeocode.formattedAddress; //返回地址描述
+        var address=address.split("市")[0];
+        address=address.split("省");
+        var d_add=address[0]+"-"+address[1]
+        $("#cityResult").text(d_add)
+        userList.city=$("#cityResult").text();
+    }
+</script>
+</html>

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>搜恋网</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <link rel="icon" type="images/x-icon" href="image/icon/sl.ico">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script type="text/javascript" src="require.js"  ></script>
+    <script type="text/javascript" src="js/config.js"></script>
+</head>
+<script>
+    function IsPC() {
+        var userAgentInfo = navigator.userAgent;
+        var Agents = ["Android", "iPhone",
+            "SymbianOS", "Windows Phone",
+            "iPad", "iPod"];
+        var flag = true;
+        for (var v = 0; v < Agents.length; v++) {
+            if (userAgentInfo.indexOf(Agents[v]) > 0) {
+                flag = false;
+                break;
+            }
+        }
+        if(flag){
+            return;
+        }else{
+            window.location.href="https://m.solian.cc";
+        }
+    }
+    IsPC();
+</script>
+<body>
+<div id="header">
+    <div class="container">
+        <div class="header-left lt">
+            <img src="image/icon/icon.png" class="mt20">
+            <img src="image/icon/logo.png" class="mt20 mL10">
+        </div>
+        <div class="header-middle lt">
+            <ul class="sl-ul">
+                <li class="mt20 actives li"><a href="#">首页</a></li>
+                <li class="mt20 li"><a href="#main">特色约会</a></li>
+                <li class="mt20"><a href="src/vipIndex.html">牵缘计划</a></li>
+                <li class="mt20"><a href="src/aboutUS.html">关于我们</a></li>
+                <li class="mt20"><a href="src/server.html">服务条款</a></li>
+            </ul>
+        </div>
+        <div class="header-right lt">
+            <p  class="mt20 rt userMsg">
+                <span class="sl-user">欢迎你,执着的承诺</span>
+                <span class="quit pL30">退出</span>
+            </p>
+        </div>
+    </div>
+</div>
+<div class="top-bg">
+    <img src="image/background_banner.png" class="bgImg">
+    <div class="main-content">
+        <div class="rt main-login">
+            <!--MP4-->
+            <div id="indexMP4">
+                <video src="solian.mp4"  width="550" height="400" id="video"  controls="controls">
+                    您的浏览器暂不支持MP4播放
+                </video>
+            </div>
+            <div class="form-login rt">
+                <div class="codeImg">
+                    <img src="image/bigIOS.png">
+                </div>
+                <div class="qrCode">
+                    <span class="lt IOS pL50" title="image/bigIOS.png">IOS端下载</span>
+                    <span class="lt android pL50" title="image/bigAndroid.png">安卓端下载</span>
+                    <span class="rt echat pL50" title="image/bigPublic.png">微信公众号</span>
+                </div>
+                <!--登陆-->
+                <form  method="post" id="loginForm" class="mt50">
+                    <div class="form-div line">
+                        <p class="pL20 phoneText mt20">用户名&nbsp;&nbsp;Admin</p>
+                        <div class="phone mt20">
+                            <input type="text" placeholder="请输入您的手机号" value="" name="phone"  maxlength="11"/>
+                        </div>
+                    </div>
+                    <div class="form-div line">
+                        <p class="pL20 phonePsd mt20">密码&nbsp;&nbsp;PassWord</p>
+                        <div class="phone mt20">
+                            <input type="password" placeholder="请输入密码" value="" name="psd"  minlength="6" maxlength="18"/>
+                        </div>
+                    </div>
+                     <p class="hint pL30">请输入您的手机号</p>
+                    <div  id="loginBtn">确定</div>
+                    <p class="jump">
+                        <span class="lt">还没有搜恋账号?<b class="register">立刻注册</b></span>
+                        <span class="rt forget">忘记密码？</span>
+                    </p>
+                </form>
+                <!--注册-->
+                <form action="" method="post" id="registerForm" class="mt50">
+                    <div class="form-div line">
+                        <p class="pL20 userText mt10">昵称&nbsp;&nbsp;Name <span class="rt login">已是会员,立即<b class="jump-login">登录</b></span></p>
+                        <div class="phone mt10">
+                            <input type="text" placeholder="请输入您的昵称" value="" name="registerUser"  maxlength="8" />
+                        </div>
+                    </div>
+                    <div class="form-div">
+                        <p class="pL20 birthday mt10">生日&nbsp;&nbsp;Birthday</p>
+                        <div class="phone mt10">
+                            <div class="register-date">
+                               <div class="lt box">
+                                    <div class="year-box">
+                                        <ul scroll="no"></ul>
+                                    </div>
+                                   <p class="date-year">请选择</p>年
+                               </div>
+                               <div class="lt box">
+                                   <div class="mouth-box">
+                                       <ul scroll="no"></ul>
+                                   </div>
+                                   <p class="date-mouth">请选择</p>月</div>
+                               <div class="date-p lt box">
+                                   <div class="day-box">
+                                       <ul scroll="no"></ul>
+                                   </div>
+                                   <p class="date-day">请选择</p>日</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-div">
+                        <p class="pL20 sexList mt20">性别&nbsp;&nbsp;Gender </p>
+                        <div class="registerSex mt20">
+                            <div class="sexMan" title="1"><span class=" boy" ></span><b class="lt">男</b></div>
+                            <div class="sexWoman" title="2"><span ></span><b class="lt">女</b></div>
+                        </div>
+                    </div>
+                    <p class="hint pL30" style=" margin:5px auto;">请输入您的手机号/搜恋号/密码</p>
+                    <div  id="stepBtn" style="margin:5px auto;">下一步</div>
+                </form>
+                <!--注册2-->
+                <form action="" method="post" id="registerForm2" class="mt10">
+                    <div class="form-div line">
+                        <p class="pL20 residence mt10">常驻地&nbsp;&nbsp;Residence<span class="rt">已是会员,立即<b class="jump-login2">登录</b></span> </p>
+                        <div class="phone mt10">
+                            <div class="address">
+                                <span>请选择您的常住址</span>
+                                <div class="district">
+                                    <ul class="province" scroll="no"></ul>
+                                    <ul class="city" scroll="no"></ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-div line">
+                        <p class="pL20 heights mt10">身高&nbsp;&nbsp;Height </p>
+                        <div class="phone mt10">
+                            <div class="height">
+                                <span>请选择您的身高</span>
+                                <div class="height-list">
+                                     <ul scroll="no" ></ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-div line">
+                        <p class="pL20 school mt10">收入&nbsp;&nbsp;Education </p>
+                        <div class="phone mt10">
+                            <div class="schooling">
+                                <span>请选择您的收入</span>
+                                <div class="school-box">
+                                    <ul scroll="no"></ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-div">
+                        <p class="pL20 marriage mt20">婚史&nbsp;&nbsp;Marry </p>
+                        <div class="registerSex2 mt20">
+                            <div class="sexMan" title="1"><span class=" boy" ></span><b class="lt">单身</b></div>
+                            <div class="sexWoman" title="2"><span ></span><b class="lt">已婚</b></div>
+                            <div class="sexWoman" title="3"><span ></span><b class="lt">情侣</b></div>
+                        </div>
+                    </div>
+                    <p class="hint pL30" style=" margin:5px auto;display: block;">请输入您的手机号/搜恋号/密码</p>
+                    <div  id="stepBtn2" style="margin:5px auto;">下一步</div>
+                </form>
+                <!--注册3-->
+                <form action="" method="post" id="registerForms" class="mt10">
+                    <div class="form-div line">
+                        <p class="pL20 phoneText mt20">手机注册&nbsp;&nbsp;Phone</p>
+                        <div class="phone mt20">
+                            <input type="text" placeholder="请输入您的手机号" value="" name="registerP"  maxlength="11" />
+                            <span id="codes" title="2">发送验证</span>
+                        </div>
+                    </div>
+                    <div class="form-div line">
+                        <p class="pL20 phoneCode mt20">验证码&nbsp;&nbsp;Code</p>
+                        <div class="phone mt20">
+                            <input type="text" placeholder="请输入您的验证码" value="" name="registerCode" maxlength="6"/>
+                        </div>
+                    </div>
+                    <div class="form-div line">
+                        <p class="pL20 phonePsd mt20">新密码&nbsp;&nbsp;New PassWord</p>
+                        <div class="phone mt20">
+                            <input type="password" placeholder="请输入新密码" value="" name="registerPsd" maxlength="18" minlength="6"/>
+                        </div>
+                    </div>
+                    <p class="hint pL30">请输入您的手机号</p>
+                    <div  id="registerBtn">确定</div>
+                    <p class="protocol"><span class="lt">已是会员,立即&nbsp;<b class="jump-DL">登录</b></span><span class="rt peruse pL20">我已阅读并同意</span></p>
+                    <p class="protocol-text clear">《搜恋网用户协议》</p>
+                </form>
+                <!--找回密码-->
+                <form action="" method="post" id="modifyForm" class="mt50">
+                     <div class="form-div">
+                         <p class="pL20 phoneText mt20">手机注册&nbsp;&nbsp;Phone<span class="rt">已是会员,立即<b class="jump-logins">登录</b></span></p>
+                         <div class="phone mt20">
+                             <input type="text" placeholder="请输入您的手机号" value=""  name="retrievePhone"  maxlength="11" />
+                              <span id="code" title="1">发送验证</span>
+                         </div>
+                     </div>
+                     <div class="form-div">
+                         <p class="pL20 phoneCode mt20">验证码&nbsp;&nbsp;Code</p>
+                         <div class="phone mt20">
+                             <input type="text" placeholder="请输入您的验证码" value="" name="retrieveCode" maxlength="6"/>
+                         </div>
+                     </div>
+                     <div class="form-div">
+                         <p class="pL20 phonePsd mt20">新密码&nbsp;&nbsp;New PassWord</p>
+                         <div class="phone mt20">
+                             <input type="password" placeholder="请输入新密码" value="" name="retrievePsd" maxlength="18" minlength="6"/>
+                         </div>
+                     </div>
+                         <p class="hint pL30">请输入您的手机号/搜恋号/密码</p>
+                       <div  id="btn">确定</div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="main">
+    <div class="main-title">
+       <div class="title-list">
+           <div class="list">
+               <img src="image/qianghb.png" alt="">
+               <p>土豪用户多多&nbsp;红包抢到手软</p>
+           </div>
+           <div class="list">
+               <img src="image/jingpYH.png" alt="">
+               <p>精品场景约会&nbsp;约会停不下来</p>
+           </div>
+           <div class="list">
+               <img src="image/tuodan.png" alt="">
+               <p>精准单身用户&nbsp;免费帮您脱单</p>
+           </div>
+       </div>
+    </div>
+    <div class="single-box ">
+        <div class="single-title pt50 pL40">
+        	<i class="caption">Single date</i>
+                	&nbsp;&nbsp;单人约会
+            <img src="image/single.png" class="single-icon">
+        </div>
+        <div class="single-content ">
+            <div class="single-content-left lt">
+                <img src="image/single2.png" class="image">
+            </div>
+            <div class="single-content-right lt">
+                <div class="single-content-right-box">
+                    <div class="single-p">
+                        <span class="lt mt20">同城异性邂逅,浪漫</span>
+                        <img src="image/yuehuei.png" class="lt pL10" >
+                        <img src="image/leftblue.png" class="rt mt10">
+                    </div>
+                    <p class="clear mt30">精准配对,一款解决你单身需求的交友软件。约吃饭,约电影,约K歌,约旅行!直接去约会！单身异性交友,
+                        全面解决和谁约,怎么约,去哪约的个人问题！</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mission-box ">
+        <div class="single-title pt30 pR60">
+        	<i class="captions">Group dating</i>
+            			&nbsp;&nbsp;团体约会
+            <img src="image/mission.png" class="single-icon">
+        </div>
+        <div class="single-content ">
+            <div class="single-content-left rt">
+                <img src="image/mission2.png" class="image">
+            </div>
+            <div class="single-content-right rt">
+                <div class="mission-content-right-box">
+                    <div class="single-p">
+                        <img src="image/right.png" class="lt mt10">
+                        <img src="image/yuehueiMission.png" class="rt pL10" >
+                        <span class="rt mt20">需要有个时间,大家</span>
+                    </div>
+                    <p class="clear mt30 mission-p">团体约会推荐,包括真是高品质的"搜恋网"&nbsp;光方推荐出的团约活动,
+                        亦有海量个人发起团约活动。让你体验个性时尚的热恋交友和团体约会方式！</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="leading-edge ">
+        <div class="single-title pt30 pR60"></div>
+        <div class="single-content ">
+            <div class="single-content-left lt">
+                <img src="image/qianyuan.png" class="image">
+            </div>
+            <div class="single-content-right lt">
+                <div class="single-content-right-box">
+                    <div class="single-p">
+                        <span class="lt mt20">爱情保鲜,</span>
+                        <img src="image/hybz.png" class="lt pL10" >
+                        <img src="image/qyileft.png" class="rt mt10">
+                    </div>
+                    <p class="clear mt30">
+                        这里是姻缘的天地,这里是幸福的寻觅。仅需缴纳单身保证金，即可开通会员专享！
+                        相约你我,免费相亲，走进"牵缘计划"大队之列，早日让你成功脱单！
+                    </p>
+                    <div class="qyBtn">
+                         加入牵缘计划
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="feet">
+        <div class="info">
+            <dl>
+                <dt>特色服务</dt>
+                <dd><a href="index.html">搜恋首页</a></dd>
+                <dd><a href="#main">特色约会</a></dd>
+                <dd><a href="src/vipIndex.html">牵缘计划</a></dd>
+            </dl>
+            <dl>
+                <dt>关于我们</dt>
+                <dd><a href="src/aboutUS.html">公司介绍</a></dd>
+                <dd><a href="src/server.html">服务条款</a></dd>
+                <dd><a href="src/aboutUS.html?1">联系我们</a></dd>
+            </dl>
+            <dl>
+                <dt>商业合作</dt>
+                <dd><a href="http://www.xiaojukeji.com" target="_blank">滴滴打车</a></dd>
+                <dd><a href="http://www.dtxs.cn/" target="_blank" >大唐西市</a></dd>
+                <dd><a href="http://www.toutiao.com" target="_blank">今日头条</a></dd>
+            </dl>
+        </div>
+        <div class="download">
+            <p>
+                <img src="image/ioscode.png"/>
+                <span>iOS客户端二维码</span>
+            </p>
+            <p class="center">
+                <img src="image/androidcode.png"/>
+                <span>安卓客户端二维码</span>
+            </p>
+            <p>
+                <img src="image/weixincode.png"/>
+                <span>微信公众号二维码</span>
+            </p>
+        </div>
+    </div>
+    <div class="enroll">
+        <p>Copyright  2017, solian.cc 2017-2018 All Right Reserved.搜恋网</p>
+        <p class="second"><span class="one">陕ICP备20170808号-1</span><span class="two">陕ICP证201766号</span></p>
+    </div>
+</div>
+<script type="text/javascript" src="js/index/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+.d_top{
+	margin-top: 1.2rem;
+	margin-left: 0.3rem;
+	height: 2.7rem;
+	width: 6.9rem;
+	background: #25a2ff;
+	border-radius: 0.06rem;
+}
+.d_top>div{
+	float: left;
+	margin-left: 0.3rem;
+	width: 3.15rem;
+}
+.d_title{
+	line-height: 1.5rem;
+	font-size: 0.34rem;
+	color: #FFFFFF;
+}
+.d_nowbill,.d_yue{
+	font-size: 0.6rem;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.d_nowbill span,.d_yue span{
+	font-size: 0.36rem;
+}
+.d_tis{
+	margin-left: 0.3rem;
+	line-height: 0.9rem;
+	font-size: 0.24rem;
+	color: #488CFF;
+}
+.d_billmoney{
+	margin-left: 0.3rem;
+	font-size: 0.32rem;
+	color: #666666;
+}
+.d_money{
+	margin: 0.3rem;
+	height: 0.9rem;
+}
+.d_money input{
+	float: left;
+	height: 0.88rem;
+	width: 4.7rem;
+	border: solid 1px #E6E6E6;
+	border-radius: 0.06rem;
+	padding-left: 0.3rem;
+	font-size: 0.38rem;
+	color: #111111;
+	line-height: 0.86rem;
+}
+::-webkit-input-placeholder {
+	color: #CCCCCC; 
+	font-size: 0.3rem;
+}
+.d_money p{
+	float: right;
+	width: 1.9rem;
+	height: 0.88rem;
+	border: solid 1px #448cff;
+	border-radius: 0.06rem;
+	line-height: 0.88rem;
+	text-align: center;
+	font-size: 0.32rem;
+	color: #488CFF;
+}
+.d_billmoney span{
+	font-size: 0.24rem;
+	color: #999999;
+}
+.d_sure{
+	height: 0.88rem;
+	width: 6.9rem;
+	margin: 0 auto;
+	margin-top: 0.8rem;
+	background: #448CFF;
+	font-size: 0.32rem;
+	color: #FFFFFF;
+	text-align: center;
+	line-height: 0.88rem;
+	border-radius: 0.5rem;
+}

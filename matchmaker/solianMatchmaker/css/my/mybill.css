@@ -1,0 +1,45 @@
+*{box-sizing: content-box;}
+.d_nav{
+	margin-top: 0.9rem;
+	height: 0.86rem;
+	border-bottom: solid 1px #E6E6E6;
+}
+.d_nav p{
+	float: left;
+	margin: 0 1.25rem;
+	line-height: 0.86rem;
+	font-size: 0.3rem;
+	color: #111111;
+}
+.d_nav .d_change{
+	color: #488cff;
+	border-bottom:solid 1px #488CFF;
+}
+.d_content1>div,.d_content2>div{
+	margin: 0 0.3rem;
+}
+.d_date,.d_datetx{
+	line-height: 1.0rem;
+	font-size: 0.34rem;
+	color: #111111;
+	font-weight: bold;
+}
+.d_billday p,.d_billdaytx p{
+	line-height: 0.5rem;
+}
+.d_billday p span,.d_billdaytx p span{
+	float: left;
+	margin-right: 0.4rem;
+	font-size: 0.26rem;
+	color: #666666;
+}
+.d_billday p i,.d_billdaytx p i{
+	float: left;
+	width: 5.5rem;
+	font-size: 0.3rem;
+	color: #111111;
+	margin-bottom: 0.3rem;
+}
+.d_hide{
+	display: none;
+}

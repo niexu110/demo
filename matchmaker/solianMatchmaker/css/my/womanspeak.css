@@ -1,0 +1,190 @@
+.header{
+	width: 7.5rem;
+    height: 0.9rem;
+    line-height: 0.9rem;
+    background: #fff;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-weight: bold;
+    font-size: 0.34rem;
+    border-bottom: 1px solid #ECECEC;
+    color: #333;
+    z-index: 100;
+}
+.back{width: 0.18rem;
+    padding-top: .2rem;
+}
+.header em{
+	margin: 0;
+}
+.header span{
+	padding-right: 0.3rem;
+	float: right;
+	font-weight: normal;
+	font-size: 0.28rem;
+	color: #FF704F;
+}
+.d_title{
+	margin-top: 0.9rem;
+	line-height: 0.5rem;
+	padding: 0.3rem;
+	font-size: 0.3rem;
+	color: #111111;
+	border-bottom: solid 1px #E6E6E6;
+}
+.d_top{
+	height: 1.4rem;
+	margin: 0 0.3rem;
+}
+.d_top p{
+	float: left;
+	line-height: 1.4rem;
+	font-size: 0.3rem;
+	color: #111111;
+}
+.d_addpeople{
+	float: left;
+	height: 0.8rem;
+	margin-top: 0.3rem;
+	margin-left: 0.3rem;
+	border-radius: 50%;
+}
+.d_text{
+	height: 3.2rem;
+	width: 6.9rem;
+	margin: 0 auto;
+	position: relative;
+}
+.d_text textarea{
+	height: 3.2rem;
+	width: 6.9rem;
+	border: solid 1px #E6E6E6;
+	border-radius: 0.06rem;
+	padding: 0.3rem;
+	font-size: 0.28rem;
+	color: #111111;
+	line-height: 0.5rem;
+}
+.d_text p{
+	position: absolute;
+	bottom: 0.3rem;
+	right: 0.3rem;
+	font-size: 0.28rem;
+	color: #CCCCCC;
+}
+.d_deu{
+	height: 0.9rem;
+	line-height: 0.9rem;
+	margin: 0 0.3rem;
+	font-size: 0.28rem;
+	color: #FF704F;
+}
+.d_u1{
+	float: left;
+}
+.d_u2{
+	float: right;
+}
+.d_texttwo{
+	height: 3.2rem;
+	width: 6.9rem;
+	margin: 0 auto;
+	border: solid 1px #E6E6E6;
+	border-radius: 0.06rem;
+	overflow: auto;
+}
+.d_save{
+	margin: 0 auto;
+	margin-top: 0.4rem;
+	width: 6.9rem;
+	height: 0.94rem;
+	background: #FF704F;
+	font-size: 0.32rem;
+	color: #FFFFFF;
+	line-height: 0.94rem;
+	text-align: center;
+	border-radius: 0.5rem;
+}
+.d_list,.d_fblist{
+	margin-top: 0.9rem;
+}
+.d_listson,.d_fblistson{
+	height: 1.6rem;
+	border-bottom: solid 1px #E6E6E6;
+	padding: 0 0.3rem;
+	clear: both;
+}
+.d_listson img,.d_fblistson img{
+	float: left;
+	height: 1.0rem;
+	width: 1.0rem;
+	border-radius: 50%;
+	margin-top: 0.3rem;
+}
+.d_box{
+	margin-top: 0.6rem;
+	float: right;
+	height: 0.4rem;
+	width: 0.4rem;
+	border: solid 1px #E6E6E6;
+	border-radius: 50%;
+	background: #FFFFFF;
+}
+.d_box>div{
+	height: 0.28rem;
+	width: 0.28rem;
+	margin-left: 0.04rem;
+	margin-top: 0.04rem;
+	border-radius: 50%;
+	border: none;
+	background: #FFFFFF;
+}
+.d_change{
+	background: #FFFFFF;
+	border: solid 1px #FF704F;
+}
+.d_change>div{
+	border: solid 1px #FF704F;
+	background: #FF704F;
+}
+.d_nickdate{
+	float: left;
+	margin: 0.3rem;
+}
+.d_nickdate p{
+	font-size: 0.28rem;
+	color: #111111;
+	font-weight: bold;
+	line-height: 0.6rem;
+}
+.d_nickdate span{
+	font-size: 0.26rem;
+	color: #666666;
+}
+.d_delete{
+	float: right;
+	height: 0.56rem;
+	width: 1.0rem;
+	border: solid 1px #E6E6E6;
+	border-radius: 0.06rem;
+	text-align: center;
+	line-height: 0.56rem;
+	font-size: 0.26rem;
+	color: #666666;
+	margin-left: 0.2rem;
+	margin-top: 0.52rem;
+}
+.d_revamp{
+	float: right;
+	height: 0.56rem;
+	width: 1.0rem;
+	border: solid 1px #FF704F;
+	border-radius: 0.06rem;
+	text-align: center;
+	line-height: 0.56rem;
+	font-size: 0.26rem;
+	color: #FF704F;
+	margin-top: 0.52rem;
+}

@@ -1,0 +1,11 @@
+.d_title{margin-top: .9rem;padding: 0 .3rem;line-height: 1.2rem;font-size: .32rem;color: #111111;}
+.d_contentBox{border-bottom: solid 1px #E6E6E6;padding: 0 .3rem;}
+.d_contentlist{height: .88rem;background: #e9f6fe;margin-bottom: .24rem;border-radius: .4px;}
+.d_contentlist img{float:left;height: .32rem;width: .32rem;margin: .28rem .34rem;}
+.d_contentlist p{line-height: .88rem;font-size: .28rem;color: #488cff;}
+.d_mygold{height: 1.2rem;line-height: 1.2rem;margin-left: .3rem;padding-right: .3rem;font-size: .32rem;border-bottom: solid 1px #E6E6E6;}
+.d_mygold p{float: left;color: #111111;}
+.d_mygold span{float: right;color: #488cff;}
+.d_bzbtn{margin: .4rem .15rem;position: relative;}
+.d_bzbtn img{height: 1.2rem;width: 7.2rem;}
+.d_bzbtn p{position: absolute;top: 0;left: 0;text-align: center;width: 100%;line-height: 1.06rem;font-size: .32rem;color: #488CFF;}

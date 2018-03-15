@@ -1,0 +1,58 @@
+.header{
+	width: 7.5rem;
+	height: .9rem;
+	position: relative;
+}
+.header a{
+	float: left;
+	margin-left: .6rem;
+	margin-top: .6rem;
+	width: .3rem;
+	height: .3rem;
+}
+.header a img{
+	width: 100%;
+}
+.view{
+	padding: 0 .6rem;
+}
+.view h1{
+	margin: .9rem 0 0 0;
+	font-size: .52rem;
+	color: #111;
+	font-weight: bold;
+}
+.view p{
+	font-size: .3rem;
+	color: #666;
+	margin: .6rem 0;
+}
+.view a{
+	display: block;
+	margin: .6rem 0;
+	width: 4.5rem;
+	height: .94rem;
+	border-radius: .47rem;
+	font-size: .32rem;
+	text-align: center;
+	line-height: .94rem;
+	background: #fff;
+	border: 1px solid #ff704f;
+	color: #ff704f;
+}
+.view a.curr{
+	background: #ff704f;
+	color: #fff;
+}
+.btn{
+	height: 1.54rem;
+}
+.btn a{
+	width: 6.3rem;
+	height: .94rem;
+	border-radius: .47rem;
+	background: #ff704f;
+	color: #fff;
+	font-size: .32rem;
+	margin: 0;
+}

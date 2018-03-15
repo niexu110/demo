@@ -1,0 +1,39 @@
+.headimgBox{
+	margin-top: 0.9rem;
+}
+.headimgBox img{
+	float: left;
+	height: 1.5rem;
+	width: 1.5rem;
+	margin-left: 0.3rem;
+	margin-top: 0.3rem;
+}
+/*弹框*/
+.d_tanbox{
+	display: none;
+	position: fixed;
+	top:0;
+	left: 0;
+	background: rgba(50,50,50,0.5);
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+}
+.d_tanbox div{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+	width: 7.0rem;
+	margin-left: 0.24rem;
+}
+.d_tanbox p{
+	height: 0.8rem;
+	width: 100%;
+	background: #FFFFFF;
+	margin: 0.1rem 0;
+	line-height: 0.8rem;
+	border-radius: 0.06rem;
+	font-size: 0.28rem;
+	color: #333333;
+}

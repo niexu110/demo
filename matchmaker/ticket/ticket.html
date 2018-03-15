@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>梦回大唐七夕购票</title>
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="expires" content="-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="common/common.css">
+    <link rel="stylesheet" href="common/ticket.css">
+    <script src="common/jquery-2.1.4.min.js"></script>
+    <script src="common/common.js"></script>
+    <script src="common/ticket.js"></script>
+</head>
+<body>
+<div class="views">
+    <img src="images/datang.png" alt="">
+    <div class="ticket-box">
+        <img src="images/bgcolor.png" alt="">
+        <div class="content-box">
+            <div class="int-box">
+                <span>输入手机号:</span> <input type="text" placeholder="请输入手机号" class="phoneInt" maxlength="11">
+            </div>
+            <div class="int-box">
+                <span>验证码:</span> <input type="text" placeholder="验证码" class="codeInt" maxlength="4">
+                <div class="codeBtn">发送验证</div>
+            </div>
+            <div class="int-box">
+                <span>购票数:</span>
+                <div class="number-btn">
+                    <b class="left-num"></b>
+                    <i class="num"></i>
+                    <b class="right-num"></b>
+                </div>
+                <em>张</em>
+            </div>
+            <div class="ticketBtn" data-follow="是否关注">立即购买</div>
+            <p>本次活动票数疯狂遭抢,预购从速,仅剩<span class="tote">20</span>张了！</p>
+        </div>
+    </div>
+</div>
+<!--关注弹窗-->
+<div class="pop">
+    <div class="pop-content">
+        <!--二维码-->
+        <img src="images/code.png" alt="">
+        <p>长按↑方二维码识别，关注后才能购买哦。</p>
+    </div>
+</div>
+<div class="showStart">
+    手机号有误
+</div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>粒子系统</title>
+    <script src="js/three.js"></script>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script>
+ $(function(){
+     var scene=new THREE.Scene();
+     var camera=new THREE.PerspectiveCamera(45,800/600,1,1000);
+     camera.position.set(0,0,155);
+     var renderer=new THREE.WebGLRenderer();
+     renderer.setClearColor(new THREE.Color(0x000000,1.0));
+     renderer.setSize(800,600);
+     document.body.appendChild(renderer.domElement);
+    //创建粒子
+     createParticles();
+     function createParticles() {
+         var geom=new THREE.Geometry();
+         var material=new THREE.PointCloudMaterial({
+             size:5,vertexColors:true,color:0xffffff
+         });
+         for(var x=-5;x<5;x++){
+             for(var y=-5;y<5;y++){
+                 var particle=new THREE.Vector3(x*10,y*10,0);
+                 geom.vertices.push(particle);
+                 geom.colors.push(new THREE.Color(Math.random()*0x00ffff));
+             }
+         }
+         var cloud=new THREE.PointCloud(geom,material);
+         scene.add(cloud);
+     }
+     render();
+     function render(){
+         requestAnimationFrame(render);
+         renderer.render(scene,camera);
+     }
+ })
+    </script>
+</head>
+<body>
+
+</body>
+</html>

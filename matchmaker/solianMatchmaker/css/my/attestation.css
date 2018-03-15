@@ -1,0 +1,47 @@
+.view{
+	padding: 1.2rem .3rem 0 .3rem;
+}
+.view p{
+	padding-top: .6rem;
+	padding-bottom: .3rem;
+	font-size: .34rem;
+	color: #111;
+}
+.view input{
+	width: 6.9rem;
+	height: .9rem;
+	border: 1px solid #bbb;
+	font-size: .3rem;
+	color: #111;
+	padding-left: .3rem;
+}
+.view input::placeholder{
+	color: #ccc;
+}
+.img{
+	width: .36rem;
+	height: .24rem;
+	position: absolute;
+	right: 0.5rem;
+	top: 5.15rem;
+	display: none;
+}
+.view span{
+	display: inline-block;
+	font-size: .24rem;
+	color: #ff704f;
+	margin-top: .3rem;
+}
+.btn{
+	padding: 0 .3rem;
+}
+.sure{
+	display: block;
+	width: 6.9rem;
+	height: .94rem;
+	border-radius: .47rem;
+	font-size: .32rem;
+	color: #fff;
+	border: none;
+	background: #ff704f;
+}

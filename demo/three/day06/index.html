@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3D几何体，之切换</title>
+    <script src="js/three.js"></script>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script>
+        $(function(){
+            var scene=new THREE.Scene;
+            var camera=new THREE.PerspectiveCamera(45,1000/800,1,1000);
+            camera.position.set(20,50,70);
+            camera.lookAt(new THREE.Vector3(10,0,0));
+            var renderer=new THREE.WebGLRenderer();
+            renderer.setClearColor(new THREE.Color(0xe4393c));
+            renderer.setSize(1000,800);
+            renderer.shadowMapEnabled=true;
+            function createMesh(geom){
+                //创建靶向材质
+                var meshMaterial=new THREE.MeshNormalMaterial();
+                //创建一个基础材质
+                var wireMaterial=new THREE.MeshBasicMaterial();
+                wireMaterial.wireframe=true;
+                //范围一个网格对象，使用联合材质
+                return THREE.SceneUtils.createMultiMaterialObject(geom,[
+                        meshMaterial,wireMaterial
+                ]);
+            }
+            var  mesh;
+            //创建球体
+            var sphere=createMesh(new THREE.SphereGeometry(10,50,50,0,2*Math.PI));
+            //创建不规则椭圆
+            var cylinder=createMesh(new THREE.CylinderGeometry(20,20,20,20,50));
+            var torus=createMesh(new THREE.TorusGeometry(10,2,20,10,Math.PI*2));
+            var knot=createMesh(new THREE.TorusKnotGeometry(10,2,64,8,20,9,1));
+            mesh=sphere;
+            $("#sphere").click(function(){
+                scene.remove(mesh);
+                mesh=sphere;
+                scene.add(mesh);
+            });
+            $("#cylinder").click(function(){
+                scene.remove(mesh);
+                mesh=cylinder;
+                scene.add(mesh);
+            });
+            $("#torus").click(function(){
+                scene.remove(mesh);
+                mesh=torus;
+                scene.add(mesh);
+            });
+            $("#knot").click(function(){
+                scene.remove(mesh);
+                mesh=knot;
+                scene.add(mesh);
+            });
+            scene.add(mesh);
+            var light=new THREE.SpotLight(0xe4393c);
+            light.position.set(-40,55,-11);
+            
+            $("#scene").append(renderer.domElement);
+            render();
+            //设置定时器
+           /* setTimeout(function(){
+                scene.remove(sphere);
+                scene.add(cylinder);
+                sphere=cylinder;
+            },3000);*/
+            function render(){
+                mesh.rotation.y+=0.01;
+                window.requestAnimationFrame(render);
+                renderer.render(scene,camera);
+            }
+        })
+    </script>
+</head>
+<body>
+<div id="scene"></div>
+<div id="controller" style="position:fixed;left:350px;top:10px;">
+    <button id="sphere">sphere</button>
+    <button id="cylinder">cylinder</button>
+    <button id="torus">torus</button>
+    <button id="knot">knot</button>
+</div>
+</body>
+</html>

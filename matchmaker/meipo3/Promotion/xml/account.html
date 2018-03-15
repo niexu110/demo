@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+     <meta charset="utf-8">
+     <title>收入明细</title>
+     <meta http-equiv="pragma" content="no-cache">
+     <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+     <meta http-equiv="expires" content="-1">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+     <meta name="apple-mobile-web-app-capable" content="yes">
+     <meta name="apple-mobile-web-app-status-bar-style" content="white">
+     <meta name="format-detection" content="telephone=no">
+     <link rel="stylesheet" href="../../css/common.css">
+     <link rel="stylesheet" href="../css/account.css">
+     <script src="../../js/jquery-3.2.1.min.js"></script>
+     <script src="../../js/common.js"></script>
+</head>
+<body>
+     <div class="view">
+         <div class='head'>
+              <div>
+                   <h1>预计收入</h1>
+                   <p>￥6562,00</p>
+              </div>
+              <div>
+                  <h1>已获得收入</h1>
+                  <p>￥4521,00</p>
+              </div>
+         </div>
+         <h1 class='txt'>*推广收入将放在服务号进行发放</h1>
+         <p class="line"></p>
+         <h2 class='text'>我的推广人:</h2>
+         <div class="item">
+              <img src="../img/demo.png" alt="">
+              <div class='user'>
+                   <h2>太公望盛世</h2>
+                   <p>今天&nbsp;&nbsp;03:46</p>
+              </div>
+              <div class='price'>
+                   <p>+400.00</p>
+                   <span>服务中</span>
+              </div>
+         </div>
+          <div class="item">
+               <img src="../img/demo.png" alt="">
+               <div class='user'>
+                    <h2>太公望盛世</h2>
+                    <p>今天&nbsp;&nbsp;03:46</p>
+               </div>
+               <div class='price'>
+                    <p>+400.00</p>
+                    <span>服务中</span>
+               </div>
+          </div>
+          <div class="item">
+               <img src="../img/demo.png" alt="">
+               <div class='user'>
+                    <h2>太公望盛世</h2>
+                    <p>今天&nbsp;&nbsp;03:46</p>
+               </div>
+               <div class='price'>
+                    <p>+400.00</p>
+                    <span>服务中</span>
+               </div>
+          </div>
+          <div class="item">
+               <img src="../img/demo.png" alt="">
+               <div class='user'>
+                    <h2>太公望盛世</h2>
+                    <p>今天&nbsp;&nbsp;03:46</p>
+               </div>
+               <div class='price'>
+                    <p>+400.00</p>
+                    <span>服务中</span>
+               </div>
+          </div>
+          <div class="item">
+               <img src="../img/demo.png" alt="">
+               <div class='user'>
+                    <h2>太公望盛世</h2>
+                    <p>今天&nbsp;&nbsp;03:46</p>
+               </div>
+               <div class='price'>
+                    <p>+400.00</p>
+                    <span>服务中</span>
+               </div>
+          </div>
+          <div class="item">
+               <img src="../img/demo.png" alt="">
+               <div class='user'>
+                    <h2>太公望盛世</h2>
+                    <p>今天&nbsp;&nbsp;03:46</p>
+               </div>
+               <div class='price'>
+                    <p>+400.00</p>
+                    <span>服务中</span>
+               </div>
+          </div>
+     </div>
+     <div class="pullUp"></div>    
+</body>
+<script>
+          $(function () {
+               var pull = $(".pullUp"), isOpen = true, page = 0;
+               var clientH = Number(document.documentElement.clientHeight);
+               var H = Number(pull.height());
+               $(document).on('scroll', function () {
+                    if (isOpen) {
+                         var docH = parseInt(document.documentElement.scrollTop | document.body.scrollTop + clientH);
+                         var H5Top = parseInt(pull.offset().top + H);
+                         if (docH > H5Top - 150) {
+                              isOpen = false;
+                              pull.html("数据加载中...");
+                              //    发送ajax
+
+                         }
+                    }
+               })
+          })
+</script>
+</html>

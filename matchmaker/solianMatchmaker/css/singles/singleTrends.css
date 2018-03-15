@@ -1,0 +1,65 @@
+s{
+	text-decoration: none;
+}
+.main{
+	margin-top: .9rem;
+	width: 7.5rem;
+	height: auto;
+	padding-left: .3rem;
+}
+.main .list{
+	width: 100%;
+	padding: .3rem .3rem .3rem 0;
+	height: 1.6rem;
+	border-bottom: 1px solid #e6e6e6;
+}
+.main .list .photo{
+	float: left;
+	width: 1rem;
+	height: 1rem;
+	border-radius: 50%;
+}
+.main .list .photo img{
+	width: 100%;
+	border-radius: 50%;
+}
+.main .list div{
+	width: 5.9rem;
+	float: right;
+	height: 100%;
+	padding-left: .2rem;
+}
+.main .list div p{
+	width: 100%;
+	font-size: .24rem;
+	color: #111;
+}
+.main .list div p:nth-of-type(1){
+	padding-top: .1rem;
+}
+.main .list div p:nth-of-type(2){
+	padding-top: .2rem;
+}
+.main .list div p:nth-of-type(1) em{
+	font-weight: bold;
+}
+.main .list div p span{
+	float: right;
+	font-size: .24rem;
+	color: #478cff;
+}
+.main .list div p i{
+	font-size: .22rem;
+	color: #999;
+}
+.main .list div{
+	position: relative;
+}
+.main .list div b{
+	position: absolute;
+	top: .35rem;
+	right: 0;
+	font-size: .22rem;
+	color: #666;
+	font-weight: normal;
+}

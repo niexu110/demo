@@ -1,0 +1,105 @@
+.nav{
+    padding: 0 .65rem;
+    overflow: hidden;
+    border-bottom:1px solid #E6E6E6;
+}
+.nav li{
+    height: .9rem;
+    font-size: .3rem;
+    color: #363636;
+    line-height: .9rem;
+    margin-right: 1.2rem;
+}
+.nav li:last-child{
+    margin-right: 0;
+}
+.nav li.active{
+    color: #F83747;
+    border-bottom:1px solid #F83747;
+}
+.time{
+    padding-left: .3rem;
+    color: #696969;
+    background: #F3F3F3;
+    font-size: .24rem;
+    line-height: .5rem;
+    height: .5rem;
+}
+.time span{
+    margin-right: .3rem;
+}
+.time span:nth-child(2),.time span:nth-child(4){
+    margin-right: 0;
+}
+.content{
+    height: 1.6rem;
+    padding: .3rem .3rem;
+    overflow: hidden;
+}
+.itePic{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: .3rem;
+}
+.itePic img{
+    width: 1rem;
+}
+.word{
+    margin-top: .15rem;
+}
+.word span{
+    display: block;
+    line-height: .26rem;
+    font-size: .26rem;
+}
+.word span:first-child{
+    color: #111;
+    font-weight: bolder;
+    line-height: .3rem;
+    font-size: .3rem;
+    margin-bottom: .2rem;
+}
+.wait{
+    color: #666;
+}
+.request{
+    color: #F83747;
+}
+.btn{
+    margin-top: .25rem;
+    width: 2rem;
+    height: .54rem;
+    overflow: hidden;
+}
+.btn div{
+    width: .9rem;
+    height: .54rem;
+    font-size: .24rem;
+    display: inline-block;
+    text-align: center;
+    line-height: .54rem;
+    border-radius:4px;
+    color: #FFFFFF;
+}
+.btn div:first-child{
+    background: #F83444;
+    margin-right: .2rem;
+}
+.btn div:last-child{
+    background: #488CFF;
+}
+.empty img{
+    display: block;
+    width: 2.3rem;
+    margin: 1.9rem auto .5rem;
+}
+.empty p{
+    color: #999899;
+    font-size: .3rem;
+    text-align: center;
+}
+.view{
+    padding-bottom: 0;
+}

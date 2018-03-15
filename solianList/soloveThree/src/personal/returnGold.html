@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>退还保证金</title>
+		<meta http-equiv="pragma" content="no-cache">
+	    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+	    <meta http-equiv="expires" content="-1">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+	    <meta name="format-detection" content="telephone=no">
+		<link rel="stylesheet" href="../../css/common.css">
+		<link rel="stylesheet" href="../../css/personal/returnGold.css">
+	    <link rel="stylesheet" href="../../css/login/d_gomhcom.css">
+	    <script src="../../js/jquery-3.2.1.min.js"></script>
+	    <script src="../../js/common.js"></script>
+	    <script src="../../js/login/d_gomhcom.js"></script>
+	    <script src="../../js/personal/returnGold.js"></script>
+	</head>
+	<body>
+		<div class="pagetop" style="position: absolute;background: none;border: none;">
+			<a href="javascript:history.go(-1)"><img src="../../image/icon/off-white.png" /></a>
+			<p style="color: #FFFFFF;">退还保证金</p>
+		</div>
+		<div class="d_bgtop">
+			<img src="../../image/icon/d_rgoldbg.png" />
+			<div class="d_bgcontent">
+				<p>1. 至尊会员（牵缘会员）脱单后方可退还。</p>
+				<p>2. 脱单后，将结婚证附件上传搜恋并填写相应的资料进行审核，审核成功后，保证金全额退还支付账户。</p>
+				<p>3. 保证金退还后，用户将会失去至尊会员身份</p>
+				<p style="text-align: center;">如有疑问，请咨询电话：400-6313-520</p>
+			</div>
+		</div>
+		<p class="d_tutitle">请上传您的结婚证附件<span>(后台审核使用，绝不对外展示)</span></p>
+		<div class="photo">
+			<div class="upload">
+				<input type="file" id="d_btn" runat="server" name='image' onchange="he()"/>
+				<img src="../../image/icon/d_addjhun.png" class="img1"/>
+				<img src="" class="img2"/>
+			</div>
+			<div class="slPhoto">
+				<img src="../../image/icon/d_jhun.png" />
+			</div>
+			<div class="uploadCover">
+				<span>点击删除</span>
+			</div>
+			<p style="margin-top: .2rem;margin-left: .4rem; font-size: .3rem;color: #666666;float: left;">例:</p>
+			<div class="slPhotoCover">
+				<span>请按示例上传证件<br />否则将不通过</span>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<form id="form">
+			<input class="d_img" type="hidden" name="image" value="" />
+			<div class="d_inpBox">
+				<p>联系方式</p>
+				<input type="number" oninput="if(value.length>11)value=value.slice(0,11)" placeholder="15522556699" />
+			</div>
+			<div class="d_inpBox">
+				<p>备注说明</p>
+				<textarea placeholder="请输入内容" maxlength="50"></textarea>
+			</div>
+		</form>
+		<div class="clear"></div>
+		<div class="d_submit">提交申请</div>	
+		<div class="d_popupbox"></div>
+	</body>
+</html>

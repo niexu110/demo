@@ -1,0 +1,88 @@
+.main{
+	width: 7.5rem;
+	height: auto;
+}
+.photo{
+	width: 1.8rem;
+	height: 1.8rem;
+	border-radius: 50%;
+	margin: 1.5rem auto 0;
+}
+.photo img{
+	width: 100%;
+	border-radius: 50%;
+}
+.main p{
+	text-align: center;
+	margin: .4rem 0 .6rem;
+	font-size: .3rem;
+	font-weight: bold;
+	color: #111;
+}
+.main .button{
+	width: 7.5rem;
+	height: .8rem;
+	padding: 0 .6rem;
+	margin-bottom: .6rem;
+}
+.main .button input[type="button"]{
+	width: 3rem;
+	height: .8rem;
+	border-radius: .4rem;
+}
+.main .button input[type="button"]:nth-of-type(1){
+	background: url(../../image/img/weixin.png) center no-repeat;
+	background-size: 99%;
+}
+.main .button input[type="button"]:nth-of-type(2){
+	float: right;
+	background: url(../../image/img/pengyouquan.png) center no-repeat;
+	background-size: 99%;
+}
+.group{
+	width: 7.5rem;
+	height: auto;
+	overflow: auto;
+	background: #f9f9f9;
+	position: relative;
+}
+.group i{
+	display: block;
+	width: 6.3rem;
+	height: 1px;
+	background: #999;
+	margin: 0 auto;
+	margin-top: .56rem;
+	margin-bottom: .45rem;
+}
+.group p{
+	height: .28rem;
+	padding: 0 .4rem;
+	font-size: .28rem;
+	color: #666;
+	font-weight: normal;
+	background: #f9f9f9;
+	position: absolute;
+	top: -.05rem;
+	left: 32%;
+}
+.group .imgs{
+	position: fixed;
+	top: 7.11rem;
+	bottom: 0;
+	padding: 0 .5rem .58rem;
+	width: 7.5rem;
+	height: auto;
+	overflow-x: hidden;
+	overflow-y: auto;
+	background: #f9f9f9;
+}
+.group .imgs div{
+	float: left;
+	padding: .1rem .1rem 0;
+	border-radius: 4px;
+}
+.group .imgs div img{
+	width: 1.1rem;
+	height: 1.1rem;
+}

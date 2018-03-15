@@ -1,0 +1,99 @@
+#header span{
+	position: absolute;
+	right: .3rem;
+	font-size: .3rem;
+	color: #ff704f;
+	font-weight: normal;
+	background: none;
+}
+.view{
+	padding-left: .3rem;
+}
+.view p{
+	border-bottom: 1px solid #e6e6e6;
+	height: 1.6rem;
+	line-height: 1.6rem;
+	font-size: .3rem;
+	color: #111;
+	position: relative;
+}
+.view p:nth-of-type(1){
+	color: #666;
+}
+.view p img{
+	position: absolute;
+	right: .3rem;
+	top: .68rem;
+	width: .14rem;
+	height: .24rem;
+}
+.view div{
+	position: relative;
+}
+.view div p{
+	color: #111 !important;
+	border: none;
+}
+textarea{
+	width: 6.9rem;
+	height: 2.7rem;
+	resize: none;
+	border: 1px solid #e6e6e6;
+	font-size: .3rem;
+	color: #111;
+	padding: .3rem;
+	line-height: .5rem;
+	border-radius: .08rem;
+}
+textarea::placeholder{
+	color: #999;
+}
+.view div span{
+	position: absolute;
+	bottom: .3rem;
+	right: .6rem;
+	font-size: .3rem;
+	color: #999;
+}
+.view div .imgs{
+	width: 100%;
+	height: 1.8rem;
+}
+.view div .imgs div{
+	width: 1.8rem;
+	height: 1.8rem;
+	border-radius: .08rem;
+	margin-right: .2rem;
+	float: left;
+	position: relative;
+	border: 1px solid #ff704f;
+	overflow: hidden;
+}
+.view div .imgs div:nth-of-type(1){
+	border: none;
+}
+.view div .imgs div img{
+	width: 99.9%;
+	height: 99.9%;
+	border-radius: .08rem;
+}
+.view div .imgs div input[type="file"]{
+	width: 1.8rem;
+	height: 1.8rem;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+} 
+.view div input[type="text"]{
+	width: 6.9rem;
+	height: .88rem;
+	border: 1px solid #e6e6e6;
+	border-radius: .08rem;
+	font-size: .3rem;
+	color: #111;
+	padding: 0 .3rem;
+}
+.view div input[type="text"]::placeholder{
+	color: #999;
+}

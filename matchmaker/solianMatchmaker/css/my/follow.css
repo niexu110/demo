@@ -1,0 +1,35 @@
+.view .lists .list{
+	width: 7.2rem;
+	height: 1.6rem;
+	margin-left: .3rem;
+	border-bottom: 1px solid #e6e6e6;
+	padding: .3rem .3rem .3rem 0;
+}
+.view .lists .list img{
+	width: 1rem;
+	height: 1rem;
+	border-radius: 50%;
+}
+.view .lists .list .rt{
+	width: 5.7rem;
+	height: 100%;
+	position: relative;
+}
+.view .lists .list .rt p{
+	font-size: .28rem;
+	color: #111;
+	line-height: .5rem;
+	font-weight: bold;
+}
+.view .lists .list .rt p img{
+	width: .24rem;
+	height: .24rem;
+	margin-left: .1rem;
+}
+.view .lists .list .rt i{
+	position: absolute;
+	right: 0;
+	top: .38rem;
+	font-size: .24rem;
+	color: #999;
+}

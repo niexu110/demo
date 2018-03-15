@@ -1,0 +1,102 @@
+.box{
+	width: 7.5rem;
+	height: 100%;
+	padding: 0 .3rem;
+	position: relative;
+}
+/*上一步*/
+.box a .back{
+	height: .32rem;
+	width: .19rem;
+	position: absolute;
+	top: 0;
+	left: .3rem;
+}
+.logo{
+	width: 100%;
+	height: auto;
+}
+.logo img{
+	display: block;
+	width: 1.2rem;
+	height: 1.1rem;
+	margin: .6rem auto .4rem;
+}
+p{
+	width: 100%;
+}
+.phone,.password,.identify{
+	color: #ff704f;
+	padding-bottom: .4rem;
+	padding-top: .8rem;
+	border-bottom: 1px solid #e6e6e6;	
+}
+input{
+	width: 100%;
+	font-size: .34rem;
+}
+input::placeholder{
+	color: #ff704f;
+}
+input[type = "tel"]{
+	color: #111;
+	line-height: .34rem;
+}
+.phone{
+	position: relative;
+}
+.phone img{
+	width: .36rem;
+	height: .24rem;
+	position: absolute;
+	right: 0;
+	top: .9rem;
+	display: none;
+}
+.password{
+	position: relative;
+}
+.password img{
+	width: .36rem;
+	height: .24rem;
+	position: absolute;
+	right: 0;
+	top: .9rem;
+	display: none;
+}
+/*验证码*/
+.identify{
+	position: relative;
+}
+.identify span{
+	display: block;
+	width: 1.8rem;
+	border: 1px solid #111;
+	color: #111;
+	font-size: .26rem;
+	line-height: .6rem;
+	text-align: center;
+	border-radius: 0.06rem;
+	position: absolute;
+	top: .7rem;
+	right: 0;
+}
+/*登录*/
+.login p{
+	color: #aaa;
+	font-size: .3rem;
+	line-height: 1.1rem;
+}
+.login p a{
+	color: #ff704f;
+}
+input[type = "button"]{
+	border-radius: .47rem;
+	background: #ffcdb9;
+	color: #ffe3cd;
+	line-height: .94rem;
+}
+.curr{
+	background: #ff704f !important;
+	color: #ffcdc5 !important;
+}

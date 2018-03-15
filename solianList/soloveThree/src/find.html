@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>发现</title>
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="expires" content="-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/common.js"></script>
+</head>
+<body>
+<!--每天主动签到弹窗-->
+<div class="pop-sign2 cartoon2">
+    <div class="pop-box6">
+        <img src="../image/img/days.png" class="title-img">
+        <img src="../image/icon/close2.png" class="closeBtn">
+        <div class="day-content">
+            <img src="../image/img/sign.png" alt="">
+            <img src="../image/img/sign.png" alt="">
+            <img src="../image/img/day3.png" alt="">
+            <img src="../image/img/day4.png" alt="">
+            <img src="../image/img/day5.png" alt="">
+            <img src="../image/img/day6.png" alt="">
+            <img src="../image/img/day7.png" alt="">
+        </div>
+        <p>连续签到7天可以获得VIP会员资格哦！</p>
+        <div class="dayBtn">签到</div>
+    </div>
+</div>
+<!--点击签到弹窗-->
+<div class="pop-sign">
+    <img src="../image/img/pop.png" class="pop-img spinRotate">
+    <div class="pop-box1 cartoon">
+        <img src="../image/img/sign-success.png" class="success-img ">
+        <div class="pop-time">
+            <p>已成功签到1天</p>
+            <p>获得2点信用值</p>
+        </div>
+    </div>
+</div>
+<div id="header">
+    <img src="../image/icon/filter.png" class="filter-btn">
+    <em>发现</em>
+</div>
+<!--筛选-->
+<div class="filter">
+    <form action="" id="filterForm">
+        <div class="filter-header">
+            <img src="../image/icon/close.png" class="close lt">
+            <button type="submit" id="btn" class="rt">保存</button>
+        </div>
+        <div class="filter-content">
+            <h1 class="filter-title">筛选条件</h1>
+            <div class="filter-item">
+                <div class="title lt">年龄</div>
+                <div class="content rt ageItem">
+                    <p class="plane-p ageP">不限</p>
+                    <img src="../image/icon/right.png" class="rt">
+                    <input type="text" name="" value=" " class="ageInt">
+                </div>
+            </div>
+            <div class="filter-item">
+                <div class="title lt">身高</div>
+                <div class="content rt heightItem">
+                    <p class="plane-p heightP">不限</p>
+                    <img src="../image/icon/right.png" class="rt">
+                    <input type="text" name="" value="" class="heightInt">
+                </div>
+            </div>
+            <div class="filter-item">
+                <div class="title lt">收入</div>
+                <div class="content rt marryItem">
+                    <p class="plane-p marryP">不限</p>
+                    <img src="../image/icon/right.png" class="rt">
+                    <input type="text" name="" value="" class="marryInt">
+                </div>
+            </div>
+            <div class="filter-item">
+                <div class="title lt ">学历</div>
+                <div class="content rt eduItem">
+                    <p class="plane-p eduP">不限</p>
+                    <img src="../image/icon/right.png" class="rt">
+                    <input type="text" name="" value="" class="eduInt">
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="filter-list-box">
+        <div class="item-container ageBox">
+            <div class="lt line2">
+                <ul class="age-ul">
+                </ul>
+            </div>
+            <div class="lt">
+                <ul class="age-ul2">
+                </ul>
+            </div>
+        </div>
+        <div class="item-container heightBox">
+            <div class="lt line2">
+                <ul class="hei-ul">
+                </ul>
+            </div>
+            <div class="lt">
+                <ul class="hei-ul2">
+                </ul>
+            </div>
+        </div>
+        <div class="item-container marryBox">
+            <ul>
+                <li>不限</li>
+                <li>1000以上</li>
+                <li>2000以上</li>
+                <li>4000以上</li>
+                <li>8000以上</li>
+                <li>20000以上</li>
+            </ul>
+        </div>
+        <div class="item-container eduBox">
+            <ul>
+                <li>不限</li>
+                <li>初中以上</li>
+                <li>高中以上</li>
+                <li>专业以上</li>
+                <li>本科以上</li>
+                <li>硕士以上</li>
+                <li>博士以上</li>
+            </ul>
+        </div>
+        <div class="item-container addressBox">
+            <div class="lt line2">
+                <ul class="pro-ul"></ul>
+            </div>
+            <div class="lt">
+                <ul class="ct-ul"></ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--主页-->
+<div  class="view">
+    <!--展示盒子-->
+    <div class="stars-list">
+        <!--图像展示-->
+        <div class="star-box-img">
+           <ul class="star-user-ul">
+               <li>
+                   <img src="../image/icon/masonry_s.png" class="vip-class">
+                   <img src="../image/user.png" class="vip-img">
+                   <p class="vip-love"><img src="../image/icon/love.png" class="bind-love rt" alt="uid" title="0"></p>
+               </li>
+               <li>
+                   <img src="../image/icon/vip_s.png" class="vip-class">
+                   <img src="../image/user.png" class="vip-img">
+                   <p class="vip-love"><img src="../image/icon/love.png" class="bind-love rt" alt="uid" title="0"></p>
+               </li>
+               <li>
+                   <img src="../image/icon/extreme_s.png" class="vip-class">
+                   <img src="../image/user.png" class="vip-img">
+                   <p class="vip-love"><img src="../image/icon/love.png" class="bind-love rt" alt="uid" title="0"></p>
+               </li>
+               <li>
+                   <img src="../image/icon/masonry_s.png" class="vip-class">
+                   <img src="../image/user.png" class="vip-img">
+                   <p class="vip-love"><img src="../image/icon/love.png" class="bind-love rt" alt="uid" title="0"></p>
+               </li>
+               <li>
+                   <img src="../image/icon/extreme_s.png" class="vip-class">
+                   <img src="../image/user.png" class="vip-img">
+                   <p class="vip-love"><img src="../image/icon/love.png" class="bind-love rt" alt="uid" title="0"></p>
+               </li>
+           </ul>
+        </div>
+        <!--信息展示-->
+        <div class="star-box">
+            <div class="star-user-box ">
+                <p>老潘 <span>陕西&nbsp;西安</span></p>
+                <h1>24岁&nbsp;&nbsp;168cm&nbsp;&nbsp;3000-5000元</h1>
+            </div>
+            <div class="star-user-box">
+                <p>程曦 <span>陕西&nbsp;西安</span></p>
+                <h1>24岁&nbsp;&nbsp;168cm&nbsp;&nbsp;3000-5000元</h1>
+            </div>
+            <div class="star-user-box">
+            <p>太公望 <span>陕西&nbsp;西安</span></p>
+            <h1>24岁&nbsp;&nbsp;168cm&nbsp;&nbsp;3000-5000元</h1>
+        </div>
+            <div class="star-user-box">
+                <p>小强 <span>陕西&nbsp;西安</span></p>
+                <h1>24岁&nbsp;&nbsp;168cm&nbsp;&nbsp;3000-5000元</h1>
+
+            </div>
+            <div class="star-user-box">
+                <p>楠楠 <span>陕西&nbsp;西安</span></p>
+                <h1>24岁&nbsp;&nbsp;168cm&nbsp;&nbsp;3000-5000元</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="footer">
+    <div class="foot-box">
+        <a href="javascript:void(0);" class="tab-link-2 active" >
+            <i class="icon icon-img-1"></i>
+        </a>
+        <a href="message/message.html" class="tab-link-2 ">
+            <i class="icon icon-img-2 "></i>
+        </a>
+        <a href="personal/myIndex.html" class="tab-link-2">
+            <i class="icon icon-img-3"></i>
+        </a>
+    </div>
+</div>
+</body>
+<script src="../js/index.js"></script>
+</html>

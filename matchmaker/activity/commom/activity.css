@@ -1,0 +1,11 @@
+.views{width:7.5rem;height:auto;overflow: hidden;}
+.views img{width:7.5rem;display: block;}
+.content{width:7.5rem;height:auto;background:#F5F2ED;}
+.testBtn{width:4rem;height:.95rem;line-height:.95rem;color:#fff;font-size:.32rem;text-align: center;border-radius: .6rem;margin:0 auto;background:linear-gradient(to right,#FF7051, #F93855);}
+.content h1{color:#A1A1A0;font-size:.28rem;text-align: center;padding-top:.25rem;}
+.pop,.pop2{position: fixed;top:0;bottom:0;right:0;left:0;background:rgba(0,0,0,.6);display:none;}
+.pop-box{width:5.65rem;height:6.7rem;position: absolute;top:0;bottom:0;left:0;right:0;margin:auto;}
+.pop-box>img{width:5.65rem;}
+.pop-title{position: absolute;width:5.65rem;font-size:.35rem;font-weight: bold;color:#f11;left:0;top:1.7rem;text-align: center;padding-left:.6rem;text-shadow:1px 2px 1px #fff;}
+.pop-box .shareBtn{width:2.35rem;position: absolute;bottom:.42rem;left:1.65rem;}
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>我是媒婆</title>
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="expires" content="-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/common.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/common.js"></script>
+    <style>
+        .itemList{width:6.9rem;height:1.5rem;margin:0 auto;border-bottom:1px solid #ccc; }
+        .itemList span{height:1.5rem;line-height: 1.5rem;}
+        .text{color:#333;font-size:.32rem; }
+        .abbr{color:#FF7051;font-size:.3rem;}
+    </style>
+</head>
+<body>
+<div class="nav">
+    <a href="javascript:history.go(-1);" class="back-1 lt"><img class="back" src="image/icon/left.png" /></a>
+    <em class="title">喜欢</em>
+</div>
+<div class="view">
+    <div class="itemList income">
+        <span class="lt text">民族</span>
+        <span class="rt abbr">请选择</span>
+    </div>
+</div>
+<div id="footer">
+    <div class="foot-box">
+        <a href="#" class="tab-link-2 " >
+            <i class="icon icon-img-1"></i>
+            <p class="size">媒婆榜</p>
+        </a>
+        <a href="javascript:void(0);" class="tab-link-2 active">
+            <i class="icon icon-img-2 "></i>
+            <p class="active">发现</p>
+        </a>
+        <a href="#" class="tab-link-2">
+            <i class="icon icon-img-3"></i>
+            <p class="size">我的</p>
+        </a>
+    </div>
+</div>
+<!--弹窗提示-->
+<div class="hint"></div>
+<!--下拉选择类别-->
+<div id="sliders">
+    <div class="option">
+        <span class="lt slider-close">取消</span>
+        <span class="rt slider-btn">确定</span>
+    </div>
+    <div class="slider"></div>
+</div>
+<script>
+    $(function(){
+        var arr=["汉族","壮族","傣族","满族","食人族","羌族"],
+        obj=null,pop=$("#sliders"),elementary=$(".abbr"),num;
+          //调用方法
+        $(".income").click(function(){
+            if(toggle){obj=new Element(arr);num=$(this).index();toggle=false;
+                obj.add(elementary,pop,num);pop.css({bottom:'0',transition: "all .3s linear","-webkit-transition": "all .3s linear"});}
+        });
+    })
+</script>
+</body>
+</html>

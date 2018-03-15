@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <title>全民媒婆</title>
+	    <meta http-equiv="pragma" content="no-cache">
+	    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+	    <meta http-equiv="expires" content="-1">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+	    <meta name="format-detection" content="telephone=no">
+	    <link rel="stylesheet" href="../../css/common.css">
+	    <link rel="stylesheet" href="../css/extensionlist.css">
+	    <script src="../../js/common.js"></script>
+	    <script src="../../js/jquery-3.2.1.min.js"></script>
+	</head>
+	<body>
+		<div class="d_extop">
+			<div class="d_topt">
+				<img class="d_topleft" src="../../image/head.png" />
+				<p>我的推荐人</p>
+				<img class="d_goright" src="../img/d_goright.png" />
+				<img class="d_topright" src="../../image/head.png" />
+			</div>
+			<div class="d_topb">
+				<div>
+					<p>我的名字七个字</p>
+					<span>2017-10-10加入</span>
+				</div>
+				<div>
+					<p>我的名字七个字</p>
+					<span>2017-10-10加入</span>
+				</div>
+			</div>
+		</div>
+		<p class="d_myex">我推荐的人</p>
+		<div class="view" style="padding-bottom: 0;">
+			<div class="d_content">
+				<div class="d_contentlist">
+					<img src="../../image/head.png"/>
+					<p>HJKHKJ</p>
+					<span>2017-10-10</span>
+				</div>
+				<div class="d_contentlist">
+					<img src="../../image/head.png"/>
+					<p>HJKHKJ</p>
+					<span>2017-10-10</span>
+				</div>
+			</div>
+			<div class="pullUp"></div>
+		</div>
+		<div style="display: block;">
+			<p style="text-align: center;font-size: .3rem;color: #666666;margin-top: 2.5rem;">
+				暂无推荐的人
+			</p>
+		</div>
+	</body>
+	<script>
+		$(function(){
+			var isOpen=true;
+			var page=0;
+			//	加载更多(点击后加载更多)
+			var clientH = Number(document.documentElement.clientHeight);
+		    var pullUp=Number($(".pullUp").height());
+		   	$(document).on('scroll',function(){
+		        if(isOpen){
+		            var docH=parseInt(document.documentElement.scrollTop | document.body.scrollTop+clientH);
+		            var H5Top=parseInt($(".pullUp").offset().top+pullUp);
+		            if(docH>=H5Top){
+		            	page++;
+		                isOpen=false;
+		                $(".pullUp").html("数据加载中...");
+		                //    发送ajax
+		                var list;
+						$.ajax({
+							type:"GET",
+							url:"../../obj.json",
+							dataType:"json",
+							success:function(data){
+								if(data.code==200){
+									list=data.data;
+									for(var i in list){
+										$(".d_content").append("<div class='d_contentlist'><img src='../../image/head.png'/><p>HJKHKJ</p><span>2017-10-10</span></div>")
+									}
+									isOpen=true;
+								}else{
+									$(".pullUp").html("无更多数据");
+									setTimeout(function(){
+										$(".pullUp").html("");
+									},1000) 
+									isOpen=false;
+								}
+							}
+						})
+		            }
+		        }
+		    })
+		})
+	</script>
+</html>

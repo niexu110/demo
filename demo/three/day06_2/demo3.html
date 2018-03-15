@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>凹凸贴图</title>
+    <script src="js/three.js"></script>
+    <script src="js/OrbitControls.js"></script>
+</head>
+<body>
+<script>
+    var scene=new THREE.Scene();
+    var camera=new THREE.PerspectiveCamera(45,500/400,1,10000);
+    var renderer=new THREE.WebGLRenderer();
+    renderer.setClearColor(new THREE.Color(0xeeeeee));
+    renderer.setSize(1000,800);
+    var sphere1=createMesh(new THREE.BoxGeometry(15,15,15),"img/113.png","miss.png");
+    sphere1.rotation.y=-0.1;
+    sphere1.position.x=2;
+    scene.add(sphere1);
+    var floorTex=THREE.ImageUtils.loadTexture("./img/111.png");
+    var plane=new THREE.Mesh(new THREE.BoxGeometry(100,50,0.1,20),new THREE.MeshPhongMaterial({
+     map:floorTex
+    }))
+    plane.rotation.x=-0.5*Math.PI;
+    plane.position.y=-7.5;
+    scene.add(plane);
+    camera.position.x=0;
+    camera.position.y=12;
+    camera.position.z=28;
+    camera.lookAt(new THREE.Vector3(0,0,0));
+    var ambiLight=new THREE.AmbientLight(0x242424);
+    scene.add(ambiLight);
+    var light=new THREE.SpotLight();
+    light.position.set(0,30,30);
+    light.intensity=1.5;
+    scene.add(light);
+    var pointColor="#ff5808";
+    var directionalLight=new THREE.PointLight(pointColor);
+    scene.add(directionalLight);
+    var sphereLight=new THREE.SphereGeometry(0.2);
+    var sphereLightMaterial=new THREE.MeshBasicMaterial({color:0xac6c25});
+    var sphereLightMesh=new THREE.Mesh(sphereLight,sphereLightMaterial);
+    sphereLightMesh.castShadow=true;
+    sphereLightMesh.position=new THREE.Vector3(3,3,3);
+    scene.add(sphereLightMesh);
+    document.body.appendChild(renderer.domElement);
+
+    var step=0;
+    render();
+    function createMesh(geom,imageFile,normal){
+        var t=THREE.ImageUtils.loadTexture(imageFile);
+        //创建法向文理
+        var m=THREE.ImageUtils.loadTexture(normal);
+        var mat2=new THREE.MeshPhongMaterial();
+        mat2.map=t;
+        mat2.normalMap=m;
+        var mesh=new THREE.Mesh(geom,mat2);
+        return mesh;
+    }
+    var invert=1;
+    var phase=0;
+    function render(){
+        step+=0.1;
+        sphere1.rotation.y-=0.01;
+        if(phase>2*Math.PI){
+            invert=invert*-1;
+            phase-=2*Math.PI;
+        }else{
+            phase+=0.03;
+        }
+        sphereLightMesh.position.z=+(21*(Math.sin(phase)));
+        sphereLightMesh.position.x=-14+(14*Math.cos(phase));
+        if(invert<0){
+            var pivot=0;
+            sphereLightMesh.position.x=(invert*(sphereLightMesh.position.x-pivot))+pivot;
+        }
+        directionalLight.position.copy(sphereLightMesh.position);
+        window.requestAnimationFrame(render);
+        renderer.render(scene,camera);
+    }
+   //引入相机控制器
+    var controls = new THREE.OrbitControls(camera);
+    controls.addEventListener("change", render);
+</script>
+</body>
+</html>

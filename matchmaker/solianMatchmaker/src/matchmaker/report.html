@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="pragma" content="no-cache">
+	    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+	    <meta http-equiv="expires" content="-1">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+	    <meta name="format-detection" content="telephone=no">
+		<title>举报用户</title>
+		<link rel="stylesheet" type="text/css" href="../../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/matchmaker/report.css"/>
+		<script src="../../js/jquery-2.1.4.min.js"></script>
+		<script src="../../js/common.js"></script>
+	</head>
+	<body>
+		<div id="header">
+		    <a href="javascript:history.go(-1);" class="lt back-1">
+		        <img src="../../image/icons/left.png" id="back" >
+		    </a>
+		    <em class="header-title">举报用户</em>
+		    <span>提交</span>
+		</div>
+		<form id="form" action="" method="post">
+			<div class="view">
+				<p>用户昵称：<span>懒懒</span></p>
+				<p class="text"><i>请选择举报类型</i><img src="../../image/icons/right-arrow.png" alt="" /></p>
+				<div>
+					<p>请详细描述您的举报内容</p>
+					<textarea placeholder="请描述该用户有什么违规行为，比如发布色情信息、广告、虚假信息、酒托饭托等" maxlength="500"></textarea>
+					<span><i class="num">0</i>/500</span>
+				</div>
+				<div>
+					<p>请提供截图举证（选填）</p>
+					<div class="imgs">
+						<div class="img">
+							<img src="../../image/img/upload.png"/>
+							<input type="file" id="file" runat="server" name='image'/>
+						</div>
+					</div>
+				</div>
+				<div>
+					<p>请提供联系方式（选填）</p>
+					<input type="text" placeholder="手机号/微信号/邮箱，便于我们回复您"/>
+				</div>
+			</div>
+		</form>
+		<script src="../../js/matchmaker/report.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
+

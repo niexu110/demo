@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>精灵</title>
+    <script src="js/three.js"></script>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script>
+        $(function(){
+            var scene=new THREE.Scene();
+            var camera=new THREE.PerspectiveCamera(45,window.innerWidth/window.innerHeight,1,1000);
+            camera.position.set(20,0,150);
+            var renderer=new THREE.WebGLRenderer;
+            renderer.setClearColor(new THREE.Color(0x000000));
+            renderer.setSize(window.innerWidth,window.innerHeight);
+            document.body.appendChild(renderer.domElement);
+            var group;
+            createSprites();
+            function createSprites(){
+                group=new THREE.Object3D();
+                var range=200;
+                for(var i=0;i<500;i++){
+                    group.add(createSprite(10,false,0.6,0xffffff,i%5,range))
+                }
+                scene.add(group);
+            }
+            function getTexture(){
+                return new THREE.ImageUtils.loadTexture("./miss.png")
+            }
+            function createSprite(size,trans,opacity,color,spriteNum,range){
+                var spriteMaterial=new THREE.SpriteMaterial({
+                    opacity:opacity,
+                    color:color,
+                    transparent:trans,
+                    map:getTexture()
+                });
+                spriteMaterial.map.offset=new THREE.Vector2(0.2*spriteNum,0);
+                spriteMaterial.map.repeat=new THREE.Vector2(1/5,1);
+                spriteMaterial.depthTest=false;
+                spriteMaterial.blending=THREE.AdditiveBlending;
+                var sprite=new THREE.Sprite(spriteMaterial);
+                sprite.scale.set(size,size,size);
+                sprite.position.set(
+                    Math.random()*range-range/2,
+                    Math.random()*range-range/2,
+                    Math.random()*range-range/2
+                );
+                sprite.velocityX=5;
+                return sprite;
+            }
+            render();
+            function render(){
+                group.rotation.x+=0.01;
+                requestAnimationFrame(render);
+                renderer.render(scene,camera);
+            }
+        })
+    </script>
+    <!--<script>-->
+        <!--$(function(){-->
+            <!--var scene=new THREE.Scene();-->
+            <!--var camera=new THREE.PerspectiveCamera(45,1000/800,1,1000);-->
+            <!--var renderer=new THREE.WebGLRenderer;-->
+            <!--renderer.setClearColor(new THREE.Color(0x5793dd));-->
+            <!--renderer.setSize(1000,800);-->
+            <!--camera.position.set(-20,30,40);-->
+            <!--camera.lookAt(new THREE.Vector3(10,0,0));-->
+            <!--document.body.appendChild(renderer.domElement);-->
+
+            <!--var group;-->
+            <!--createSprites();-->
+            <!--render();-->
+             <!--function createSprites(){-->
+                <!--group=new THREE.Object3D();-->
+                 <!--var range=200;-->
+                 <!--for(var i=0;i<500;i++){-->
+                     <!--group.add(createSprite(10,false,0.6,0xffffff,i%5,range));-->
+                 <!--}-->
+                 <!--scene.add(group);-->
+             <!--}-->
+             <!--function getTexture(){-->
+                 <!--return new THREE.ImageUtils.loadTexture("./miss.png");-->
+             <!--}-->
+             <!--function createSprite(size,transparent,opacity,color,spriteNumber,range){-->
+                 <!--var spriteMaterial=new THREE.SpriteMaterial({-->
+                     <!--opacity:opacity,-->
+                     <!--color:color,-->
+                     <!--transparent:transparent,-->
+                     <!--map:getTexture()-->
+                 <!--});-->
+                 <!--spriteMaterial.map.offset=new THREE.Vector2(0.2*spriteNumber,0);-->
+                 <!--spriteMaterial.map.repeat=new THREE.Vector2(1/5,1);-->
+                 <!--spriteMaterial.depthTest=false;-->
+                 <!--spriteMaterial.blending=THREE.AdditiveBlending;-->
+                 <!--//创建一个精灵-->
+                 <!--var sprite=new THREE.Sprite(spriteMaterial);-->
+                 <!--sprite.scale.set(size,size,size);-->
+                 <!--sprite.position.set(-->
+                         <!--Math.random()*range-range/2,-->
+                         <!--Math.random()*range-range/2,-->
+                         <!--Math.random()*range-range/2-->
+                 <!--);-->
+                 <!--sprite.velocityX=5;-->
+                 <!--return sprite;-->
+             <!--}-->
+
+            <!--function render(){-->
+                <!--group.rotation.x+=0.01;-->
+                <!--requestAnimationFrame(render);-->
+                <!--renderer.render(scene,camera);-->
+            <!--}-->
+        <!--})-->
+    <!--</script>-->
+</head>
+<body>
+
+</body>
+</html>

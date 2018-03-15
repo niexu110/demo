@@ -1,0 +1,13 @@
+body{background:#f3f3f3;}
+.manage-main{width:7rem; height:auto;margin:1.1rem auto 0;}
+.manageItem{width:100%;height:1.7rem;margin-top:.2rem;background:#fff;}
+.item-left{width:5rem;height:1.7rem;}
+.item-right{width:2rem;height:1.7rem;}
+.item-left p{margin-top:.15rem;padding-left:.2rem;color:#747474;font-size:.26rem;}
+.item-left .manage-title{font-size:.3rem;color:#333;}
+.pep{color:#5793dd;padding-left:.1rem;}
+.item-right img{width:.36rem;height:.36rem; display: block;margin:.35rem auto;}
+.item-right p{text-align: center;font-size: .26rem;}
+.nameA{color:#5793dd;}
+.nameB{color:#adadad;}
+.nameC{color:#E06363;}

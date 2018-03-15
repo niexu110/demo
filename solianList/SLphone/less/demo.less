@@ -1,0 +1,34 @@
+@bold:bold;@c : #5793dd;
+.color(@col){  color: @col;
+}.size(@size){font-size:@size;}
+.wh(@w,@h,@lh){width:@w;height:@h;line-height: @lh}
+.cen(@cent){
+  text-align:@cent;
+}
+.a{
+  .size(.3rem);
+  font-weight:@bold;
+  .cen(center);
+  .wh(7.5rem,.9rem,.9rem);
+  .color(#333);
+  a{
+    float:left;
+    margin-left:.4rem;
+    .wh(.5rem,.9rem,0);
+    .he{
+      .wh(.25rem,.35rem,0);
+      padding-top:.2rem;
+    }
+  }
+}
+.transition(@moveStyle:all,@Time:3s,@type:linear,@dearTime:2s){
+  transition: @arguments;
+}
+.whs(@width:4rem;@height:1rem;@Lheight:1rem){
+  height:@height;width:@width;line-height: @Lheight;
+};
+.b{
+  .whs(3rem)!important;
+  .transition(width,8s,ease-in-out);
+  background:fade(hsl(90%,50%,80%),70%);
+}

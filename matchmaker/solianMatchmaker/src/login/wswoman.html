@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <title>我是媒婆</title>
+	    <meta http-equiv="pragma" content="no-cache">
+	    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+	    <meta http-equiv="expires" content="-1">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+	    <meta name="format-detection" content="telephone=no">
+	    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+	    <link rel="stylesheet" href="../../css/common.css">
+    	<link rel="stylesheet" href="../../css/login/register.css">
+   		<link rel="stylesheet" href="http://cache.amap.com/lbs/static/main1119.css"/>
+    	<script type="text/javascript" src="http://cache.amap.com/lbs/static/addToolbar.js"></script>
+	    <script type="text/javascript" src="../../js/common.js"></script>
+	    <script type="text/javascript" src="../../js/jquery-2.1.4.min.js" charset="utf-8"></script>
+	   	<script src="../../js/login/wswoman.js"></script>
+    	<script src="js/img.js"></script>
+		<script src="js/require.js"></script>
+		<script src="js/main.js"></script>
+	</head>
+	<body>
+		<form class="d_fileForm" id="form">
+			<div style="display: none;">
+				<div class="SL_nav">
+					上传图像
+					<a href="#" class="imgLeft"></a>
+				</div>
+				<div class="toBar">
+					<label>
+						选择图片
+						<input type="file"  id="upLoadInt">
+					</label>
+					<button type="button">确定</button>
+				</div>
+				<div class="img_content">
+					<img class="image" src="" id="upLoadImg">
+				</div>
+				<canvas width="200" height="200" id="canvas"></canvas>
+			</div>
+			<input type="hidden" name="image" value="" />
+			<input type="hidden" name="nickname" value="" />
+			<input type="hidden" name="province" value="" />
+			<input type="hidden" name="city" value="" />
+			<input type="hidden" name="industry" value="" />
+			<input type="hidden" name="introduction" value="" />
+		</form>
+			<!-- 从事的行业-->
+			<div class="d_zhiy" style="display: none;">
+				<div class="d_backBox">
+					<img class="d_back d_hyback" src="../../image/icons/left.png" />
+				</div>
+				<div class="d_koy"></div>
+				<p class="d_send">选择您从事的行业</p>
+				<p class="d_declare" style="text-align: left;margin-left: 0.6rem;">
+					目前从事的行业是什么？
+				</p>
+				<ul class="d_jobBox"></ul>
+				<div class="d_koyi"></div>
+			</div>
+		<div class="d_formTwo">
+			<div>
+				<div class="d_backBox">
+					<a href="javascript:history.go(-1)"><img class="d_back d_zlback" src="../../image/icons/left.png" /></a>
+				</div>
+				<div class="d_koy"></div>
+				<div class="d_file">
+					<img class="d_phototow" src="../../image/icons/d_photo.png" />
+				</div>
+				<p class="d_declare">上传媒婆照片，提高你单身群的成功率</p>
+				<div>
+					<div class="d_inpBox">
+						<p>昵称</p>
+						<input class="d_nicknames" type="text" placeholder="请输入(昵称为2-7个字)" />
+					</div>
+					<div class="d_inpBox" class="d_showCityPicker">
+						<p>所在城市</p>
+						<em class="d_cityResult">点击选择城市</em>
+					</div>
+					<div class="d_inpBox d_tradeselect">
+						<p>所属行业</p>
+						<span style="font-size: 0.32rem;">请选择</span>
+					</div>
+					<div class="d_inpBox">
+						<p>职位/身份介绍</p>
+						<input class="d_post" type="text" placeholder="请填写公司职位或简单介绍" />
+					</div>
+				</div>
+				<div class="d_koyi"></div>
+				<div class="d_nextone d_zlnext"><p>下一步</p></div>
+			</div>
+		</div>
+		<div class="d_hideBox" style="display: none;">
+			<div class="d_selectcity" >
+				<div class="d_citytitle"><span>取消</span><p>确认</p></div>
+				<div class="d_citylist">
+					<ul class="d_province"></ul>
+					<ul class="d_town"></ul>
+				</div>
+			</div>
+		</div>
+		<div class="d_popupbox"></div>
+	</body>
+</html>

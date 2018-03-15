@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>粒子系统</title>
+    <script src="js/three.js"></script>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script>
+ $(function(){
+     var scene=new THREE.Scene();
+     var camera=new THREE.PerspectiveCamera(45,800/600,1,1000);
+     camera.position.set(0,0,155);
+     var renderer=new THREE.WebGLRenderer();
+     renderer.setClearColor(new THREE.Color(0x000000,1.0));
+     renderer.setSize(800,600);
+     document.body.appendChild(renderer.domElement);
+     //创建精灵
+     createSprites();
+     function createSprites(){
+         var material=new THREE.SpriteMaterial();
+         for (var x=-5;x<5;x++){
+             for(var y=-5;y<5;y++){
+                 //生成精灵
+                 var sprite=new THREE.Sprite(material);
+                 //定位精灵位置
+                 sprite.position.set(x*10,y*10,0);
+                 scene.add(sprite);
+             }
+         }
+     }
+     render();
+     function render(){
+         requestAnimationFrame(render);
+         renderer.render(scene,camera);
+     }
+ })
+    </script>
+</head>
+<body>
+
+</body>
+</html>

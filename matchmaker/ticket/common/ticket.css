@@ -1,0 +1,23 @@
+.views{width:7.5rem;height:auto;}
+.views img{width:7.5rem;display: block;}
+.ticket-box{width:7.5rem;position: relative;height:auto;}
+.content-box{position: absolute;top:0;left:0;bottom:0;right:0;}
+.content-box p{text-align: center;font-size:.3rem;color:#fff;}
+.content-box p>span{font-size:.5rem;color:#e4393c;}
+.int-box{width:100%;height:1rem;position: relative;}
+.int-box em{font-size:.3rem;color:#fff;}
+.int-box span{ display: inline-block;width:3rem;font-size:.32rem;color:#fff;text-align: right;padding:.1rem 0;}
+.int-box input{padding-left:.2rem;font-size:.3rem;background:transparent;border-bottom:1px solid #fff;color:#fff; height:.6rem;width:3.6rem;}
+.int-box .codeInt{width:2rem;}
+.codeBtn{position: absolute;top:0;right:.75rem;width:1.5rem;height:.6rem;line-height:.6rem;font-size:.28rem;text-align:center;color:#fff;border:1px solid #fff;border-radius:4px;   }
+.number-btn{display: inline-block;color:#fff;}
+.number-btn b{display: inline-block;width:0;height:0;padding:0 .1rem;}
+.number-btn i{display: inline-block;width:1rem;text-align: center;font-size:.4rem;}
+.left-num{ border-top: 8px solid transparent;  border-right: 8px solid #fff;  border-bottom: 8px solid transparent;}
+.right-num{  border-top: 8px solid transparent;  border-bottom: 8px solid transparent;  border-left: 8px solid #fff;}
+.ticketBtn{width:3rem;height:.9rem;line-height: .9rem;font-size:.34rem;color:#fff;margin:.4rem auto 0;text-align: center;background:linear-gradient(to top,#5514AD ,#AA6DFF);font-weight: bold;text-shadow: 1px 2px 1px #000;border-radius: 6px;}
+.pop{position: fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.8);display:none;}
+.pop-content{width:6rem;height:8rem;position: absolute;left:0;right:0;bottom:0;top:0;margin: auto;background:#fff;}
+.pop-content img{width:6rem;}
+.pop-content p{text-align: center;color:#e4393c;font-size:.35rem;padding:0 .2rem;font-weight: bold;}
+.showStart{width:3rem;height:.8rem;text-align:center;line-height:.8rem;position: fixed;top:0;bottom:0;right:0;left:0;margin: auto;background:rgba(0,0,0,1);font-size:.3rem;color:#fff;display: none;}

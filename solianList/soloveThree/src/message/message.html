@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>消息</title>
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="expires" content="-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/message/message.css">
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/common.js"></script>
+</head>
+<body>
+<div id="header">
+    <em>消息</em>
+</div>
+<div class="pop">
+    <div class="pop-box4">
+        <h1>下载APP</h1>
+        <p>聊天约会需要下载APP,</p>
+        <p>让你的幸福之路更顺畅</p>
+        <span class="btn">确定</span>
+    </div>
+</div>
+<!--主页-->
+<div  class="view">
+   <div class="container">
+       <a href="housekeeper.html" class="msg-box">
+           <img src="../../image/icon/system.png" class=" lt msg-title-img">
+           <div class="msg-content lt">
+               <h1>搜恋小管家</h1>
+               <p>欢迎您加入搜恋</p>
+           </div>
+       </a>
+       <a href="likeperson.html" class="msg-box">
+           <img src="../../image/icon/loves.png" class=" lt msg-title-img">
+           <div class="msg-content lt">
+               <h1>喜欢</h1>
+               <p>看看谁喜欢你</p>
+           </div>
+       </a>
+       <a href="#" class="msg-box">
+           <img src="../../image/icon/looks.png" class=" lt msg-title-img">
+           <div class="msg-content lt">
+               <h2>谁看过我</h2>
+           </div>
+       </a>
+       <div class="msg-box chat-download">
+           <img src="../../image/icon/looks.png" class=" lt msg-title-img">
+           <div class="msg-content lt">
+               <h1>小可爱</h1>
+               <p>您好！可以聊聊吗？</p>
+           </div>
+           <span class="msg-hint rt"><img src="../../image/icon/lock.png" alt="">解锁聊天</span>
+       </div>
+   </div>
+</div>
+<div id="footer">
+    <div class="foot-box">
+        <a href="../find.html" class="tab-link-2 " >
+            <i class="icon icon-img-1"></i>
+        </a>
+        <a href="javascript:void(0);" class="tab-link-2 active">
+            <i class="icon icon-img-2 "></i>
+        </a>
+        <a href="../personal/myIndex.html" class="tab-link-2">
+            <i class="icon icon-img-3"></i>
+        </a>
+    </div>
+</div>
+
+</body>
+<script>
+    $(function(){
+            $(".chat-download").click(function(){
+                $(".pop").show();
+            })
+        $(".btn").click(function(){$(".pop").hide();})
+    })
+</script>
+</html>

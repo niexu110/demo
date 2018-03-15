@@ -1,0 +1,6 @@
+.view{padding:0;position: relative;}
+.bgCode{width:7.5rem;}
+.title{width:7.5rem;font-size:.35rem;color:#fff;position: absolute;left:0;top:4.3rem;text-align: center;font-weight: bold;}
+.codeNum{position: absolute;left:0;top:0;width:7.5rem;height:1.1rem;line-height:1.1rem;text-align: center; color: #fff;font-size:.32rem;font-weight: bold}
+.transImg{position: absolute;left:2.3rem;top:5.4rem;width:3rem;transform:rotateX(-54deg)rotateY(0deg)rotateZ(45deg);-webkit-transform:rotateX(-54deg)rotateY(0deg)rotateZ(45deg);}
+.userImg{position: absolute;left:2.3rem;top:6.4rem;width:3rem;}

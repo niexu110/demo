@@ -1,0 +1,23 @@
+.view img{
+	display: block;
+	margin: 2rem auto .8rem;
+	width: 1.6rem;
+	height: 1.46rem;
+}
+.view p{
+	font-size: .3rem;
+	color: #111;
+	text-align: center;
+}
+.phone{
+	padding-top: .3rem;
+}
+.view span{
+	position: absolute;
+	bottom: 1.3rem;
+	left: 0;
+	right: 0;
+	text-align: center;
+	font-size: .24rem;
+	color: #666;
+}

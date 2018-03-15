@@ -1,0 +1,58 @@
+.d_content{
+	margin-top: 0.9rem;
+}
+.d_title{
+	margin-left: 0.3rem;
+	height: 0.88rem;
+	line-height: 0.88rem;
+	font-size: 0.28rem;
+	color: #111111;
+	border-bottom: solid 1px #E6E6E6;
+}
+.d_boxson{
+	height: 1.6rem;
+	margin-left: 0.3rem;
+	padding-right: 0.3rem;
+	border-bottom:solid 1px #E6E6E6;
+}
+.d_headimg{
+	height: 1.0rem;
+	width: 1.0rem;
+	border-radius: 50%;
+	float: left;
+	margin-top: 0.3rem;
+	margin-right: 0.3rem;
+}
+.d_nickjob{
+	float: left;
+	margin-top: 0.3rem;
+}
+.d_nickjob span{
+	display: block;
+	clear: both;
+	font-size: 0.26rem;
+	color: #111111;
+}
+.d_son{
+	width: 4.0rem;
+}
+.d_son p{
+	float: left;
+	font-size: 0.28rem;
+	color: #111111;
+	font-weight: bold;
+	line-height: 0.6rem;
+}
+.d_son img{
+	float: left;
+	height: 0.24rem;
+	width: 0.24rem;
+	margin-top: 0.18rem;
+	margin-left: 0.1rem;
+}
+.d_add{
+	float: right;
+	font-size: 0.26rem;
+	color: #666666;
+	line-height: 1.6rem;
+}

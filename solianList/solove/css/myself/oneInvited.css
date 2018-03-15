@@ -1,0 +1,262 @@
+@charset "utf-8";
+html,body{}
+i,s{font-style: normal;text-decoration: none;}
+header{
+	width:7.5rem;
+	height:.9rem;
+	background-color: #f9f9f9;
+	border-bottom:1px solid #e6e6e6;
+	position: fixed;
+	top:0;
+	left:0;
+}
+header a{
+	position: absolute;
+	left:.24rem;
+	top:0;
+  display: block;
+  width: .27rem;
+  height: 100%;
+  background: url(../../img/icon/d_leftboult.png) no-repeat;
+  background-size: .18rem .32rem;
+  background-position: left center;
+}
+header h3{
+	text-align: center;
+	font-size: .34rem;
+	color:#333333;
+	font-weight: bold;
+	line-height: .9rem;
+}
+/*约会主题*/
+.theme{
+	width:7.5rem;
+	margin-top:.9rem;
+	border-bottom:1px solid #e6e6e6;
+	padding:.3rem 0 .3rem;
+}
+.theme h1{
+	width:100%;
+	margin-bottom:.52rem;
+	box-sizing: border-box;
+	padding-left:.24rem;
+	color:#333333;
+	font-size: .3rem;
+}
+.theme h1 span{
+	display: inline-block;
+	margin-left:.2rem;
+}
+/*邀请人信息*/
+.inviteMsg{
+	width:100%;
+}
+.inviteTop{
+	width:5.4rem;
+	margin:0 auto;
+	overflow: hidden;
+}
+.inviteTop p{
+	float:left;
+	width:1.7rem;
+	text-align: center;
+	color:#5793dd;
+	font-size: .24rem;
+	padding-top:.2rem;
+}
+.inviteTop p s{
+	width:100%;
+	display: block;
+}
+.inviteTop span{
+	float:left;
+	margin:0 .4rem;
+	width:1.2rem;
+	height:1.2rem;
+	border-radius: 4px;
+	overflow: hidden;
+}
+.inviteTop span img{
+	display: block;
+	width:100%;
+}
+.inviteBottom{
+	text-align: center;
+	margin-top:.4rem;
+}
+.inviteBottom h2{
+	font-size: .3rem;
+	color:#333333;
+}
+.inviteBottom h5{margin-top:.1rem;}
+.inviteBottom img{
+	display: inline-block;
+	vertical-align: middle;
+}
+.inviteBottom span{
+	display: inline-block;
+	margin-right:.2rem;
+	color:#333333;
+	font-size: .24rem;
+}
+.inviteBottom .sex{
+	width:.2rem;
+	height:.2rem;
+	margin-right:.1rem;
+}
+.inviteBottom .identity{
+	width:.3rem;
+	height:auto;
+}
+/*约会信息(接送等)*/
+.dateMsg{
+	width:7.5rem;
+	padding:0 1.86rem;
+	box-sizing: border-box;
+	padding-top:.3rem;
+}
+.dateMsg span{
+	display: inline-block;
+	width:1.84rem;
+	text-align: center;
+	margin-bottom:.3rem;
+}
+.dateMsg span img{
+	display: block;
+	width:.8rem;
+	height: auto;
+	margin:0 auto;
+}
+.dateMsg span s{
+	display: block;
+	color:#5793dd;
+	font-size:.22rem;
+	margin-top:.1rem;
+}
+
+.agreeMessage{
+	width:7.5rem;
+	box-sizing: border-box;
+	padding:0 .24rem;
+	height:1.1rem;
+	line-height: 1.1rem;
+	overflow: hidden;
+}
+.agreeMessage p{
+	float:left;
+}
+.agreeMessage span{
+	float:right;
+	width:1rem;
+	height:.56rem;
+	line-height: .56rem;
+	text-align: center;
+	margin-top:.27rem;
+	font-size:.28rem;
+	box-sizing: border-box;
+	border-radius: 4px;
+}
+.agreeMessage span.agree{
+	color:#ffffff;
+	background-color: #5793dd;
+	margin-right:.3rem;
+}
+.agreeMessage span.naysay{
+	color:#5793dd;
+	border:1px solid #5793dd;
+}
+h6{
+	width:7.5rem;
+	height:.1rem;
+	background-color: #f3f3f3;
+}
+/*约会地址*/
+.dateAddress{
+	width:7.5rem;
+	box-sizing: border-box;
+	padding:.24rem .24rem .3rem;
+}
+.dateAddress h3{
+	font-size:.3rem;
+	color:#333333;
+}
+.dateAddress p{
+	margin-top:.3rem;
+	overflow: hidden;
+	font-size:.28rem;
+	color:#666666;
+}
+.dateAddress p s{
+	float:left;
+}
+.dateAddress p span{
+	float:left;
+	width:6rem;
+}
+/*约会进度*/
+.tempo{
+	padding:.3rem .24rem .6rem;
+	position: relative;
+}
+.tempo h3{
+	font-size:.3rem;
+	color:#333333;
+	margin-bottom:.3rem;
+}
+.tempo i{
+	display: none;
+	position: absolute;
+	top:1.2rem;
+	left:.4rem;
+	width:2px;
+	height:2.52rem;
+	background-color: #c1c1c1;
+}
+.tempo ul{
+	box-sizing: border-box;
+	padding-left:.45rem;
+}
+.tempo ul li{
+	margin-bottom:.4rem;
+	position: relative;
+}
+.tempo ul li p{
+	color:#999999;
+	font-size:.26rem;
+	margin-bottom:.24rem;
+}
+.tempo ul li span{
+	color:#999999;
+	font-size:.24rem;
+}
+.tempo ul li s{
+	position: absolute;
+	top:.15rem;
+	left: -.34rem;
+	width:.14rem;
+	height:.14rem;
+	border-radius: 50%;
+	background-color: #c1c1c1;
+	z-index: 2;
+}
+.tempo ul li s.now{
+	width:.2rem;
+	height: .2rem;
+	background-color: #5793dd;
+	left:-.37rem;
+	top:.1rem;
+
+}
+.tempo ul li .nows{color:#5793dd;} 
+h4{
+	position: fixed;
+	bottom:0;
+	left:0;
+	width:7.5rem;
+	height:.94rem;
+	line-height: .94rem;
+	text-align: center;
+	color:#fff;
+	font-size:.32rem;
+	background-color: #5793dd;
+}

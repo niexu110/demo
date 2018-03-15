@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>全民媒婆</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon " type="images/x-icon" href="image/ico.ico">
+    <link rel="stylesheet" href="css/common/common.css">
+    <link rel="stylesheet" href="css/subclass/index.css">
+    <script type="text/javascript" src="js/common/jquery-3.2.1.min.js"></script>
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/common/jquery-1.11.3.js"></script>
+    <style>#header{background:#ffffff;}</style>
+    <![endif]-->
+    <script type="text/javascript" src="js/common/ajaxHttp.js"></script>
+</head>
+<body>
+<div id="header">
+    <div class="nav">
+        <div class="nav-logo lt">
+            <img src="image/icon/LOGO.png" class="mt20">
+            <img src="image/icon/meipo.png" class="mt40 mL20">
+        </div>
+        <div class="nav-bar rt">
+            <ul class="mp-ul">
+                <li class="mt20 actives li"><a href="javascript:void(0);">首页</a></li>
+                <li class="mt20 li"><a href="src/industryNews.html">行业资讯</a></li>
+                <li class="mt20"><a href="src/activity.html">活动中心</a></li>
+                <li class="mt20"><a href="#">关于我们</a></li>
+                <li class="mt20"><a href="#F5">下载APP</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="pop">
+    <div class="box">
+        <img src="image/icon/close.png" class="close">
+         <div class="left-box lt">
+             <div class="pop-header mt30">
+                 <img src="image/img/user.png" class="lt">
+                 <div class="pop-user lt">
+                     <h3 class="pt20">我的名字六个字</h3>
+                     <p class="pt10">IT互联网&nbsp;&nbsp;&nbsp;IT界的精英任务</p>
+                 </div>
+             </div>
+             <div class="pop-title clear mt50 mL30">TA的单身团成员(156人)</div>
+             <div class="pop-imgItem mt30">
+                 <img src="image/img/user.png" alt="">
+                 <img src="image/img/user.png" alt="">
+                 <img src="image/img/user.png" alt="">
+                 <img src="image/img/user.png" alt="">
+                 <img src="image/img/user.png" alt="">
+                 <img src="image/img/user.png" alt="">
+                 <img src="image/img/user.png" alt="">
+             </div>
+         </div>
+         <div class="right-box lt">
+             <h4 class="mt30 mL30">下载APP</h4>
+             <img src="image/img/ad@2x.png" alt="">
+             <p>安卓下载</p>
+             <img src="image/img/iOS@2x.png" alt="">
+             <p>IOS下载</p>
+             <img src="image/img/meiCode.png" alt="">
+             <p>服务号关注</p>
+         </div>
+    </div>
+</div>
+<div id="main">
+    <!--主页轮播-->
+    <div class="banner mWidth" style="min-height: 460px">
+        <a href=""><img src="image/img/banner.png" class="response-img pso_img"></a>
+    </div>
+    <p class="line"></p>
+    <!--F1-->
+    <div class="banner">
+        <div class="container">
+            <div class="floor">
+                <img src="image/img/floor1.png" class="mt20">
+                 <span class="posit-span">为什么在全民媒婆找对象？</span>
+            </div>
+            <img src="image/img/list.png" class="img1">
+        </div>
+    </div>
+    <!--F2-->
+    <div class="banner bgF9">
+        <div class="container ">
+            <div class="floor">
+                <img src="image/img/floor2.png" class="mt20">
+                <span class="posit-span bgF9">优质会员展示</span>
+                <div class="menu">
+                    <span class="lt active" data-type="1">媒婆</span>
+                    <span  class="rt" data-type="2">单身</span>
+                </div>
+            </div>
+            <div class="slider-box mt20">
+               <div class="slider">
+                 <div  class="asoBox lt ">
+                <ul class="list-ul lt meiList">
+                    <li class="item ">
+                        <img src="image/img/user.png" class="response-img">
+                        <img src="image/icon/masonry.png" class="item-img">
+                        <p>服务业·媒婆</p>
+                        <div>太公望.盛世 <span class="pL20">单身团45人</span></div>
+                    </li>
+                    <li class="item mL25">
+                        <img src="image/img/user.png" class="response-img">
+                        <img src="image/icon/masonry.png" class="item-img">
+                        <p>服务业·媒婆</p>
+                        <div>太公望.盛世 <span class="pL20">单身团45人</span></div>
+                    </li>
+                    <li class="item mL25">
+                        <img src="image/img/user.png" class="response-img">
+                        <img src="image/icon/masonry.png" class="item-img">
+                        <p>服务业·媒婆</p>
+                        <div>太公望.盛世 <span class="pL20">单身团45人</span></div>
+                    </li>
+                    <li class="item mL25">
+                        <img src="image/img/user.png" class="response-img">
+                        <img src="image/icon/masonry.png" class="item-img">
+                        <p>服务业·媒婆</p>
+                        <div>太公望.盛世 <span class="pL20">单身团45人</span></div>
+                    </li>
+                    <li class="item">
+                        <img src="image/img/user.png" class="response-img">
+                        <img src="image/icon/masonry.png" class="item-img">
+                        <p>服务业·媒婆</p>
+                        <div>太公望.盛世 <span class="pL20">单身团45人</span></div>
+                    </li>
+                    <li class="item mL25">
+                        <img src="image/img/user.png" class="response-img">
+                        <img src="image/icon/masonry.png" class="item-img">
+                        <p>服务业·媒婆</p>
+                        <div>太公望.盛世 <span class="pL20">单身团45人</span></div>
+                    </li>
+                    <li class="item mL25">
+                        <img src="image/img/user.png" class="response-img">
+                        <img src="image/icon/masonry.png" class="item-img">
+                        <p>服务业·媒婆</p>
+                        <div>太公望.盛世 <span class="pL20">单身团45人</span></div>
+                    </li>
+                    <li class="item mL25">
+                        <img src="image/img/user.png" class="response-img">
+                        <img src="image/icon/masonry.png" class="item-img">
+                        <p>服务业·媒婆</p>
+                        <div>太公望.盛世 <span class="pL20">单身团45人</span></div>
+                    </li>
+                </ul>
+            </div>
+                 <div  class="asoBox  lt">
+                  <ul class="list-ul lt">
+                    <li class="item ">
+                        <img src="image/img/user.png" class="response-img">
+                        <img src="image/icon/masonry.png" class="item-img">
+                        <p>27岁·170cm·互联网·2000以上</p>
+                        <div>太公望.盛世</div>
+                        <p class="address">陕西·西安</p>
+                    </li>
+                    <li class="item mL25">
+                        <img src="image/img/user.png" class="response-img">
+                        <img src="image/icon/masonry.png" class="item-img">
+                        <p>27岁·170cm·互联网·2000以上</p>
+                        <div>太公望.盛世 </div>
+                    </li>
+                    <li class="item mL25">
+                        <img src="image/img/user.png" class="response-img">
+                        <img src="image/icon/masonry.png" class="item-img">
+                        <p>27岁·170cm·互联网·2000以上</p>
+                        <div>太公望.盛世 </div>
+                    </li>
+                    <li class="item mL25">
+                        <img src="image/img/user.png" class="response-img">
+                        <img src="image/icon/masonry.png" class="item-img">
+                        <p>27岁·170cm·互联网·2000以上</p>
+                        <div>太公望.盛世 </div>
+                    </li>
+                    <li class="item">
+                        <img src="image/img/user.png" class="response-img">
+                        <img src="image/icon/masonry.png" class="item-img">
+                        <p>27岁·170cm·互联网·2000以上</p>
+                        <div>太公望</div>
+                    </li>
+                    <li class="item mL25">
+                        <img src="image/img/user.png" class="response-img">
+                        <img src="image/icon/masonry.png" class="item-img">
+                        <p>24岁·175cm·互联网·4000以上</p>
+                        <div>太公望.盛</div>
+                    </li>
+                    <li class="item mL25">
+                        <img src="image/img/user.png" class="response-img">
+                        <img src="image/icon/masonry.png" class="item-img">
+                        <p>21岁·170cm·互联网·2000以上</p>
+                        <div>盛世/div>
+                    </li>
+                    <li class="item mL25">
+                        <img src="image/img/user.png" class="response-img">
+                        <img src="image/icon/masonry.png" class="item-img">
+                        <p>27岁·170cm·互联网·2000以上</p>
+                        <div>太公望.盛世</div>
+                    </li>
+                </ul>
+            </div>
+               </div>
+            </div>
+        </div>
+    </div>
+    <!--F3-->
+    <div class="banner">
+        <div class="container">
+            <div class="floor">
+                <img src="image/img/floor3.png" class="mt20">
+                <span class="posit-span">活动中心</span>
+            </div>
+            <div class="action-box mt30  lt">
+                <div class="carousel lt">
+                   <div class="carousel-slider">
+                       <div><img src="image/img/user.png" class="response-img"></div>
+                       <div><img src="image/img/user.png" class="response-img"></div>
+                       <div><img src="image/img/user.png" class="response-img"></div>
+                   </div>
+                   <p class="carousel-item">
+                       <span class="active"></span>
+                       <span></span>
+                       <span></span>
+                   </p>
+                </div>
+                <div class="guide lt">
+                    <!--轮播内容摘要-->
+                     <div class="guide-item mt50 mL60 active2">
+                         <h5 class="pB30">因为刚好遇见你</h5>
+                         <div class="summary">
+                             <span class="lt">内容摘要:</span>
+                             <p class="rt">
+                                 阿达萨达撒阿斯达所多阿斯达所多阿萨德安市撒的阿萨德撒大厦安市断水的啊
+                                 阿达凯撒沙拉大胜靠德大凯撒活动卡的哈撒上看到安徽的扩散大声道阿萨德把搜恋的
+                             </p>
+                         </div>
+                         <a href="javascript:void(0); ">查看详情</a>
+                     </div>
+                     <div class="guide-item mt50 mL60">
+                         <h5 class="pB30">测试内容</h5>
+                         <div class="summary">
+                             <span class="lt">内容摘要:</span>
+                             <p class="rt">
+                                 阿达萨达撒阿斯达所多阿斯达所多阿萨德安市撒的阿萨德撒大厦安市断水的啊
+                                 阿达凯撒沙拉大胜靠德大凯撒活动卡的哈撒上看到安徽的扩散大声道阿萨德把搜恋的
+                             </p>
+                         </div>
+                         <a href="javascript:void(0); ">点击进入</a>
+                     </div>
+                     <div class="guide-item mt50 mL60">
+                         <h5 class="pB30">为五杀而努力</h5>
+                         <div class="summary">
+                             <span class="lt">内容摘要:</span>
+                             <p class="rt">
+                                 阿达萨达撒阿斯达所多阿斯达所多阿萨德安市撒的阿萨德撒大厦安市断水的啊
+                                 阿达凯撒沙拉大胜靠德大凯撒活动卡的哈撒上看到安徽的扩散大声道阿萨德把搜恋的
+                             </p>
+                         </div>
+                         <a href="javascript:void(0);">查看详情</a>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--F4-->
+    <div class="banner bgF9">
+        <div class="container">
+            <div class="floor">
+                <img src="image/img/floor4.png" class="mt20">
+                <span class="posit-span bgF9">行业资讯</span>
+            </div>
+            <div class="action-box mt30  lt">
+                <div class="guide2 lt">
+                    <!--轮播内容摘要-->
+                    <div class="guide-item2 mt50 mR60 active2">
+                        <h5 class="pB30">因为刚好遇见你</h5>
+                        <div class="summary">
+                            <span class="lt">内容摘要:</span>
+                            <p class="lt">
+                                阿达萨达撒阿斯达所多阿斯达所多阿萨德安市撒的阿萨德撒大厦安市断水的啊
+                                阿达凯撒沙拉大胜靠德大凯撒活动卡的哈撒上看到安徽的扩散大声道阿萨德把搜恋的
+                            </p>
+                        </div>
+                        <a href="javascript:void(0); ">查看详情</a>
+                    </div>
+                    <div class="guide-item2 mt50 mR60">
+                        <h5 class="pB30">测试内容</h5>
+                        <div class="summary">
+                            <span class="lt">内容摘要:</span>
+                            <p class="rt">
+                                阿达萨达撒阿斯达所多阿斯达所多阿萨德安市撒的阿萨德撒大厦安市断水的啊
+                                阿达凯撒沙拉大胜靠德大凯撒活动卡的哈撒上看到安徽的扩散大声道阿萨德把搜恋的
+                            </p>
+                        </div>
+                        <a href="javascript:void(0); ">点击进入</a>
+                    </div>
+                    <div class="guide-item2 mt50 mR60">
+                        <h5 class="pB30">为五杀而努力</h5>
+                        <div class="summary">
+                            <span class="lt">内容摘要:</span>
+                            <p class="rt">
+                                阿达萨达撒阿斯达所多阿斯达所多阿萨德安市撒的阿萨德撒大厦安市断水的啊
+                                阿达凯撒沙拉大胜靠德大凯撒活动卡的哈撒上看到安徽的扩散大声道阿萨德把搜恋的
+                            </p>
+                        </div>
+                        <a href="javascript:void(0);">查看详情</a>
+                    </div>
+                </div>
+                <div class="carousel2 lt">
+                    <div class="carousel-slider2">
+                        <div><img src="image/img/title.png" class="response-img2"></div>
+                        <div><img src="image/img/title.png" class="response-img2"></div>
+                        <div><img src="image/img/title.png" class="response-img2"></div>
+                    </div>
+                    <p class="carousel-item2">
+                        <span class="active"></span>
+                        <span></span>
+                        <span></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--F5-->
+    <div class="banner" id="F5">
+        <div class="container">
+            <div class="floor">
+                <img src="image/img/floor5.png" class="mt20">
+                <span class="posit-span">全民媒婆&nbsp;共享单身</span>
+            </div>
+            <p class="title pL30 pt20">免费下载全民媒婆,不仅可以帮助身边好友解决单身困扰,还会发现全民媒婆是一个赚钱神器</p>
+            <div class="download clear">
+                <div class="download-box lt">
+                    <img src="image/icon/iPhone-LOGO.png" class="download-icon">
+                    <p class="download-p mt20">APP Store下载</p>
+                    <img src="image/img/iOSapp.png" class="download-img response-img">
+                </div>
+                <div class="download-box lt">
+                    <img src="image/icon/Android-logo.png" class="download-icon">
+                    <p class="download-p mt20">Android 下载</p>
+                    <img src="image/img/adAPP.png" class="download-img response-img">
+                </div>
+                <div class="download-box lt">
+                    <img src="image/icon/wx-logo.png" class="download-icon">
+                    <p class="download-p mt20">服务号关注</p>
+                    <img src="image/img/meiCode.png" class="download-img response-img">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="footer">
+    <div class="feet">
+        <div class="info">
+            <dl>
+                <dt>特色服务</dt>
+                <dd><a href="#">全民媒婆</a></dd>
+                <dd><a href="#">共享单身</a></dd>
+                <dd><a href="#">资讯活动</a></dd>
+            </dl>
+            <dl>
+                <dt>关于我们</dt>
+                <dd><a href="#">公司介绍</a></dd>
+                <dd><a href="#">服务条款</a></dd>
+                <dd><a href="#">联系我们</a></dd>
+            </dl>
+            <dl>
+                <dt>商业合作</dt>
+                <dd><a href="http://www.xiaojukeji.com" target="_blank">滴滴打车</a></dd>
+                <dd><a href="http://www.dtxs.cn/" target="_blank" >大唐西市</a></dd>
+                <dd><a href="http://www.toutiao.com" target="_blank">今日头条</a></dd>
+            </dl>
+        </div>
+        <div class="downloads">
+            <p>
+                <img src="image/img/iOS@2x.png"/>
+                <span>iOS客户端二维码</span>
+            </p>
+            <p class="center">
+                <img src="image/img/ad@2x.png"/>
+                <span>安卓客户端二维码</span>
+            </p>
+            <p>
+                <img src="image/img/meip@2x.png"/>
+                <span>微信公众号二维码</span>
+            </p>
+        </div>
+    </div>
+    <div class="enroll">
+        <p>Copyright  2017, solian.cc 2017-2018 All Right Reserved.搜恋网</p>
+        <p class="second"><span class="lt">陕ICP备20170808号-1</span><span class="rt">陕ICP证201766号</span></p>
+    </div>
+</div>
+</body>
+<script src="js/subclass/index.js"></script>
+</html>

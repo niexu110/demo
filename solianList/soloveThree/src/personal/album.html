@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>我是媒婆</title>
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="expires" content="-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../../css/common.css">
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/common.js"></script>
+    <style>
+
+        .imgList{position: fixed;top:0;left:0;bottom:0;right:0;background:#fff;z-index:130;}
+        .headers{width:7.5rem;height:.9rem;text-align: center;border-bottom:1px solid #f3f3f3; }
+        .headers span{display: inline-block;height:.9rem;line-height: .9rem;margin-right:.5rem;font-size:.3rem;color:#111;}
+        .goBack{width:.18rem;height:.37rem;margin-left:.3rem;margin-top:.25rem;}
+        .imgList-content{height:11.5rem;width:6.9rem;margin:.3rem auto 0;overflow: hidden;}
+        .imgList-content div{display:inline-block;width:2rem;height:2rem;border-radius:6px;margin:0 .3rem .3rem 0;overflow: hidden;}
+        .imgList-content div>img{width:2rem;}
+        .imgList-file{position: relative;}
+        #upFiles{position: absolute;left:0;right:0;z-index: 500;opacity: 0;width:2.1rem; height:2.1rem;}
+        .mash-imgList{position: fixed;top:0;bottom:0;left:0;right:0;z-index:200;background:rgba(0,0,0,1);overflow: hidden;display:none;}
+        .mash-ul{width:auto;height:100%; overflow: hidden;}
+        .mash-ul li{width:7.5rem;height:100%;position:relative;float:left;}
+        .mash-ul li>img{display:block;max-width:100%;max-height:100%;position: absolute;top:0; left:0;bottom:0;right:0;margin: auto;}
+        .imgList-num{width:100%;height:1.2rem;line-height:1.2rem;color:#fff;font-size:.34rem;text-align:center;position: absolute;top:0; left:0;z-index:300;background:rgba(0,0,0,.5)}
+        .imgList-footer{width:100%;height:1.2rem;line-height:1.2rem;text-align:center;position: absolute;bottom:0; left:0;z-index:300;background:rgba(0,0,0,.5);margin:auto;}
+        .delete{width:.4rem;}
+        .close{width:.18rem;position: absolute;top:.45rem; left:.3rem;}
+    </style>
+</head>
+<body>
+<div class="imgList">
+    <div class="headers"><img src="../../image/icon/left.png" class="goBack lt"><span>相册</span></div>
+    <div class="imgList-content">
+        <div class="imgList-file">
+            <input type="file" id="upFiles">
+            <img src="../../image/icon/upFile.png" >
+        </div>
+        <div><img src="../../image/user.png" ></div>
+        <div><img src="../../image/user.png" ></div>
+        <div><img src="../../image/user.png" ></div>
+        <div><img src="../../image/user.png" ></div>
+        <div><img src="../../image/user.png" ></div>
+        <div><img src="../../image/user.png" ></div>
+        <div><img src="../../image/user.png" ></div>
+    </div>
+    <div class="mash-imgList" id="contents">
+        <div class="imgList-num">
+            <img src="../../image/icon/off-white.png" class="close lt">
+            <span class="num-1"></span>/<span class="num-2"></span>
+        </div>
+        <ul class="mash-ul">
+            <li ><img src="../../image/user.png" class="imgItem"></li>
+            <li ><img src="../../image/user.png" class="imgItem"></li>
+            <li ><img src="../../image/user.png" class="imgItem"></li>
+            <li ><img src="../../image/user.png" class="imgItem"></li>
+            <li ><img src="../../image/user.png" class="imgItem"></li>
+            <li ><img src="../../image/user.png" class="imgItem"></li>
+            <li ><img src="../../image/user.png" class="imgItem"></li>
+        </ul>
+        <div class="imgList-footer">
+            <img src="../../image/icon/delete.png" class="delete">
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    $(function(){
+        //上传图片
+        $("#upFiles").change(function(e){
+            e.stopPropagation();
+            var imgFile = new FileReader();
+            imgFile.readAsDataURL(this.files[0]);
+            imgFile.onload=function(){
+                var  src = this.result; //base64数据
+                var html="<div><img src="+src+"></div>";
+                $(".imgList-content").append(html);
+            }
+        });
+        var imgList=$(".imgList-content div");
+        var str=parseInt(imgList.length/3);
+        for(var i=1;i<=str;i++){imgList.eq(i*3-1).css({marginRight:"0"})}
+        $(".goBack").click(function(){skip("myIndex.html")});
+        //滑动
+        var $w=$("body").width();
+        var mashImg=$(".mash-ul li");
+        var len=mashImg.length;
+        var slide=false;
+        var index=0,left=0,startX=0,endX=0;
+        $(".mash-ul").width($w*len);
+        $(".num-2").text(len);
+        imgList.click(function(){
+            index=$(this).index();
+            if(index==0){
+                return ;
+            }else{
+                $(".num-1").text(index+1);
+                $(".mash-imgList").fadeIn(100);
+                $(".mash-ul").css({marginLeft:-index*$w});
+            }
+        })
+        mashImg.on("touchstart",function(e){
+            var touch = e.originalEvent.changedTouches[0];
+            startX=touch.pageX;
+            slide=true;
+        });
+        mashImg.on("touchend",function(e){
+            var touch = e.originalEvent.changedTouches[0];
+            endX=touch.pageX;
+            if(slide){
+                slide=false;
+                if(startX>endX&&index<len-1){
+                    index++;
+                    $(".num-1").text(index+1);
+                    left=$w*index;
+                    $(".mash-ul").css({
+                        marginLeft:-left,
+                        transition:"all .4s linear",
+                        "-webkit-transition": "all .4s linear"
+                    })
+                }else if(startX<endX&&index>0){
+                    index--;
+                    $(".num-1").text(index+1);
+                    left=index*$w;
+                    $(".mash-ul").css({
+                        marginLeft:-left,
+                        transition:"all .4s linear",
+                        "-webkit-transition": "all .4s linear"
+                    })
+                }
+            }
+        });
+        // $(".imgItem").click(function(){
+        //     $(".mash-imgList").fadeOut(200);
+        //     $(".mash-ul").css({marginLeft:0,transition:"all 0s linear"});
+        // });
+        $(".close").click(function(e){
+            e.stopPropagation();
+            $(".mash-imgList").fadeOut(200);
+            $(".mash-ul").css({marginLeft:0,transition:"all 0s linear","-webkit-transition": "all 0s linear"});
+        });
+        $(".delete").click(function(e){
+            e.stopPropagation();
+            len--;
+            mashImg.eq(index-1).detach();
+            $(".mash-ul").width($w*len);
+            $(".num-2").text(len);
+            $(".mash-imgList").fadeOut(200);
+        })
+    })
+</script>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>邻家小院</title>
+    <meta name="keywords" content='恋爱,约会,love'/>
+    <meta name="description" content="邻家小院"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <link rel="stylesheet" href="cs/demo.css">
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+<div id="fixed">
+    <div class="validate">
+        <div class="correct">
+            <div class="ok">&radic;</div>
+        </div>
+        <h2>验证成功</h2>
+        <div class="container">
+            <table>
+            </table>
+            <div id="button">确定</div>
+        </div>
+    </div>
+</div>
+<div id="fixed1">
+    <div class="validate validate1">
+        <div class="correct">
+            <div class="no"><span></span></div>
+        </div>
+        <h2>验证失败</h2>
+        <div class="container">
+            <input type="text" placeholder="请输入正确的验证码">
+            <div id="button1">确定</div>
+        </div>
+    </div>
+</div>
+ <div class="header">
+   <div class="sellerName">
+       <span></span>
+       <a href="login.html" download="nx.zip">下载</a>
+   </div>
+     <div class="sellerBox">
+         <div class="rightTell">
+             <img src="tell.png">
+             <span>联系我们</span>
+         </div>
+      <div class="sellerImg">
+          <img class="img" src="">
+          <p>邻家小院美食城(北大街)</p>
+      </div>
+     </div>
+     <div class="identifying_code ">
+         <div class="left">
+             <input type="text" value="" placeholder="请输入消费验证码" class="input" maxlength="11">
+         </div>
+         <div class="right">
+             <span id="btn">验证</span>
+         </div>
+     </div>
+ </div>
+ <div class="banner">
+     <div class="total">
+         <div class="total_left">
+             <span>已完成订单</span>
+         </div>
+         <div class="total_right">
+             <span class="to">实际总价格:</span><span class="total_price"></span>元
+         </div>
+     </div>
+     <!--选择日期-->
+     <div class="total_date">
+       <div class="date_box">
+           <div class="date_left">
+             <span>2017-01</span>
+           </div>
+           <div class="date_right">
+               <select id="opt">
+                   <option value="rq">选择日期</option>
+               </select>
+           </div>
+       </div>
+     </div>
+     <!--订单详情-->
+         <ul class="order">
+         </ul>
+ </div>
+</body>
+</html>

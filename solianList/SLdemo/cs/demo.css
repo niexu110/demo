@@ -1,0 +1,70 @@
+*{margin:0;padding:0;}
+html{font-size:15px;font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;}
+body{position:relative;}
+ul li{ list-style: none;}
+.lt{float:left;}.rt{float:right;}
+.header{width:100%;height:20rem;background:#5793DD; }
+.sellerName{width:5rem;margin:0 auto 1rem;text-align: center;color:#ffffff;font-size:1.2rem;}
+.sellerBox{width:100%;height:10rem;}
+.sellerImg{width:50%;height:10rem;margin:0 auto;}
+.img{width:8rem;height:8rem;border-radius:5px;display:block;margin:0 auto;}
+.sellerImg p{color:#ffffff;font-size:1rem;margin-top:0.6rem;text-align:center; }
+.rightTell{width:7rem;height:2rem;line-height:2rem;color:#ffffff;float:right;font-size:0.8rem;}
+.rightTell>img{display:inline-block;float:left;margin-top:0.2rem;}
+.rightTell>span{display:inline-block;margin-left:0.5rem; }
+.rightTell>p{padding-left:0.5rem;}
+.identifying_code{width:90%;height:4rem;margin:1rem auto;}
+.left{width:70%;height:4rem;background:#fff;display:inline-block;float:left;}
+.right{width:25%;height:4rem;background:#fff;line-height:4rem;display:inline-block;float:right;text-align:center;color:#5793DD;font-size:1.3rem; }
+.input{width:80%;height:3rem;font-size:1.3rem;color:#5793DD;border:none; outline:none;margin-left:2rem;margin-top:0.5rem;}
+.banner{width:100%;height:auto;}
+.total{width:90%;height:3rem;margin:0 auto;}
+.total div{padding-top:1rem;}
+.date_left,.total_left{display:inline-block;width:40%;float:left;height:2rem;}
+.total_left>span{font-size:1.3rem;}
+.to{color:#666;}
+.total_right{display:inline-block;width:60%;float:right;height:2rem;text-align:right;}
+.total_price{color:#5793DD;}
+.total_date{width:100%;height:3rem;background:#eee;}
+.date_box div{margin-top:1rem;}
+.date_box{width:90%;height:3rem;margin:0 auto;}
+.date_right{float:right;}
+.order{width:100%;height:auto;}
+.order li{width:100%;height:4rem;border-bottom:1px solid #e6e6e6;}
+.order_top{width:90%;height:2rem;margin:0 auto;color:#A1A1A1;}
+.order_title div,.order_top div{margin-top:0.4rem;}
+.order_title{width:90%;height:2rem;margin:0 auto;}
+.b{color:#5793DD;}
+.right:hover{ color:#e4393c;}
+#fixed{position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.8);display:none;}
+#fixed1{position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.8);display:none;}
+/*验证*/
+.validate{width:18rem;height:20rem;background:#fff;margin:0 auto;position:relative;}
+.correct{position:absolute;width:5rem;height:5rem;border-radius:50%;background:#fff;left:6.5rem;top:-2.5rem;}
+.ok{background:#5793dd;text-align:center;color:#fff;font-size:3rem;width:4rem;height:4rem;border-radius:50%;line-height:4rem;margin-left:0.5rem;margin-top:0.3rem;}
+.validate>h2{width:100%;text-align:center; padding-top:2.5rem;color:#333;}
+.container{width:14rem;height:14rem;margin:0 auto;}
+table{color:#9D9D9D;}
+#fixed1 .validate1{height:15rem;}
+.no{background:#5793dd;width:4rem;height:4rem;border-radius:50%;margin-left:0.5rem;margin-top:0.3rem;text-align: center;}
+.no span{display:inline-block;width:3rem;height:5px;background:#fff;border-radius:10px;margin-top:2rem; }
+.container>input{ width:100%;height:2.5rem;line-height:2.5rem;margin:2rem auto;border:none;text-align:center;font-size:1.4rem; }
+#button1,#button{width:4rem;height:1.5rem;border:1px solid #5793dd;text-align:center;line-height:1.5rem;margin:1rem auto;color:#5793dd;}
+/*订单详情*/
+.order_box{width:100%;height:12rem;border-top:1px solid #8c8c8c;}
+.orderDetail_box{width:90%;height:10rem;margin:1rem auto;}
+.order_left{width:40%;}.order_right{width:55%;height:120px;margin-left:0.5rem;}
+.p{margin-top:1.5rem;font-size:1.2rem;}.p1{color:#FEC5D3;margin-top:1.5rem;}
+.img1{width:1rem;height:1rem;}
+.orderContainer{width:90%;height:auto;margin:0 auto;}
+.orderContainer li{width:100%;height:4rem;line-height:4rem;text-align:left;border-top:1px solid #aaa;}
+.span{color:#B3B3B3;width:40%;}.span1{color:#7F7F7F;width:60%;}
+/*登陆*/
+.login_img{width:100%;height:12rem;}
+.login_img>img{width:100%;height:12rem; }
+.login_box{width:90%;margin:0 auto;height:auto;}
+.login_name{width:100%;height:4rem; margin-top:1rem;border:1px solid #ddd;}
+.login_box_img>img{width:4rem;height:4rem;}
+.phone{width:20rem;height:3.5rem; font-size:1.7rem; border:none;outline:none; }
+.login_box_btn{width:90%;margin:2rem auto; height:auto;}
+#loginBtn{width:100%;height:4rem; background:#5793DD; color:#fff;font-size:2rem;border:none;border-radius:3px; }

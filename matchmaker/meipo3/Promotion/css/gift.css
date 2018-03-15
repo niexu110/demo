@@ -1,0 +1,3 @@
+.view{padding:0;position: relative;}
+.view>img{width:7.5rem;}
+.btn{position: absolute;left:0;bottom:0;width:7.5rem;}

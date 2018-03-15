@@ -1,0 +1,44 @@
+.border{
+	border: none !important;
+}
+a{
+	display: block;
+}
+s{
+	text-decoration: none;
+}
+.view .list{
+	margin-left: .3rem;
+	width: 7.2rem;
+	height: 1.1rem;
+	font-size: .3rem;
+	color: #111;
+	line-height: 1.1rem;
+	border-bottom: 1px solid #e6e6e6;
+	position: relative;
+}
+.view .list .MB{
+	position: absolute;
+	right: .3rem;
+	color: #999;
+}
+.view .list img{
+	width: .14rem;
+	height: .24rem;
+	position: absolute;
+	right: .3rem;
+	top: .43rem;
+}
+.view .out{
+	position: absolute;
+	bottom: .6rem;
+	right: .3rem;
+	width: 6.9rem;
+	height: .94rem;
+	text-align: center;
+	line-height: .94rem;
+	border-radius: .47rem;
+	font-size: .32rem;
+	color: #fff;
+	background: #ff704f;
+}

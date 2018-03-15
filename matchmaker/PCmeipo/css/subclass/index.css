@@ -1,0 +1,39 @@
+.floor{width:100%;height:90px;position: relative; }
+.posit-span{position: absolute;left:10px;bottom:0;display: block;padding:5px 20px;background:#fff;z-index:10;color:#FE7D60;font-size:24px; }
+.img1{display: block;margin:38px auto 0;}
+.bgF9{background:#F9F9F9;}
+.menu{position: absolute;right:0;bottom:0;width:135px;}
+.menu span{font-size:18px;padding:10px 10px;cursor: pointer;}
+span.active{color:#FE7D60;border-bottom:2px solid #FE8C73;}
+.slider-box{width:1200px;height:740px;overflow: hidden;}
+.slider{width:2400px;height:740px;}
+.asoBox{width:1200px;height:740px;}
+.list-ul{width:100%;}
+.item{width:280px;height:370px;position: relative;float: left;}
+.item-img{position: absolute;left:0;top:0;width:70px;}
+.item p{padding:10px 0;font-size:14px; color:#666;}
+.item div{font-size:16px; color:#585858;font-weight: bold;}
+.item div span{font-size:14px; color:#FE8C73;font-weight: 100;}
+.action-box{margin-bottom:60px;}
+.carousel,.guide,.carousel2,.guide2{width:600px;height:430px;position: relative;overflow: hidden;}
+.carousel-slider{height:430px; }
+.carousel-slider2{width:600px;}
+.carousel-slider div,.carousel-slider2 div{width:600px;height:430px;float: left;}
+.carousel-item,.carousel-item2{position: absolute;bottom:15px;left:250px;width:100px;}
+.carousel-item :first-child,.carousel-item2 :first-child{margin:0;}
+.carousel-item span,.carousel-item2 span{display: inline-block;width:16px;height:3px;background:#666;margin-left:15px;}
+.carousel-item span.active,.carousel-item2 span.active{background:#FE8C73;}
+.guide-item,.guide-item2{width:540px;height:370px;display: none;}
+div.active2{display: block;}
+.guide-item h5,.guide-item2 h5{color:#525252;font-size:20px;font-weight:100; }
+.guide-item a,.guide-item2 a{display: block;width:180px;height:45px;line-height:45px;text-align: center;font-size:18px;color:#fff;background:#FF7051;border-radius:40px;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#FF7051,endColorstr=#FF7051)}
+.summary{width:100%;height:120px;overflow: hidden;}
+.summary span{color:#525252;font-size:16px;width:75px; height:120px;}
+.summary p{color:#787878;font-size:14px;width:460px;}
+.title{font-size:16px;color:#6A6A6A;}
+.download{width:920px;height:350px;margin:30px auto;}
+.download :last-child{margin:0;}
+.download-box{width:185px;height:100%;position: relative;margin-right:180px;}
+.download-icon{display:block;margin:0 auto;}
+.download-p{font-size:16px;color:#484848;text-align: center;}
+.download-img{position: absolute;bottom:0;left:0;}

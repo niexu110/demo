@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>编辑资料</title>
+		<meta http-equiv="pragma" content="no-cache">
+	    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+	    <meta http-equiv="expires" content="-1">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+	    <meta name="format-detection" content="telephone=no">
+		<link rel="stylesheet" href="../../css/common.css">
+		<link rel="stylesheet" href="../../css/personal/editdata.css">
+	    <link rel="stylesheet" href="../../css/login/d_gomhcom.css">
+	    <script src="../../js/jquery-3.2.1.min.js"></script>
+	    <script src="../../js/common.js"></script>
+	    <script src="../../js/login/d_gomhcom.js"></script>
+	    <script src="../../js/personal/editdata.js"></script>
+	</head>
+	<body>
+		<div class="pagetop">
+			<a href="javascript:history.go(-1)"><img src="../../image/icon/left.png" /></a>
+			<p>编辑资料</p>
+			<span class="d_save">保存</span>
+		</div>
+		<div class="d_bannerBox">
+			<img class="d_banner" src="../../image/icon/d_editbanner.png" />
+			<img id="previewResult" class="d_headimg" src="../../image/icon/d_morenhead.png" />
+			<p>点击更换头像</p>
+			<button style="height: .6rem;width: 2rem;position: absolute;top: 2.16rem;left: 2.75rem;opacity: 0;" class="button blue rarrow file-input-mask"><input type="file" style="width: 2.0rem;height: .6rem;" id="file" capture=camera"/></button>
+			<div class="app" id="uploadPage">
+			    <div class="main">
+			        <canvas class="upload-mask"></canvas>
+			        <div class="preview-box">
+			            <img id="preview" />
+			        </div>
+			        <canvas class="photo-canvas" style="border:1px solid #5793dd;">
+			        </canvas>
+			    </div>
+			    
+			    <div class="bar">
+			        <a id="closeCrop">取消</a>
+			        <a id="getFile">确定</a>
+			    </div>
+			    
+			</div>
+		</div>
+		<p class="d_mintitle">基本资料</p>
+		<div class="d_pageminBox">
+			<p>昵称</p>
+			<div></div>
+			<input class="d_nickname" name="" type="text" placeholder="请输入昵称" />
+		</div>
+		<div class="d_pageminBox">
+			<p>性别</p>
+			<div></div>
+			<span>女</span>
+		</div>
+		<div class="d_pageminBox d_clicksr">
+			<p>出生日期</p>
+			<div><img src="../../image/icon/right.png" /></div>
+			<span>1991-10-14</span>
+		</div>
+		<div class="d_pageminBox">
+			<p>星座</p>
+			<div></div>
+			<span>天平座</span>
+		</div>
+		<div class="d_pageminBox d_clickhei">
+			<p>身高</p>
+			<div><img src="../../image/icon/right.png" /></div>
+			<span>165cm</span>
+		</div>
+		<div class="d_pageminBox d_clickwei">
+			<p>体重</p>
+			<div><img src="../../image/icon/right.png" /></div>
+			<span>55kg</span>
+		</div>
+		<div class="d_pageminBox d_clickedu">
+			<p>学历</p>
+			<div><img src="../../image/icon/right.png" /></div>
+			<span>本科</span>
+		</div>
+		<div class="d_pageminBox d_clickinc">
+			<p>收入</p>
+			<div><img src="../../image/icon/right.png" /></div>
+			<span>4001-8000元</span>
+		</div>
+		<div class="d_pageminBox d_clickadd">
+			<p>所在地</p>
+			<div><img src="../../image/icon/right.png" /></div>
+			<span>请选择</span>
+		</div>
+		<div class="d_pageminBox d_clickho">
+			<p>购房情况</p>
+			<div><img src="../../image/icon/right.png" /></div>
+			<span>请选择</span>
+		</div>
+		<div class="d_pageminBox d_clickcar" style="border: none;">
+			<p>购车情况</p>
+			<div><img src="../../image/icon/right.png" /></div>
+			<span>请选择</span>
+		</div>
+		<p class="d_mintitle">其他资料</p>
+		<div class="d_pageminBox d_job">
+			<p>行业/职业</p>
+			<div><img src="../../image/icon/right.png" /></div>
+			<span>请选择</span>
+		</div>
+		<div class="d_pageminBox">
+			<p>毕业院校</p>
+			<div></div>
+			<input class="d_clicksch" type="text" placeholder="请输入您的毕业院校" />
+		</div>
+		<div class="d_pageminBox d_clickfambg">
+			<p>家庭背景</p>
+			<div><img src="../../image/icon/right.png" /></div>
+			<span>请选择</span>
+		</div>
+		<div class="d_pageminBox d_clicknat">
+			<p>民族</p>
+			<div><img src="../../image/icon/right.png" /></div>
+			<span>请选择</span>
+		</div>
+		<div class="d_pageminBox d_clickhome">
+			<p>家乡</p>
+			<div><img src="../../image/icon/right.png" /></div>
+			<span>请选择</span>
+		</div>
+		<div class="d_pageminBox d_clicksm">
+			<p>吸烟</p>
+			<div><img src="../../image/icon/right.png" /></div>
+			<span>请选择</span>
+		</div>
+		<div class="d_pageminBox d_clickdri">
+			<p>饮酒</p>
+			<div><img src="../../image/icon/right.png" /></div>
+			<span>请选择</span>
+		</div>
+		<div class="d_pageminBox d_clickbel">
+			<p>宗教</p>
+			<div><img src="../../image/icon/right.png" /></div>
+			<span>请选择</span>
+		</div>
+		<div class="d_pageminBox d_clickchi">
+			<p>子女状况</p>
+			<div><img src="../../image/icon/right.png" /></div>
+			<span>请选择</span>
+		</div>
+		<div class="d_pageminBox d_clickdiet">
+			<p>饮食习惯</p>
+			<div><img src="../../image/icon/right.png" /></div>
+			<span>请选择</span>
+		</div>
+		<div class="d_pageminBox d_clickrest">
+			<p>作息习惯</p>
+			<div><img src="../../image/icon/right.png" /></div>
+			<span>请选择</span>
+		</div>
+		<div class="d_pageminBox d_clickpet">
+			<p>宠物</p>
+			<div><img src="../../image/icon/right.png" /></div>
+			<span>请选择</span>
+		</div>
+		<div class="d_pageminBox">
+			<p>爱情宣言</p>
+			<div></div>
+			<input class="d_clicklovesay" name="" type="text" placeholder="请输入您的爱情宣言" />
+		</div>
+		<div class="d_pageminBox d_clicklike" style="border: none;">
+			<p>兴趣爱好</p>
+			<div><img src="../../image/icon/right.png" /></div>
+			<span>请选择</span>
+		</div>
+		<p class="d_mintitle">择偶条件</p>
+		<div class="d_pageminBox d_clickzoage">
+			<p>年龄</p>
+			<div><img src="../../image/icon/right.png" /></div>
+			<span>请选择</span>
+		</div>
+		<div class="d_pageminBox d_clickzohei">
+			<p>身高</p>
+			<div><img src="../../image/icon/right.png" /></div>
+			<span>请选择</span>
+		</div>
+		<div class="d_pageminBox d_clickzoinc">
+			<p>月收入</p>
+			<div><img src="../../image/icon/right.png" /></div>
+			<span>请选择</span>
+		</div>
+		<div class="d_pageminBox d_clickzoedu" style="border: none;">
+			<p>学历</p>
+			<div><img src="../../image/icon/right.png" /></div>
+			<span>请选择</span>
+		</div>
+		<form id="form">
+			<input type="hidden" name="cmd" value="100002" />
+			<input type="hidden" name="nickname" value="" />
+			<input type="hidden" name="birthday" value="" />
+			<input type="hidden" name="height" value="" />
+			<input type="hidden" name="weight" value="" />
+			<input type="hidden" name="image" value="" />
+			<input type="hidden" name="income" value="" />
+			<input type="hidden" name="edu" value="" />
+			<input type="hidden" name="declaration" value="" />
+			<input type="hidden" name="province" value="" />
+			<input type="hidden" name="city" value="" />
+			<input type="hidden" name="children" value="" />
+			<input type="hidden" name="industry" value="" />
+			<input type="hidden" name="job" value="" />
+			<input type="hidden" name="car" value="" />
+			<input type="hidden" name="house" value="" />
+			<input type="hidden" name="school" value="" />
+			<input type="hidden" name="familybg" value="" />
+			<input type="hidden" name="hometown" value="" />
+			<input type="hidden" name="drink" value="" />
+			<input type="hidden" name="smoking" value="" />
+			<input type="hidden" name="belief" value="" />
+			<input type="hidden" name="diet" value="" />
+			<input type="hidden" name="rest" value="" />
+			<input type="hidden" name="pet" value="" />
+			<input type="hidden" name="nation" value="" />
+			<input type="hidden" name="style" value="" />
+			<input type="hidden" name="rq_age" value="" />
+			<input type="hidden" name="rq_height" value="" />
+			<input type="hidden" name="rq_income" value="" />
+			<input type="hidden" name="rq_edu" value="" />
+			<input type="hidden" name="uid" value="" />
+			<input type="hidden" name="token" value="" />
+		</form>
+		<!-- 生日弹框 -->
+		<div class="d_fetedayBox" style="display: none;">
+			<div class="d_feteday">
+				<div class="d_fetedaytop">
+					<p class="d_fetedayclear">取消</p>
+					<p class="d_fetedaysure">确认</p>
+				</div>
+				<ul class="d_year"></ul>
+				<ul class="d_month"></ul>
+				<ul class="d_day"></ul>
+			</div>
+		</div>
+		<!-- 单一弹框 -->
+		<div class="d_popbottomBox" style="display: none;">
+			<div class="d_popbottom">
+				<div class="d_fetedaytop">
+					<p class="d_fetedayclear">取消</p>
+					<p class="d_fetedaysure">确认</p>
+				</div>
+				<ul></ul>
+			</div> 
+		</div>
+		<!-- 择偶身高、体重弹框 -->
+		<div class="d_twoPopBox" style="display: none;">
+			<div class="d_twoPop">
+				<div class="d_fetedaytop">
+					<p class="d_fetedayclear">取消</p>
+					<p class="d_fetedaysure">确认</p>
+				</div>
+				<ul class="d_minBox"></ul>
+				<ul class="d_maxBox"></ul>
+			</div>
+		</div>
+		<!-- 定位弹框 -->
+		<div class="d_locationpopBox" style="display: none;">
+			<div class="d_addressBox">
+				<div class="d_fetedaytop">
+					<p class="d_fetedayclear">取消</p>
+					<p class="d_fetedaysure">确认</p>
+				</div>
+				<ul class="d_province"></ul>
+				<ul class="d_city"></ul>
+			</div>
+		</div>
+		<!-- 兴趣爱好 -->
+		<div class="d_xqaihao" style="display: none;position: fixed;top: 0;left: 0;width: 100%;height: 100%;background: #FFFFFF;z-index: 100000;">
+			<div>
+				<div class="d_tetop">
+					<img class="d_xqback" src="../../image/icon/left.png" />
+				</div>
+				<p class="d_pageMintitle">选择您的兴趣爱好</p>
+				<p class="d_pagePrompt">最多选5项</p>
+				<div class="d_contentlist" style="height: 6.0;">
+					<ul class="d_xqul">
+					</ul>
+				</div>
+				<div class="d_next d_xqnext">确认</div>
+			</div>
+		</div>
+		<div class="d_popupbox"></div>
+	</body>
+	<script src="../../js/js/require.js" ></script>
+	<script src="../../js/js/main.js"></script>
+	<script>
+	    var myCrop;
+	    require(["jquery",'hammer','tomPlugin',"tomLib",'hammer.fake','hammer.showtouch'],function($,hammer,plugin,T){
+	        document.addEventListener("touchmove",function(e){
+	            e.preventDefault();
+	        })
+	        //初始化图片大小300*300
+	        var opts={cropWidth:300,cropHeight:300},
+	                $file=$("#file"),
+	                previewStyle={x:0,y:0,scale:1,rotate:0,ratio:1},
+	                transform= T.prefixStyle("transform"),
+	                $previewResult=$("#previewResult"),
+	                $previewBox=$(".preview-box"),
+	                $getFile=$("#getFile"),
+	                $preview=$("#preview"),
+	                $uploadPage=$("#uploadPage"),
+	                $mask=$(".upload-mask"),
+	                maskCtx=$mask[0].getContext("2d");
+	
+	        //这是插件调用主体
+	        myCrop=T.cropImage({
+	            bindFile:$file,
+	            enableRatio:true,//是否启用高清,高清得到的图片会比较大
+	            canvas:$(".photo-canvas")[0],  //放一个canvas对象
+	            cropWidth:opts.cropWidth,       //剪切大小
+	            cropHeight:opts.cropHeight,
+	            bindPreview:$preview,      //绑定一个预览的img标签
+	            useHammer:false,            //是否使用hammer手势，否的话将不支持缩放
+	            oninit:function(){
+	
+	            },
+	            onLoad:function(data){
+	                //用户每次选择图片后执行回调
+	                resetUserOpts();
+	                previewStyle.ratio=data.ratio;
+	                $preview.attr("src",data.originSrc).css({width:data.width,height:data.height}).css(transform,'scale('+1/previewStyle.ratio+')');
+	                myCrop.setCropStyle(previewStyle)
+	            }
+	        });
+	        function resetUserOpts(){
+	            $(".photo-canvas").hammer('reset');
+	            previewStyle={scale:2,x:0,y:0,rotate:0};
+	            $previewResult.attr("src",'');
+	            $preview.attr("src",'')
+	        }
+	        $(".photo-canvas").hammer({
+	            gestureCb:function(o){
+	                //每次缩放拖拽的回调
+	                $.extend(previewStyle,o);
+	                console.log("用户修改图片",previewStyle)
+	                $preview.css(transform,"translate3d("+ previewStyle.x+'px,'+ previewStyle.y+"px,0) rotate("+previewStyle.rotate+"deg) scale("+(previewStyle.scale/previewStyle.ratio)+")")
+	            }
+	        })
+	        //获取图片并关闭弹窗返回到表单界面
+	        $getFile.on("click",function(){
+	            var src;
+	            $uploadPage.hide();
+	            myCrop.setCropStyle(previewStyle)
+	//            getCropFile({type:"png",background:"red",lowDpi:true})
+	            src=myCrop.getCropFile({});
+	            $previewResult.attr("src",src);
+	            $("input[name='image']").val(src);
+	        })
+	        //上传文件按钮&&关闭弹窗按钮
+	        $(document).delegate("#file","click",function(){
+	            $uploadPage.show();
+	        }).delegate("#closeCrop","click",function(){
+	            $uploadPage.hide();
+	            resetUserOpts();
+	            myCrop.setCropStyle(previewStyle)
+	        })
+	        $file.one("click",function(){
+	            $uploadPage.show();
+	            $mask.prop({width:$mask.width(),height:$mask.height()})
+	            maskCtx.fillStyle="rgba(0,0,0,0.7)";
+	            maskCtx.fillRect(0,0,$mask.width(),$mask.height());
+	            maskCtx.fill();
+	            maskCtx.clearRect(($mask.width()-opts.cropWidth)/2,($mask.height()-opts.cropHeight)/2,opts.cropWidth,opts.cropHeight)
+	        })
+	    })
+	</script>
+</html>

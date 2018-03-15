@@ -1,0 +1,26 @@
+body{background:#fcfcfc; }
+.group-GL{font-size:.3rem;color:#5793dd;position:absolute;  height:0.9rem;  line-height:0.9rem;  font-weight:500; top:0;right:0.25rem; }
+.group-nav{  color:#666;  width:7.5rem; background:#fcfcfc; position: fixed;  font-size:0.3rem;  top:.9rem;  left:0;  height:1.8rem;  border-bottom: 1px solid #e6e6e6;overflow-x:auto;  overflow-y: hidden;z-index:800  }
+.group-nav-box{  margin-left:0.4rem;  width:10.78rem; margin-top:.4rem; height:1.4rem;}
+.group-nav-box li{ float:left; width:1.54rem;height:1.28rem;text-align: center;}
+.group-nav-box li img{width:.57rem;height:.57rem;display: inline-block;margin:0 auto;}
+.line{width:7.5rem;height:.1rem;background:#f3f3f3;margin-top:2.7rem;}
+.group-main{width:7.5rem;height:auto;}
+.group-item{width:7rem;height:6.4rem;margin:0 auto;}
+.group-title{width:auto;height:.6rem;margin-top:.2rem;}
+.userImg{width:.6rem;height:.6rem;border-radius: 50%;}
+.group-title p{width:auto;height:.6rem; line-height:.6rem;color:#363636;}
+.group-title p span{margin-left:.1rem;}
+.group-title p span.SL{font-size: .35rem;color:#666;}
+.group-title p span.nikeName{font-size: .35rem;color:#333;}
+.group-title p span.GF{display: inline-block;width:.55rem;height:.28rem;line-height:.28rem;border-radius: 4px;background:#47D3D5;color:#fff;text-align: center;font-size: .16rem;}
+.group-title p span.age{display: inline-block;width:.55rem;height:.28rem;line-height:.28rem;border-radius: 4px;background:#5793dd;color:#fff;text-align: center;font-size: .16rem;}
+.group-title p span.ages{display: inline-block;width:.55rem;height:.28rem;line-height:.28rem;border-radius: 4px;background:#FEB3C5;color:#fff;text-align: center;font-size: .16rem;}
+.group-title p span.age>img{width:.17rem;height:.17rem;}
+.group-title p span.ages>img{width:.17rem;height:.17rem;}
+.group-icon{width:auto; height:3.6rem;margin-top:.24rem;}
+.group-icon>img{width:7rem; height:3.6rem;}
+.group-footer{margin-top:.26rem;}
+.group-footer p{color:#333;font-size: .32rem;font-weight: bold;}
+.group-footer h2{color:#898989;font-size: .24rem;margin-top:.1rem;}
+.group-price{font-size: .32rem;color:#2ac845;}

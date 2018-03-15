@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>创建几何圆</title>
+    <script src="js/three.js"></script>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script>
+        $(function(){
+            var scene=new THREE.Scene();
+            var camera=new THREE.PerspectiveCamera(45,800/600,1,1000);
+            camera.position.x=-20;
+            camera.position.y=30;
+            camera.position.z=40;
+            camera.lookAt(new THREE.Vector3(10,0,0));
+            var renderer=new THREE.WebGLRenderer();
+            renderer.setClearColor(new THREE.Color(0xFEFEFE));
+            renderer.setSize(800,600);
+            var circle=createMesh(new THREE.CircleGeometry(4,10,0.3*Math.PI,0.3*Math.PI));
+            scene.add(circle);
+            //几何体
+            function createMesh(geom){
+             var meshMaterial=new THREE.MeshNormalMaterial();
+             var basicMaterial=new THREE.MeshBasicMaterial();
+               basicMaterial.wireframe=true;
+                return THREE.SceneUtils.createMultiMaterialObject(geom,[
+                   meshMaterial,basicMaterial
+                ]);
+            }
+            var light=new THREE.SpotLight(0xffff01);
+            light.position.set(-40,60,-10);
+            scene.add(light);
+            document.body.appendChild(renderer.domElement);
+            function render(){
+                circle.position.z+=0.2;
+                requestAnimationFrame(render);
+                renderer.render(scene,camera);
+            }
+            render();
+        });
+    </script>
+</head>
+<body>
+
+</body>
+</html>

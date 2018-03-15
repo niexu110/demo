@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>下MISS</title>
+    <script src="js/three.js"></script>
+    <script>
+        function main(){
+            var scene=new THREE.Scene();
+            var camera=new THREE.PerspectiveCamera(45,window.innerWidth/window.innerHeight,.1,1000);
+            var renderer=new THREE.WebGLRenderer();
+            renderer.setClearColor(new THREE.Color(0x111111));
+            renderer.setSize(window.innerWidth,window.innerHeight);
+            camera.position.set(20,40,110);
+            camera.lookAt(new THREE.Vector3(20,30,0));
+            document.body.appendChild(renderer.domElement);
+            createPointCloud();
+            var cloud;
+            function createPointCloud(){
+                if(cloud){
+                    scene.remove(cloud);
+                };
+                //MESH
+
+                var geom=new THREE.Geometry();
+                var material=new THREE.ParticleBasicMaterial({
+                    size:6,
+                    transparent:true,
+                    opacity:.8,
+
+                    blending:THREE.AdditiveBlending,
+                    sizeAttenuation:true,
+                    color:0xffffff
+                });
+                var range=600;
+                for(var i=0;i<2000;i++){
+                    var particle=new THREE.Vector3(
+                            Math.random()*range-range/2,
+                            Math.random()*range-range/2,
+                            Math.random()*range-range/2
+                    );
+                    particle.velocityY=0.1+Math.random()/5;
+                    particle.velocityX=(Math.random()-0.5)/3;
+                    geom.vertices.push(particle);
+                }
+                cloud=new THREE.ParticleSystem(geom,material);
+                cloud.sortParticles=true;
+                scene.add(cloud);
+            }
+            render();
+            var startTime=Date.now();
+            function render(){
+               if(Date.now()-startTime>100){
+                    createPointCloud();
+                    startTime=Date.now();
+                }
+                window.requestAnimationFrame(render);
+                var vertices=cloud.geometry.vertices;
+                vertices.forEach(function(v){
+                    v.y=v.y-v.velocityY;
+                    v.x=v.x-v.velocityX;
+                    if(v.y<=0)v.y=60;
+                    if(v.x<=-20||v.x>=20)v.velocityX=v.velocityX-1;
+                });
+                renderer.render(scene,camera);
+            }
+        }
+    </script>
+</head>
+<body onload="main()">
+</body>
+</html>
